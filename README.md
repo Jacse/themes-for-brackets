@@ -1,1 +1,4 @@
-Will be written in a few days.
+Themes for Brackets
+==================
+Enhance your Brackets experience with full themes.
+Currently Dark Soda and Visual Studio.
