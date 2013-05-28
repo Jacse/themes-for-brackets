@@ -1,3 +1,11 @@
+#status-bar{ /* Bottom status bar */
+    background:#3C3F41;
+    border-top:1px solid #484b4d;
+}
+#status-indicators, #status-info{ /* Status bar text */
+    background:transparent;
+}
+
 .CodeMirror-scroll{
 	background-color: #242424;
 	color: #fff;

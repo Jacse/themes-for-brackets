@@ -8,6 +8,10 @@
 #project-files-header, #working-set-header{/* "working files" header and folder header*/
 	color:#777!important;
 }
+#project-dropdown-toggle:hover{ /* Open url when hover */
+    color:#555!important;
+    background:#e8e8e8;
+}
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working fiels"*/
 	color:#222!important;
@@ -22,6 +26,19 @@
 .sidebar-selection-triangle.triangle-visible::before{
 	border-left:12px solid #cccedb;
 }
+
+#main-toolbar{ /* Toolbar to the right */
+    background:#f6f6f6;
+}
+
+#status-bar{ /* Bottom status bar */
+    background:#f6f6f6;
+    border-top:1px solid #d4d4d4;
+}
+#status-indicators, #status-info{ /* Status bar text */
+    background:transparent;
+}
+
 
 .CodeMirror-scroll{
     background-color: #fefefe;
