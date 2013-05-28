@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013 Miguel Castillo.
+ * Copyright (c) 2013 Jacob Lauritzen.
  *
  * Licensed under MIT
  *
@@ -20,6 +20,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
+ * 
+ * Thanks to Miguel Castillo for letting me expand his extension.
  */
 
 
