@@ -6,6 +6,8 @@ List of themes
 ==================
 * Visual Studio
 * Dark Soda
+
+
 FAQ
 ==================
 * Another Brackets extension already adds themes, why make another one?
