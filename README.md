@@ -18,5 +18,5 @@ FAQ
 
 Links
 ===============
-[The other Brackets Themes extension](https://raw.github.com/MiguelCastillo/Brackets-Themes/)
-[Brackets](http://brackets.io/)
+* [The other Brackets Themes extension](https://raw.github.com/MiguelCastillo/Brackets-Themes/)
+* [Brackets](http://brackets.io/)
