@@ -1,3 +1,4 @@
+/** SIDEBAR **/
 #sidebar{
 	background:#f6f6f6;
 	text-shadow:none;
@@ -8,9 +9,11 @@
 #project-files-header, #working-set-header{/* "working files" header and folder header*/
 	color:#777!important;
 }
+#project-files-header{ border-top: 1px solid rgba(0,0,0,0.2);} /* Delimiter between "working files" and project files */
 #project-dropdown-toggle:hover{ /* Open url when hover */
     color:#555!important;
     background:#e8e8e8;
+	border:1px solid #c9c9c9;
 }
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working fiels"*/
@@ -27,11 +30,13 @@
 	border-left:12px solid #cccedb;
 }
 
-#main-toolbar{ /* Toolbar to the right */
+/** TOOLBAR **/
+#main-toolbar{
     background:#f6f6f6;
 }
 
-#status-bar{ /* Bottom status bar */
+/** STATUSBAR **/
+#status-bar{
     background:#f6f6f6;
     border-top:1px solid #d4d4d4;
 }
@@ -39,7 +44,12 @@
     background:transparent;
 }
 
+/** QUICK EDIT ETC: **/
+.inline-widget{
+	background:#F4F4F4;
+}
 
+/** CODEMIRROR **/
 .CodeMirror-scroll{
     background-color: #fefefe;
     color:black;
@@ -68,10 +78,8 @@
   	z-index: 3;
 }
 
-
 .CodeMirror span.cm-atom { color: blue; }
 .CodeMirror span.cm-qualifier, .CodeMirror span.cm-builtin { color: #800000; }
-
 .CodeMirror span.cm-keyword { color: blue; }
 .CodeMirror span.cm-comment { color: green; }
 .CodeMirror span.cm-string {color: #800000;}
@@ -86,15 +94,7 @@
   	background-color: yellow;
 }
 
-.CodeMirror .CodeMirror-selectedtext{
-  	background-color: #ADD6FF;
-}
-
-.CodeMirror .CodeMirror-selected{
-  	background: transparent;
-}
-
-.CodeMirror-focused .CodeMirror-selected{
-  	background: transparent;
+.CodeMirror-selected { 
+    background: #9ccfff !important;
 }
 

@@ -21,9 +21,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  * 
- * Thanks to Miguel Castillo for letting me expand his extension.
  */
-
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
 /*global define, $, brackets, window, CodeMirror */
@@ -61,6 +59,8 @@ define(function (require, exports, module) {
 		$("#currentTheme").attr("href", ExtensionUtils.getModulePath(module, "./themes/" + Themes.currentTheme + ".css"));
 		Themes.setCommand(Themes.currentTheme, true);
 		preferences.setValue("theme", Themes.currentTheme);
+		CodeMirror.defaults.theme = Themes.currentTheme;
+		$("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
 	};
 	Themes.setCommand = function (theme, val) {
 		CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
@@ -71,14 +71,14 @@ define(function (require, exports, module) {
 		this.command_id = "jacse.themes-for-brackets.changetheme_" + theme;
 		var that = this;
 		CommandManager.register(Themes.getName(this.theme), this.command_id, function () {
-			console.log(that.theme);
 			Themes.load(that.theme);
 		});
 		menu.addMenuItem(this.command_id);
 	}
 	
-	Themes.allThemes = [new Theme("default"), new Theme("dark-soda"), new Theme("visual-studio")];
+	Themes.allThemes = [new Theme("default"), new Theme("dark-soda"), new Theme("visual-studio"), new Theme("blackboard")];
 	
 	$("body").append('<link id="currentTheme" rel="stylesheet"/>');
+	$("body").append('<style>.CodeMirror-scroll{background-color:transparent;}.CodeMirror-gutters{border-right:none;</style>');
 	Themes.load(Themes.currentTheme);
 });

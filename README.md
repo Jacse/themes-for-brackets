@@ -28,7 +28,8 @@ Links
 
 To do
 =================
+- [x] Add styles to quick-edit both for Dark Soda and Visual Studio
 - [ ] Add more themes
 - [ ] Add wiki for theme CSS
-- [ ] Add custom classes, so theme specific styles are over-ruling deafault ones without the use of !important.
-- [ ] Screenshot for Dark Soda
+- [x] Add CodeMirror classes, so theme specific styles are over-ruling default ones without the use of !important.
+- [x] Screenshot for Dark Soda
