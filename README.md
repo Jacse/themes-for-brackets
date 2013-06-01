@@ -5,7 +5,8 @@ With Themes for Brackets you can apply themes to Brackets via a menu in the top 
 List of themes
 ==================
 * Visual Studio <br />![Visual Studio theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
-* Dark Soda
+* Dark Soda <br />![Dark Soda theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
+* Blackboard
 
 
 FAQ
