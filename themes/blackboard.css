@@ -1,3 +1,14 @@
+/** SIDEBAR **/
+#sidebar, #working-set-header, #open-files-container{
+	background:#373c50;
+	text-shadow:none;
+}
+
+/** TOOLBAR **/
+#main-toolbar{
+    background:#353a52;
+}
+
 #status-bar{ /* Bottom status bar */
     background:#0C1021;
     border-top:1px solid rgba(72, 75, 77, 0.62);
@@ -8,6 +19,7 @@
 .inline-widget{ /* Quick-edit styles */
 	background:rgba(255,255,255, 0.06);
 }
+
 /** CodeMirror styles **/
 
 .cm-s-blackboard.CodeMirror { background: #0C1021; color: #F8F8F8; }

@@ -8,6 +8,12 @@ List of themes
 * Dark Soda <br />![Dark Soda theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
 * Blackboard
 
+How to install
+==================
+Installing Themes for Brackets is easy. All you have to do is this: 
+* file->extension manager...
+* Install from url...
+* Copy https://github.com/Jacse/themes-for-brackets.git in there and click OK
 
 FAQ
 ==================
@@ -18,10 +24,6 @@ FAQ
 Contact and contribute
 ==================
 If you want to add a theme or would like to talk to me for some other reason, please send me a mail at jacsebl@hotmail.com
-
-Links
-=================
-* [Brackets](http://brackets.io/)
 
 
 To do
