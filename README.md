@@ -6,6 +6,7 @@ List of themes
 ==================
 * Visual Studio <br />![Visual Studio theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
 * Dark Soda <br />![Dark Soda theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
+* Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
 * Blackboard
 
 How to install
@@ -19,6 +20,13 @@ FAQ
 ==================
 * Can I make my own theme?
  - Shure thing, all you need to do is make a new css file in the themes/ folder, and add it to main.js in the Themes.allThemes array.<br/><b>HINT:</b> I would recommend looking at already existing themes to find ids and classes.
+
+Troubleshooting
+==================
+* There are no commands in the themes menu?
+ - Try re-opening Brackets, that should help it.
+
+Didn't find the answer you were looking for? Send me a mail at jacsebl@hotmail.com I'll be glad to help you out!
 
 
 Contact and contribute
