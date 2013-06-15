@@ -4,6 +4,7 @@
 }
 #status-indicators, #status-info{ /* Status bar text */
     background:transparent;
+	color:#FFF;
 }
 #main-toolbar{ background:#3C3F41;}
 
