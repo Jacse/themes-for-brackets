@@ -76,7 +76,7 @@ define(function (require, exports, module) {
 		menu.addMenuItem(this.command_id);
 	}
 	
-	Themes.allThemes = [new Theme("default"), new Theme("dark-soda"), new Theme("visual-studio"), new Theme("blackboard"), new Theme("ambiance")];
+	Themes.allThemes = [new Theme("default"), new Theme("dark-soda"), new Theme("visual-studio"), new Theme("blackboard"), new Theme("ambiance"), new Theme("cobalt")];
 	
 	$("body").append('<link id="currentTheme" rel="stylesheet"/>');
 	$("body").append('<style>.CodeMirror-scroll{background-color:transparent;}.CodeMirror-gutters{border-right:none;</style>');
