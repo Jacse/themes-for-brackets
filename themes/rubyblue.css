@@ -1,0 +1,67 @@
+/** SIDEBAR **/
+#sidebar, #working-set-header, #open-files-container, #main-toolbar{
+	background:#1F4661;
+	text-shadow:none;
+}
+#working-set-header, #open-files-container{ /* Working files */
+	background:#16314a;
+}
+#project-files-header, #working-set-header{/* "working files" header and folder header*/
+	color:#E0E0E0!important;
+}
+#project-files-header{ border-top: 4px solid #3E7087;} /* Delimiter between "working files" and project files */
+#project-dropdown-toggle:hover{ /* Open url when hover */
+    color:#FFF!important;
+    background:rgba(255,255,255,0.1);
+	border:1px solid rgba(255,255,255,0.3);
+}
+.jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
+#open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working fiels"*/
+	color:#FFF!important;
+}
+.sidebar-selection{ /* Selected file or folder */
+	background:#3E7087;
+}
+.sidebar-selection-triangle{ /* ^ the cool arrow */
+	background:transparent;
+}
+.sidebar-selection-triangle.triangle-visible::before{
+	border-left:12px solid #3E7087;
+}
+
+
+#status-bar{ /* Bottom status bar */
+    background:#1F4661;
+    border-top:1px solid #3E7087;
+}
+#status-indicators, #status-info{ /* Status bar text */
+    background:transparent;
+	color:#FFF;
+}
+
+.inline-widget{ /* Quick-edit styles */
+	background:#1F4661;
+}
+
+/** CodeMirror styles **/
+.cm-s-rubyblue { font-family: Trebuchet, Verdana, sans-serif; }	/* - customized editor font - */
+
+.cm-s-rubyblue.CodeMirror { background: #112435; color: white; }
+.cm-s-rubyblue div.CodeMirror-selected { background: #38566F !important; }
+.cm-s-rubyblue .CodeMirror-gutters { background: #1F4661; border-right: 7px solid #3E7087; }
+.cm-s-rubyblue .CodeMirror-linenumber { color: white; }
+.cm-s-rubyblue .CodeMirror-cursor { border-left: 1px solid white !important; }
+
+.cm-s-rubyblue span.cm-comment { color: #999; font-style:italic; line-height: 1em; }
+.cm-s-rubyblue span.cm-atom { color: #F4C20B; }
+.cm-s-rubyblue span.cm-number, .cm-s-rubyblue span.cm-attribute { color: #82C6E0; }
+.cm-s-rubyblue span.cm-keyword { color: #F0F; }
+.cm-s-rubyblue span.cm-string { color: #F08047; }
+.cm-s-rubyblue span.cm-meta { color: #F0F; }
+.cm-s-rubyblue span.cm-variable-2, .cm-s-rubyblue span.cm-tag { color: #7BD827; }
+.cm-s-rubyblue span.cm-variable-3, .cm-s-rubyblue span.cm-def { color: white; }
+.cm-s-rubyblue span.cm-error { color: #AF2018; }
+.cm-s-rubyblue span.cm-bracket { color: #F0F; }
+.cm-s-rubyblue span.cm-link { color: #F4C20B; }
+.cm-s-rubyblue span.CodeMirror-matchingbracket { color:#F0F !important; }
+.cm-s-rubyblue span.cm-builtin, .cm-s-rubyblue span.cm-special { color: #FF9D00; }

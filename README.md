@@ -6,7 +6,8 @@ List of themes
 ==================
 * Visual Studio <br />![Visual Studio theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
 * Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
-* Cobalt <br />![Cobalt Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/cobalt.png)
+* Rubyblue <br />![Cobalt Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/rubyblue.png)
+* Cobalt
 * Dark Soda
 * Blackboard
 
