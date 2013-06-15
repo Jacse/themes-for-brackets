@@ -16,7 +16,7 @@ How to install
 Installing Themes for Brackets is easy. All you have to do is this: 
 * file->extension manager...
 * Install from url...
-* Copy https://github.com/Jacse/themes-for-brackets.git in there and click OK
+* Copy https://github.com/Jacse/themes-for-brackets in there and click OK
 
 FAQ
 ==================
