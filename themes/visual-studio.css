@@ -20,11 +20,8 @@
 	color:#222!important;
 }
 
-.sidebar-selection{ /* Selected file or folder */
+.sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
 	background:#cccedb;
-}
-.sidebar-selection-triangle{ /* ^ the cool arrow */
-	background:transparent;
 }
 .sidebar-selection-triangle.triangle-visible::before{
 	border-left:12px solid #cccedb;

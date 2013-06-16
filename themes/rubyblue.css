@@ -19,11 +19,8 @@
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working fiels"*/
 	color:#FFF!important;
 }
-.sidebar-selection{ /* Selected file or folder */
+.sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
 	background:#3E7087;
-}
-.sidebar-selection-triangle{ /* ^ the cool arrow */
-	background:transparent;
 }
 .sidebar-selection-triangle.triangle-visible::before{
 	border-left:12px solid #3E7087;

@@ -7,9 +7,11 @@ List of themes
 * Visual Studio <br />![Visual Studio theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
 * Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
 * Rubyblue <br />![Cobalt Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/rubyblue.png)
+* Solarized Dark
 * Cobalt
 * Dark Soda
 * Blackboard
+* Default
 
 How to install
 ==================
@@ -28,7 +30,7 @@ Troubleshooting
 * There are no commands in the themes menu?
  - Try re-opening Brackets, that should help it.
 * My line numbers are looking weird?
- - Try hitting F5 or re-opening Brackets.
+ - Try hitting F5 (Save changes before doing so!).
 
 Didn't find the answer you were looking for? Send me a mail at jacsebl@hotmail.com I'll be glad to help you out!
 
