@@ -9,9 +9,38 @@
 #main-toolbar{ background:#3C3F41;}
 
 .inline-widget{ /* Quick-edit styles */
-	background:#3d4042;
+	background:rgb(51, 51, 51);
 }
 
+.divider-holder .divider {
+    margin-left: 12px;
+    width: 0px;
+    height: 100%;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(73, 73, 73);
+}
+
+.css-prop-defn h1 {
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 0 9px 0;
+}
+
+.css-prop-defn {
+    color: rgb(197, 197, 197);
+    cursor: auto;
+    font-family: SourceSansPro;
+    font-size: 14px;
+}
+
+.css-prop-values dl dt {
+    color: rgb(219, 219, 219);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
 
 
 /** CodeMirror styles **/
