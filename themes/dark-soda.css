@@ -12,6 +12,19 @@
 	background:rgb(51, 51, 51);
 }
 
+.inlineEditorHolder > div > .CodeMirror-wrap{
+    background:rgb(51, 51, 51);
+}
+
+.inlineEditorHolder .CodeMirror-linenumber{
+    
+    background-color:rgb(51, 51, 51) !important;
+}
+
+.inline-widget .CodeMirror-gutter {
+    background-color: rgb(51, 51, 51) !important;
+}
+
 .divider-holder .divider {
     margin-left: 12px;
     width: 0px;
