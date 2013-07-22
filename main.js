@@ -20,7 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
- * 
+ *
  */
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
@@ -32,18 +32,20 @@ define(function (require, exports, module) {
     var CommandManager      = brackets.getModule("command/CommandManager"),
         Menus               = brackets.getModule("command/Menus"),
         PreferencesManager  = brackets.getModule("preferences/PreferencesManager"),
-        ExtensionUtils      = brackets.getModule("utils/ExtensionUtils");
-	
-	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets");
-	var menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU);
-	
+        ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
+        NativeFileSystem    = brackets.getModule("file/NativeFileSystem").NativeFileSystem;
+
+	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets"),
+        menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
+        moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/");
+
 	// If there is no currently selected theme, use default
 	var __theme = preferences.getValue("theme");
 	if (__theme === undefined) {
 		preferences.setValue("theme", "default");
 		return;
 	}
-	
+
 	var Themes = {};
 	Themes.currentTheme = __theme;
 	Themes.getName = function (theme) {
@@ -56,7 +58,7 @@ define(function (require, exports, module) {
 		if (theme) {
 			Themes.currentTheme = theme;
 		}
-		$("#currentTheme").attr("href", ExtensionUtils.getModulePath(module, "./themes/" + Themes.currentTheme + ".css"));
+		$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
 		Themes.setCommand(Themes.currentTheme, true);
 		preferences.setValue("theme", Themes.currentTheme);
 		CodeMirror.defaults.theme = Themes.currentTheme;
@@ -75,10 +77,29 @@ define(function (require, exports, module) {
 		});
 		menu.addMenuItem(this.command_id);
 	}
-	
-	Themes.allThemes = [new Theme("default"), new Theme("dark-soda"), new Theme("visual-studio"), new Theme("blackboard"), new Theme("ambiance"), new Theme("cobalt"), new Theme("rubyblue"), new Theme("solarized-dark")];
-	
-	$("body").append('<link id="currentTheme" rel="stylesheet"/>');
-	$("body").append('<style>.CodeMirror-scroll{background-color:transparent;}.CodeMirror-gutters{border-right:none;</style>');
-	Themes.load(Themes.currentTheme);
+
+	// Pass file names as an array and create the Themes
+    Themes.getDirFiles = function (themesNameArray) {
+        var i;
+        Themes.allThemes = [];
+        for (i = 0; i < themesNameArray.length; i += 1) {
+            Themes.allThemes.push(new Theme(themesNameArray[i]));
+        }
+        $("body").append('<link id="currentTheme" rel="stylesheet"/>');
+        $("body").append('<style>.CodeMirror-scroll{background-color:transparent;}.CodeMirror-gutters{border-right:none;</style>');
+        Themes.load(Themes.currentTheme);
+    };
+
+    // Get the theme directory file names without the .css extension
+    NativeFileSystem.requestNativeFileSystem(moduleThemesDir, function (rootEntry) {
+        rootEntry.root.createReader().readEntries(function (entries) {
+            var i,
+                fetching = [],
+                len = entries.length;
+            for (i = 0; i < len; i += 1) {
+                fetching.push(entries[i].name.replace(".css", ""));
+            }
+            $.when.apply(module, fetching).done(Themes.getDirFiles(fetching));
+        });
+    });
 });
