@@ -15,7 +15,7 @@ List of themes
 
 How to install
 ==================
-Installing Themes for Brackets is easy. All you have to do is this: 
+Installing Themes for Brackets is easy. All you have to do is this:
 * file->extension manager...
 * Install from url...
 * Copy https://github.com/Jacse/themes-for-brackets in there and click OK
@@ -23,7 +23,7 @@ Installing Themes for Brackets is easy. All you have to do is this:
 FAQ
 ==================
 * Can I make my own theme?
- - Shure thing, all you need to do is make a new css file in the themes/ folder, and add it to main.js in the Themes.allThemes array.<br/><b>HINT:</b> I would recommend looking at already existing themes to find ids and classes.
+ - Sure thing, all you need to do is make a new css file in the themes/ folder, and add it to main.js in the Themes.allThemes array.<br/><b>HINT:</b> I would recommend looking at already existing themes to find ids and classes.
 
 Troubleshooting
 ==================
@@ -37,4 +37,4 @@ Didn't find the answer you were looking for? Send me a mail at jacsebl@hotmail.c
 
 Contact and contribute
 ==================
-If you want to add a theme or would like to talk to me for some other reason, please send me a mail at jacsebl@hotmail.com
+If you want to add a theme or would like to talk to me for some other reason, please send me a mail at jacsebl@hotmail.com. You are also very welcome to open a pull request.
