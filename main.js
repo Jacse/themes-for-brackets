@@ -80,9 +80,14 @@ define(function (require, exports, module) {
 
 	// Pass file names as an array and create the Themes
     Themes.getDirFiles = function (themesNameArray) {
-        var i;
+        var i,
+            len = themesNameArray.length,
+            findDefault = themesNameArray.indexOf('default');
+        if (findDefault !== -1) {
+            themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
+        }
         Themes.allThemes = [];
-        for (i = 0; i < themesNameArray.length; i += 1) {
+        for (i = 0; i < len; i += 1) {
             Themes.allThemes.push(new Theme(themesNameArray[i]));
         }
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
