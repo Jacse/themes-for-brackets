@@ -23,7 +23,7 @@ Installing Themes for Brackets is easy. All you have to do is this:
 FAQ
 ==================
 * Can I make my own theme?
- - Sure thing, all you need to do is make a new css file in the themes/ folder, and add it to main.js in the Themes.allThemes array.<br/><b>HINT:</b> I would recommend looking at already existing themes to find ids and classes.
+ - Sure thing, all you need to do is make a new css file in the themes/ folder.<br/><b>HINT:</b> I would recommend looking at already existing themes to find ids and classes.
 
 Troubleshooting
 ==================
