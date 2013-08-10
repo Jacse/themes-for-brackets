@@ -76,11 +76,38 @@
 
 #status-bar{
     border-top:1px solid #666;
-}
-#status-indicators, #status-info{ /* Status bar text */
-    background:transparent;
 	color:#CCC;
 }
+
+#editor-holder #not-editor{
+	background-color: #202020;
+}
+
+
+.inline-widget{ /* Quick-edit etc. */
+	background-color: #2e2d2d;
+}
+.css-prop-defn code, .css-prop-defn h1, .css-prop-values dl dt{
+	color:#999;
+}
+.css-prop-defn{
+	color:#CCC;
+}
+.divider-holder .divider{
+	border-right:1px solid rgb(50, 51, 49);
+	border-left:1px solid rgb(34, 36, 32);
+}
+
+a.more-info{
+	background-color: #454545;
+	border: 1px solid #555;
+	border-bottom: none;
+	box-shadow: inset 0 1px 0 #777;
+	text-shadow: none;
+	color: #CCC;
+}
+
+
 
 .cm-s-ambiance.CodeMirror,
 .cm-s-ambiance .CodeMirror-gutters,
