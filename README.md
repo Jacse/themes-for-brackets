@@ -11,7 +11,7 @@ List of themes
 * Solarized Dark
 * Cobalt
 * Dark Soda
-* Blackboard
+* Night Sky
 * Default
 
 How to install
