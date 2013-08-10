@@ -1,12 +1,13 @@
 Themes for Brackets
 ==================
-With Themes for Brackets you can apply themes to Brackets via a menu in the top bar. Do you want to hear the best part of Themes for Brackets? New themes are added all the time, and you can even make your own.
+With Themes for Brackets you can apply themes to Brackets via a menu in the top bar. Do you want to hear the best part of Themes for Brackets? New themes are added all the time, and you can even make your own, or tweak already existing ones.
 
 List of themes
 ==================
 * Visual Studio <br />![Visual Studio theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
 * Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
 * Rubyblue <br />![Cobalt Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/rubyblue.png)
+* Light table
 * Solarized Dark
 * Cobalt
 * Dark Soda
@@ -16,7 +17,13 @@ List of themes
 How to install
 ==================
 Installing Themes for Brackets is easy. All you have to do is this:
-* file->extension manager...
+* file->extension manager..., or click the lego brick icon in the right toolbar
+* Click the tab called "available"
+* Type "themes" in the top right search bar
+* Locate "Themes for Brackets" (not to be confused with just "Themes", which is a completely other extension, which doesn't style all of Brackets) and click the install button next to it
+
+If you are having troubles installing the extension that way, you can follow theses steps instead (the first approach is to be preffered)
+* file->extension manager..., or click the lego brick icon in the right toolbar
 * Install from url...
 * Copy https://github.com/Jacse/themes-for-brackets in there and click OK
 
