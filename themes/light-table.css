@@ -57,7 +57,8 @@
 	color: #99997a;
 	padding-left: 15px;
 }
-.cm-s-light-table.CodeMirror .CodeMirror-activeline{
+.cm-s-light-table.CodeMirror .CodeMirror-activeline,
+.cm-s-light-table.CodeMirror.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt{
 	background: rgba(255,255,255,.1);
 }
 .cm-s-light-table.CodeMirror pre{
