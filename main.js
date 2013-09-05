@@ -91,7 +91,7 @@ define(function (require, exports, module) {
             Themes.allThemes.push(new Theme(themesNameArray[i]));
         }
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-        $("body").append('<style>.CodeMirror-scroll{background-color:transparent}.CodeMirror-gutters{border-right:none}#status-indicators,#status-info{background:transparent;color:inherit;}</style>');
+        $("body").append('<style>.CodeMirror-scroll{background-color:transparent}.CodeMirror-gutters{border-right:none}#status-indicators,#status-info{background:transparent;color:inherit;}.CodeMirror-activeline-background {background:none;}</style>');
         Themes.load(Themes.currentTheme);
     };
 
