@@ -30,9 +30,6 @@
 #status-bar{ /* Bottom status bar */
     background:#1F4661;
     border-top:1px solid #3E7087;
-}
-#status-indicators, #status-info{ /* Status bar text */
-    background:transparent;
 	color:#FFF;
 }
 

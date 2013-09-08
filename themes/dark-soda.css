@@ -1,9 +1,6 @@
 #status-bar{ /* Bottom status bar */
     border-top:1px solid #484b4d;
 	background:#3C3F41;
-}
-#status-indicators, #status-info{ /* Status bar text */
-    background:transparent;
 	color:#FFF;
 }
 #main-toolbar{ background:#3C3F41;}

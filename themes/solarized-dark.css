@@ -18,10 +18,7 @@ http://ethanschoonover.com/solarized
 }
 #status-bar{
     border-top:1px solid #666;
-}
-#status-indicators, #status-info{ /* Status bar text */
-    background:transparent;
-	color:#CCC;
+    color:#CCC;
 }
 
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
