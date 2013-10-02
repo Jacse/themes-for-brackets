@@ -4,14 +4,14 @@ With Themes for Brackets you can apply themes to Brackets via a menu in the top 
 
 List of themes
 ==================
-* Visual Studio <br />![Visual Studio theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
 * Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
-* Rubyblue <br />![Cobalt Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/rubyblue.png)
-* Light table
+* Night Sky <br />[Night Sky Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/night-sky.png)
+* Dark Soda <br />[Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
+* Rubyblue
+* Visual Studio
 * Solarized Dark
 * Cobalt
-* Dark Soda
-* Night Sky
+* Light Table
 * Default
 
 How to install

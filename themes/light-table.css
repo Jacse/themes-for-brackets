@@ -1,10 +1,20 @@
+#status-bar{
+    background:#3c3f41;
+	color:rgba(255,255,255,0.9);
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+#main-toolbar{
+	background-color:#3c3f41;
+}
+
+
 .cm-s-light-table.CodeMirror {
 	background-color: #202020;
     color:#ccc;
     padding-left: 8px;
 }
 .cm-s-light-table .CodeMirror-sizer{
-	padding-bottom: 90px;
+	padding-bottom: 40px;
 }
 
 .cm-s-light-table .CodeMirror-scroll{
@@ -21,14 +31,14 @@
     background: transparent;
 }
 .cm-s-light-table ::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,.2);
+    background: #3C3F41;
     border-radius: 5px;
 }
 .cm-s-light-table ::-webkit-scrollbar-thumb:hover{
-	background: rgba(255,255,255,.3);
+	background: #494d4f;
 }
 .cm-s-light-table ::-webkit-scrollbar-thumb:active{
-	background: rgba(255,255,255,.4);
+	background: #6d757a;
 }
 
 .cm-s-light-table.CodeMirror .inline-widget{
