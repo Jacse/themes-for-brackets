@@ -5,8 +5,8 @@ With Themes for Brackets you can apply themes to Brackets via a menu in the top 
 List of themes
 ==================
 * Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
-* Night Sky <br />[Night Sky Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/night-sky.png)
-* Dark Soda <br />[Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
+* Night Sky <br />![Night Sky Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/night-sky.png)
+* Dark Soda <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
 * Rubyblue
 * Visual Studio
 * Solarized Dark
