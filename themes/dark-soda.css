@@ -234,3 +234,7 @@ code {
     background-color: #ffe69d;
     color: #242424;
 }
+.cm-s-dark-soda.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-dark-soda.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: #3C3F41;
+    color: #d9d9d9;
+}

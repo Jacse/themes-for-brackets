@@ -37,6 +37,10 @@
 	background:rgba(255,255,255, 0.06);
 }
 
+.cm-s-cobalt.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-cobalt.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /** CodeMirror styles **/
 .cm-s-cobalt.CodeMirror { background: #002240; color: white; }
 .cm-s-cobalt div.CodeMirror-selected { background: #b36539 !important; }
