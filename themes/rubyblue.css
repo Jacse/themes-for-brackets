@@ -59,3 +59,12 @@
 .cm-s-rubyblue span.cm-link { color: #F4C20B; }
 .cm-s-rubyblue span.CodeMirror-matchingbracket { color:#F0F !important; }
 .cm-s-rubyblue span.cm-builtin, .cm-s-rubyblue span.cm-special { color: #FF9D00; }
+
+.cm-s-rubyblue.CodeMirror-focused .CodeMirror-activeline-background {
+    background-color: rgba(255,255,255,0.1);
+}
+.cm-s-rubyblue.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	background:none;
+	border-right: 7px solid #165471;
+	color:#7BD827;
+}

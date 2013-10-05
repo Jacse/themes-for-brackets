@@ -72,3 +72,8 @@ a.more-info{
 .cm-s-night-sky .cm-header { color: #FF6400; }
 .cm-s-night-sky .cm-hr { color: #AEAEAE; }
 .cm-s-night-sky .cm-link { color: #8DA6CE; }
+
+.cm-s-night-sky.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-night-sky.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: #3C3F41;
+    color: #d9d9d9;
+}

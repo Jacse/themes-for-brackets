@@ -131,3 +131,6 @@
 .cm-s-light-table.CodeMirror .cm-attribute {
     color: #83e1b2;
 }
+.cm-s-light-table.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-light-table.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background-color: rgba(255,255,255,0.1);
+}

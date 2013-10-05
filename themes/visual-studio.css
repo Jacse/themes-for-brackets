@@ -95,3 +95,7 @@
     background: #9ccfff !important;
 }
 
+.cm-s-visual-studio.CodeMirror-focused .CodeMirror-activeline-background {
+  background: none;
+}
+
