@@ -75,6 +75,11 @@
   	z-index: 3;
 }
 
+.cm-s-visual-studio span.CodeMirror-matchingtag {
+	color:#800000 !important;
+	background: rgba(0,0,0,0.2);
+}
+
 .CodeMirror span.cm-atom { color: blue; }
 .CodeMirror span.cm-qualifier, .CodeMirror span.cm-builtin { color: #800000; }
 .CodeMirror span.cm-keyword { color: blue; }

@@ -8,7 +8,7 @@
 }
 
 
-.cm-s-light-table.CodeMirror {
+.cm-s-light-table.CodeMirror, #editor-holder #not-editor {
 	background-color: #202020;
     color:#ccc;
     padding-left: 8px;

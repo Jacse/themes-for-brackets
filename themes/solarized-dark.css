@@ -28,6 +28,11 @@ http://ethanschoonover.com/solarized
 	border-left:12px solid #134957;
 }
 
+.cm-s-solarized-dark span.CodeMirror-matchingtag {
+	color:#EEE !important;
+	background:none;
+}
+
 /*
 Solarized color pallet
 http://ethanschoonover.com/solarized/img/solarized-palette.png

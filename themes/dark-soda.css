@@ -208,13 +208,19 @@ code {
 .cm-s-dark-soda span.cm-meta {color: #a7ec21;}
 .cm-s-dark-soda span.cm-qualifier, .CodeMirror span.cm-builtin {color: #a7ec21;}
 .cm-s-dark-soda span.cm-bracket {color: #f9faf4;}
-.cm-s-dark-soda span.cm-tag {color: #ff007f;}
+.cm-s-dark-soda span.cm-tag {color: #ff007f !important;}
 .cm-s-dark-soda span.cm-attribute {color: #a7ec21;}
 .cm-s-dark-soda span.cm-matchhighlight {background-color: rgba(61,61,61.23);}
 
 .cm-s-dark-soda span.CodeMirror-matchingbracket {
     color: #a7ec21;
     font-weight: bold;
+}
+
+.cm-s-dark-soda span.CodeMirror-matchingtag {
+	color: #a7ec21 !important;
+    text-decoration:underline;
+	background:none;
 }
 
 
