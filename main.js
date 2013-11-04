@@ -54,6 +54,7 @@ define(function (require, exports, module) {
 		return theme.charAt(0).toUpperCase() + theme.slice(1);
 	};
 	Themes.load = function (theme) {
+		$("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
 		Themes.setCommand(Themes.currentTheme, false);
 		if (theme) {
 			Themes.currentTheme = theme;
