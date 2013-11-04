@@ -49,7 +49,7 @@ a.more-info{
 
 /** CodeMirror styles **/
 
-.cm-s-mbo .CodeMirror-matchingtag{
+.cm-s-night-sky .CodeMirror-matchingtag{
 	background:none;
 	text-decoration:underline;
 	color: #8DA6CE !important;

@@ -61,8 +61,14 @@
   border-left: 1px solid #7991E8;
 }
 
-.cm-s-ambiance.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-ambiance.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+.cm-s-ambiance.CodeMirror-focused .CodeMirror-activeline-background {
   background: rgba(255, 255, 255, 0.1);
+}
+.cm-s-ambiance.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt{ background:none; }
+.cm-s-ambiance span.CodeMirror-matchingtag {
+	color: #a7ec21 !important;
+    text-decoration:underline;
+	background:none;
 }
 
 

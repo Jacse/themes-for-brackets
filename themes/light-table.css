@@ -74,6 +74,10 @@
 	/*padding between line number & content*/
 	padding: 0 8px;
 }
+.cm-s-light-table span.CodeMirror-matchingtag {
+    color:white!important;
+	background:rgba(255,255,255,0.2);
+}
 
 .cm-s-light-table.CodeMirror .CodeMirror-cursor {
 	border-left: 1px solid #ffffff;
