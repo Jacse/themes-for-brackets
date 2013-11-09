@@ -14,6 +14,13 @@ List of themes
 * Light Table
 * Default
 
+How to make you own theme
+==================
+Creating your own theme is easy.
+Have a look at Pawel's bare Brackets theme [here](https://github.com/trimek/BearTheme/blob/master/BearTheme.css).
+Copy it, customize it and add it to the themes folder (on windows it is located at C:\Users\[USERNAME]\AppData\Roaming\Brackets\extensions\user\themes-for-brackets\themes).
+
+
 How to install
 ==================
 Installing Themes for Brackets is easy. All you have to do is this:
@@ -26,12 +33,6 @@ If you are having trouble installing the extension that way, you can follow thes
 * file->extension manager..., or click the lego brick icon in the right toolbar
 * Install from url...
 * Copy https://github.com/Jacse/themes-for-brackets in there and click OK
-
-HOW TO MAKE YOUR OWN THEME
-==================
-Creating your own theme is easy.
-Have a look at Pawel's bare Brackets theme [here](https://github.com/trimek/BearTheme/blob/master/BearTheme.css).
-Copy it, customize it and add it to the themes folder (on windows it is located at C:\Users\[USERNAME]\AppData\Roaming\Brackets\extensions\user\themes-for-brackets\themes).
 
 Troubleshooting
 ==================
