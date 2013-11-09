@@ -1,6 +1,6 @@
 Themes for Brackets
 ==================
-With Themes for Brackets you can apply themes to Brackets via a menu in the top bar. Do you want to hear the best part of Themes for Brackets? New themes are added all the time, and you can even make your own, or tweak already existing ones.
+With Themes for Brackets you can apply themes to Brackets via a menu in the top bar. Do you want to hear the best part of Themes for Brackets? New themes are added all the time, and you can even make your own or tweak already existing ones.
 
 List of themes
 ==================
@@ -27,10 +27,11 @@ If you are having trouble installing the extension that way, you can follow thes
 * Install from url...
 * Copy https://github.com/Jacse/themes-for-brackets in there and click OK
 
-FAQ
+HOW TO MAKE YOUR OWN THEME
 ==================
-* Can I make my own theme?
- - Sure thing, all you need to do is make a new css file in the themes/ folder.<br/><b>HINT:</b> I would recommend looking at already existing themes to find ids and classes.
+Creating your own theme is easy.
+Have a look at Pawel's bare Brackets theme [here](https://github.com/trimek/BearTheme/blob/master/BearTheme.css).
+Copy it, customize it and add it to the themes folder (on windows it is located at C:\Users\[USERNAME]\AppData\Roaming\Brackets\extensions\user\themes-for-brackets\themes).
 
 Troubleshooting
 ==================
