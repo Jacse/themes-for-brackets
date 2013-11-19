@@ -33,7 +33,7 @@ define(function (require, exports, module) {
         Menus               = brackets.getModule("command/Menus"),
         PreferencesManager  = brackets.getModule("preferences/PreferencesManager"),
         ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
-        NativeFileSystem    = brackets.getModule("file/NativeFileSystem").NativeFileSystem;
+        FileSystem    		= brackets.getModule("filesystem/FileSystem");
 
 	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets"),
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
@@ -95,17 +95,15 @@ define(function (require, exports, module) {
         $("body").append('<style>.CodeMirror-scroll{background-color:transparent}.CodeMirror-gutters{border-right:none}#status-indicators,#status-info{background:transparent;color:inherit;}.CodeMirror-activeline-background {background:none;}#working-set-header{text-shadow:none;}</style>');
         Themes.load(Themes.currentTheme);
     };
-
+	
     // Get the theme directory file names without the .css extension
-    NativeFileSystem.requestNativeFileSystem(moduleThemesDir, function (rootEntry) {
-        rootEntry.root.createReader().readEntries(function (entries) {
-            var i,
-                fetching = [],
-                len = entries.length;
-            for (i = 0; i < len; i += 1) {
-                fetching.push(entries[i].name.replace(".css", ""));
-            }
-            $.when.apply(module, fetching).done(Themes.getDirFiles(fetching));
-        });
-    });
+    var path = FileSystem.getDirectoryForPath(moduleThemesDir);
+	path.getContents(function(err, contents) {
+		var themesInDir = [],
+			i;
+		for (i = 0; i < contents.length; i++) {
+			themesInDir.push(contents[i].name.replace(".css", ""));
+		}
+		Themes.getDirFiles(themesInDir);
+	});
 });
