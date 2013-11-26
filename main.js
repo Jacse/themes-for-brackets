@@ -33,7 +33,7 @@ define(function (require, exports, module) {
         Menus               = brackets.getModule("command/Menus"),
         PreferencesManager  = brackets.getModule("preferences/PreferencesManager"),
         ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
-        FileSystem    		= brackets.getModule("filesystem/FileSystem");
+        FileSystem          = brackets.getModule("filesystem/FileSystem");
 
 	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets"),
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
@@ -98,7 +98,7 @@ define(function (require, exports, module) {
 	
     // Get the theme directory file names without the .css extension
     var path = FileSystem.getDirectoryForPath(moduleThemesDir);
-	path.getContents(function(err, contents) {
+	path.getContents(function (err, contents) {
 		var themesInDir = [],
 			i;
 		for (i = 0; i < contents.length; i++) {
