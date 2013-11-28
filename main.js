@@ -39,44 +39,45 @@ define(function (require, exports, module) {
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/");
 
-	// If there is no currently selected theme, use default
-	var __theme = preferences.getValue("theme");
-	if (__theme === undefined) {
-		preferences.setValue("theme", "default");
-		return;
-	}
 
 	var Themes = {};
-	Themes.currentTheme = __theme;
+	
+	// If there is no currently selected theme, use default
+	Themes.currentTheme = preferences.getValue("theme");
+	if (Themes.currentTheme === undefined) {
+		preferences.setValue("theme", "default");
+		Themes.currentTheme = "default";
+	}
+	
 	Themes.getName = function (theme) {
 		theme = theme || Themes.currentTheme;
 		theme = theme.replace(new RegExp("-", "g"), " ");
 		return theme.charAt(0).toUpperCase() + theme.slice(1);
 	};
+	
 	Themes.load = function (theme) {
+		console.log(Themes.currentTheme);
 		$("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
 		Themes.setCommand(Themes.currentTheme, false);
-		if (theme) {
-			Themes.currentTheme = theme;
-		}
+		Themes.currentTheme = theme;
 		$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
 		Themes.setCommand(Themes.currentTheme, true);
 		preferences.setValue("theme", Themes.currentTheme);
 		CodeMirror.defaults.theme = Themes.currentTheme;
 		$("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
+		console.log(Themes.currentTheme);
 	};
+	
 	Themes.setCommand = function (theme, val) {
 		CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
 	};
 
-	function Theme(theme) {
-		this.theme = theme;
-		this.command_id = "jacse.themes-for-brackets.changetheme_" + theme;
-		var that = this;
-		CommandManager.register(Themes.getName(this.theme), this.command_id, function () {
-			Themes.load(that.theme);
+	function addCommand(theme) {
+		var command = "jacse.themes-for-brackets.changetheme_" + theme;
+		CommandManager.register(Themes.getName(theme), command, function () {
+			Themes.load(theme);
 		});
-		menu.addMenuItem(this.command_id);
+		menu.addMenuItem(command);
 	}
 
 	// Pass file names as an array and create the Themes
@@ -87,12 +88,11 @@ define(function (require, exports, module) {
         if (findDefault !== -1) {
             themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
         }
-        Themes.allThemes = [];
         for (i = 0; i < len; i += 1) {
-            Themes.allThemes.push(new Theme(themesNameArray[i]));
+            addCommand(themesNameArray[i]);
         }
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-        $("body").append('<style>.CodeMirror-scroll{background-color:transparent}.CodeMirror-gutters{border-right:none}#status-indicators,#status-info{background:transparent;color:inherit;}.CodeMirror-activeline-background {background:none;}#working-set-header{text-shadow:none;}</style>');
+		$("body").append('<link id="ThemesCss" rel="stylesheet" href="'+ExtensionUtils.getModulePath(module, "")+'stuff.css"/>');
         Themes.load(Themes.currentTheme);
     };
 	
