@@ -12,6 +12,9 @@ List of themes
 * Solarized Dark
 * Cobalt
 * Light Table
+* MBO
+* Dracula
+* Brunante
 * Default
 
 How to make you own theme
