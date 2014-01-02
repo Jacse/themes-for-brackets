@@ -36,19 +36,27 @@ define(function (require, exports, module) {
         FileSystem          = brackets.getModule("filesystem/FileSystem");
 
 	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets"),
+		fontMenu = Menus.addMenu("Font", "fonts-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/");
 
-
-	var Themes = {};
 	
 	// If there is no currently selected theme, use default
-	Themes.currentTheme = preferences.getValue("theme");
-	if (Themes.currentTheme === undefined) {
-		preferences.setValue("theme", "default");
-		Themes.currentTheme = "default";
-	}
+	var __theme = preferences.getValue("theme");
+    if (__theme === undefined) {
+        preferences.setValue("theme", "default");
+        return;
+    }
 	
+	/* var __font = preferences.getValue("font");
+    if (__font === undefined) {
+        preferences.setValue("font", "Default");
+        return;
+    } */
+	
+	var Themes = {};
+	Themes.currentTheme = __theme;
+	//Themes.currentFont = __font;
 	Themes.getName = function (theme) {
 		theme = theme || Themes.currentTheme;
 		theme = theme.replace(new RegExp("-", "g"), " ");
@@ -56,20 +64,18 @@ define(function (require, exports, module) {
 	};
 	
 	Themes.load = function (theme) {
-		console.log(Themes.currentTheme);
 		$("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
-		Themes.setCommand(Themes.currentTheme, false);
+		Themes.setCommand("theme", Themes.currentTheme, false);
 		Themes.currentTheme = theme;
 		$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
-		Themes.setCommand(Themes.currentTheme, true);
+		Themes.setCommand("theme", Themes.currentTheme, true);
 		preferences.setValue("theme", Themes.currentTheme);
 		CodeMirror.defaults.theme = Themes.currentTheme;
 		$("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
-		console.log(Themes.currentTheme);
 	};
 	
-	Themes.setCommand = function (theme, val) {
-		CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
+	Themes.setCommand = function (fontortheme, theme, val) {
+		CommandManager.get("jacse." + fontortheme + "s-for-brackets.change" + fontortheme + "_" + theme).setChecked(val);
 	};
 
 	function addCommand(theme) {
@@ -79,7 +85,8 @@ define(function (require, exports, module) {
 		});
 		menu.addMenuItem(command);
 	}
-
+	
+	
 	// Pass file names as an array and create the Themes
     Themes.getDirFiles = function (themesNameArray) {
         var i,
@@ -88,11 +95,11 @@ define(function (require, exports, module) {
         if (findDefault !== -1) {
             themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
         }
-        for (i = 0; i < len; i += 1) {
+        for (i = 0; i < len; i++) {
             addCommand(themesNameArray[i]);
         }
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-		$("body").append('<link id="ThemesCss" rel="stylesheet" href="'+ExtensionUtils.getModulePath(module, "")+'stuff.css"/>');
+		$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
         Themes.load(Themes.currentTheme);
     };
 	
@@ -106,4 +113,42 @@ define(function (require, exports, module) {
 		}
 		Themes.getDirFiles(themesInDir);
 	});
+
+	
+	
+	/*
+	 * FONTS Disabled.
+	 */
+	/*
+	Themes.loadFont = function (font) {
+		Themes.setCommand("font", Themes.currentFont, false);
+		if (font === "Default") {
+			$("#styleFont").html('');
+			$("#editor-holder .CodeMirror").removeClass("themeFont");
+		} else {
+			$("#styleFont").html("@font-face {font-family: 'themeFont';src: url('" + ExtensionUtils.getModulePath(module, "fonts/") + font + ".woff') format('woff');font-weight: normal;font-style: normal;} .themeFont{font-family:'themeFont'}");
+			$("#editor-holder .CodeMirror").addClass("themeFont");
+		}
+		Themes.currentFont = font;
+		preferences.setValue("font", Themes.currentFont);
+		Themes.setCommand("font", Themes.currentFont, true);
+	};
+	
+	function addFontCommand(font) {
+		var command = "jacse.fonts-for-brackets.changefont_" + font;
+		CommandManager.register(font, command, function () {
+			Themes.loadFont(font);
+		});
+		fontMenu.addMenuItem(command);
+	}
+	
+	var fontArray = ["Default", "VeraMono", "Inconsolata"],
+		i;
+	
+	for (i = 0; i < fontArray.length; i++) {
+		addFontCommand(fontArray[i]);
+    }
+	
+	$("body").append('<style id="styleFont"></style>');
+	*/
 });
