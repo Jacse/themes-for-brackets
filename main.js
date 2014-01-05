@@ -36,7 +36,7 @@ define(function (require, exports, module) {
         FileSystem          = brackets.getModule("filesystem/FileSystem");
 
 	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets"),
-		fontMenu = Menus.addMenu("Font", "fonts-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
+	// fontMenu = Menus.addMenu("Font", "fonts-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/");
 
