@@ -1,3 +1,15 @@
+#status-bar{ /* Bottom status bar */
+    border-top:1px solid #484b4d;
+	background:#3C3F41;
+	color:#FFF;
+}
+
+#main-toolbar{ background:#3C3F41;}
+
+.inline-widget{ /* Quick-edit styles */
+	background:rgb(51, 51, 51);
+}
+
 .cm-s-dracula.CodeMirror { background: #282a36 !important; color: #EEE; }
 
 .CodeMirror div.CodeMirror-cursor { border-left: 1px solid #FFF !important; }
