@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013 Jacob Lauritzen.
+ * Copyright (c) 2014 Jacob Lauritzen.
  *
  * Licensed under MIT
  *
