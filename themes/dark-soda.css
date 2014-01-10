@@ -1,15 +1,15 @@
 .cm-s-dark-soda .CodeMirror-scroll{
-	margin-right: 5px;
 	border-color: #202020;
-}
-.cm-s-dark-soda .CodeMirror-vscrollbar{
-	overflow-y: hidden;
 }
 .cm-s-dark-soda ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
-.cm-s-dark-soda ::-webkit-scrollbar-track {
-    background: transparent;
+.cm-s-dark-soda .CodeMirror-gutter-filler {
+    height: 10px !important;
+}
+.cm-s-dark-soda ::-webkit-scrollbar-track, .cm-s-dark-soda .CodeMirror-gutter-filler {
+    background: #191919;
 }
 .cm-s-dark-soda ::-webkit-scrollbar-thumb {
     background: #3C3F41;

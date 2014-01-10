@@ -98,8 +98,8 @@ define(function (require, exports, module) {
         for (i = 0; i < len; i++) {
             addCommand(themesNameArray[i]);
         }
-        $("body").append('<link id="currentTheme" rel="stylesheet"/>');
 		$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
+        $("body").append('<link id="currentTheme" rel="stylesheet"/>');
         Themes.load(Themes.currentTheme);
     };
 	

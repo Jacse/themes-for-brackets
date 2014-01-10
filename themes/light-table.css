@@ -26,9 +26,13 @@
 }
 .cm-s-light-table ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
-.cm-s-light-table ::-webkit-scrollbar-track {
-    background: transparent;
+.cm-s-light-table .CodeMirror-gutter-filler {
+    height: 10px !important;
+}
+.cm-s-light-table ::-webkit-scrollbar-track, .cm-s-light-table .CodeMirror-gutter-filler {
+    background: #202020;
 }
 .cm-s-light-table ::-webkit-scrollbar-thumb {
     background: #3C3F41;

@@ -35,13 +35,17 @@ a.more-info{
 }
 
 /** Scrollbars **/
-::-webkit-scrollbar {
+.cm-s-night-sky ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
-::-webkit-scrollbar-track {
+.cm-s-night-sky .CodeMirror-gutter-filler {
+    height: 10px !important;
+}
+.cm-s-night-sky ::-webkit-scrollbar-track, .cm-s-night-sky .CodeMirror-gutter-filler {
     background: #2d2e30;
 }
-::-webkit-scrollbar-thumb {
+.cm-s-night-sky ::-webkit-scrollbar-thumb {
 	width:8px;
     background: rgba(0,0,0,.5);
     border-radius: 4px;
