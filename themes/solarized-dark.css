@@ -154,6 +154,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   padding: 0 15px 0 10px;
   box-shadow: 0 10px 20px black;
   border-right: 1px solid;
+  height: 100% !important;
 }
 
 /* Gutter colors and line number styling based of color scheme (dark / light) */

@@ -17,3 +17,7 @@
 .CodeMirror-gutter-filler {
     background: transparent;
 }
+
+.inline-widget .CodeMirror-scroll .CodeMirror-linenumbers {
+  background-color: transparent;
+}

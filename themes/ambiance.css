@@ -56,6 +56,10 @@
   color: #222;
   padding: 0 5px;
 }
+.cm-s-ambiance .inline-text-editor .CodeMirror-linenumber {
+  text-shadow: 0px 1px 1px #2d2d2d;
+  color: #111;
+}
 
 .cm-s-ambiance .CodeMirror-lines .CodeMirror-cursor {
   border-left: 1px solid #7991E8;
