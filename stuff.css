@@ -14,7 +14,7 @@
 #working-set-header{
 	text-shadow:none;
 }
-.CodeMirror-gutter-filler {
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler {
     background: transparent;
 }
 
