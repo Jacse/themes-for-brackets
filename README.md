@@ -21,7 +21,7 @@ How to make you own theme
 ==================
 Creating your own theme is easy.<br/>
 Have a look at Pawel's bare Brackets theme [here](https://github.com/trimek/BearTheme/blob/master/BearTheme.css).<br/>
-Copy it, customize it and add it to the themes folder (on windows it is located at C:\Users\\[USERNAME]\AppData\Roaming\Brackets\extensions\user\themes-for-brackets\themes) (on a mac it is located at ~/Library/Application Support/Brackets/extensions/user/themesforbrackets).
+Copy it, customize it and add it to the custom themes folder (on windows it is located at C:\Users\\[USERNAME]\AppData\Roaming\Brackets\custom themes) (on a mac it is located at ~/Library/Application Support/Brackets/custom themes).
 
 
 How to install
@@ -39,9 +39,9 @@ If you are having trouble installing the extension that way, you can follow thes
 
 Troubleshooting
 ==================
-* There are no commands in the themes menu?
+* There are no commands in the themes menu
  - Try re-opening Brackets, that should help it.
-* My line numbers are looking weird?
+* Line numbers are looking weird or scrollbars are not styled/have dissapeared
  - Try hitting F5 (Save changes before doing so!).
 
 Didn't find the answer you were looking for? Send me a mail at jacsebl@hotmail.com I'll be glad to help you out!
