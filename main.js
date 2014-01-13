@@ -36,9 +36,9 @@ define(function (require, exports, module) {
         FileSystem          = brackets.getModule("filesystem/FileSystem");
 
 	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets"),
-	// fontMenu = Menus.addMenu("Font", "fonts-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
-        moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/");
+        moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/"),
+		customThemesDir = brackets.app.getApplicationSupportDirectory() + "/custom themes/";
 
 	
 	// If there is no currently selected theme, use default
@@ -47,108 +47,92 @@ define(function (require, exports, module) {
         preferences.setValue("theme", "default");
         return;
     }
-	
-	/* var __font = preferences.getValue("font");
-    if (__font === undefined) {
-        preferences.setValue("font", "Default");
+	var __custom = preferences.getValue("isCustom");
+    if (__custom === undefined) {
+        preferences.setValue("isCustom", false);
         return;
-    } */
+    }
 	
 	var Themes = {};
 	Themes.currentTheme = __theme;
-	//Themes.currentFont = __font;
 	Themes.getName = function (theme) {
 		theme = theme || Themes.currentTheme;
 		theme = theme.replace(new RegExp("-", "g"), " ");
 		return theme.charAt(0).toUpperCase() + theme.slice(1);
 	};
 	
-	Themes.load = function (theme) {
+	Themes.load = function (theme, isCustom) {
 		$("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
-		Themes.setCommand("theme", Themes.currentTheme, false);
+		Themes.setCommand(Themes.currentTheme, false);
 		Themes.currentTheme = theme;
-		$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
-		Themes.setCommand("theme", Themes.currentTheme, true);
+		if (isCustom) {
+			$("#currentTheme").attr("href", customThemesDir + Themes.currentTheme + ".css");
+			preferences.setValue("isCustom", true);
+		} else {
+			$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
+			preferences.setValue("isCustom", false);
+		}
+		Themes.setCommand(Themes.currentTheme, true);
 		preferences.setValue("theme", Themes.currentTheme);
 		CodeMirror.defaults.theme = Themes.currentTheme;
 		$("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
 	};
 	
-	Themes.setCommand = function (fontortheme, theme, val) {
-		CommandManager.get("jacse." + fontortheme + "s-for-brackets.change" + fontortheme + "_" + theme).setChecked(val);
+	Themes.setCommand = function (theme, val) {
+		CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
 	};
 
-	function addCommand(theme) {
+	function addCommand(theme, isCustom) {
 		var command = "jacse.themes-for-brackets.changetheme_" + theme;
 		CommandManager.register(Themes.getName(theme), command, function () {
-			Themes.load(theme);
+			Themes.load(theme, isCustom);
 		});
 		menu.addMenuItem(command);
 	}
 	
 	
-	// Pass file names as an array and create the Themes
+	// Pass file names as an array and create the themes
     Themes.getDirFiles = function (themesNameArray) {
         var i,
             len = themesNameArray.length,
             findDefault = themesNameArray.indexOf('default');
-        if (findDefault !== -1) {
+        if (findDefault !== -1) { //make sure default theme is on top
             themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
         }
         for (i = 0; i < len; i++) {
-            addCommand(themesNameArray[i]);
+			var name = themesNameArray[i];
+			if (name.indexOf(".css") > -1) { //I know this is a stupid way to check whether a theme is custom, but hey!
+				addCommand(themesNameArray[i].replace(".css", ""), true);
+			} else {
+				addCommand(themesNameArray[i]);
+			}
         }
 		$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-        Themes.load(Themes.currentTheme);
+        Themes.load(Themes.currentTheme, __custom);
     };
 	
-    // Get the theme directory file names without the .css extension
-    var path = FileSystem.getDirectoryForPath(moduleThemesDir);
-	path.getContents(function (err, contents) {
-		var themesInDir = [],
-			i;
+
+    // Get standard themes
+	FileSystem.getDirectoryForPath(moduleThemesDir).getContents(function (err, contents) {
+		var themesInDir = [], i;
 		for (i = 0; i < contents.length; i++) {
 			themesInDir.push(contents[i].name.replace(".css", ""));
 		}
-		Themes.getDirFiles(themesInDir);
-	});
-
-	
-	
-	/*
-	 * FONTS Disabled.
-	 */
-	/*
-	Themes.loadFont = function (font) {
-		Themes.setCommand("font", Themes.currentFont, false);
-		if (font === "Default") {
-			$("#styleFont").html('');
-			$("#editor-holder .CodeMirror").removeClass("themeFont");
-		} else {
-			$("#styleFont").html("@font-face {font-family: 'themeFont';src: url('" + ExtensionUtils.getModulePath(module, "fonts/") + font + ".woff') format('woff');font-weight: normal;font-style: normal;} .themeFont{font-family:'themeFont'}");
-			$("#editor-holder .CodeMirror").addClass("themeFont");
-		}
-		Themes.currentFont = font;
-		preferences.setValue("font", Themes.currentFont);
-		Themes.setCommand("font", Themes.currentFont, true);
-	};
-	
-	function addFontCommand(font) {
-		var command = "jacse.fonts-for-brackets.changefont_" + font;
-		CommandManager.register(font, command, function () {
-			Themes.loadFont(font);
+		
+		//Make sure custom themes directory exists
+		FileSystem.getDirectoryForPath(customThemesDir).create(function () {
+			// Get custom themes
+			FileSystem.getDirectoryForPath(customThemesDir).getContents(function (err, contents) {
+				var themesInDir2 = [], i;
+				for (i = 0; i < contents.length; i++) {
+					themesInDir2.push(contents[i].name);
+				}
+				Themes.getDirFiles(themesInDir.concat(themesInDir2));
+			});
 		});
-		fontMenu.addMenuItem(command);
-	}
+	});
 	
-	var fontArray = ["Default", "VeraMono", "Inconsolata"],
-		i;
 	
-	for (i = 0; i < fontArray.length; i++) {
-		addFontCommand(fontArray[i]);
-    }
 	
-	$("body").append('<style id="styleFont"></style>');
-	*/
 });
