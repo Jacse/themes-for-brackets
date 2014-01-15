@@ -36,6 +36,10 @@ a.more-info{
 
 /** Scrollbars **/
 
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler {
+    background: transparent;
+}
+
 .CodeMirror .CodeMirror-vscrollbar{width: 8px; bottom:8px !important;} /*Scrollbar vertical*/
 
 .CodeMirror ::-webkit-scrollbar {width: 8px; height:8px;}

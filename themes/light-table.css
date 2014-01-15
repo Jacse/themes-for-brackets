@@ -17,6 +17,9 @@
 	padding-bottom: 40px;
 }
 
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler {
+    background: transparent;
+}
 .cm-s-light-table .CodeMirror-scroll{
 	margin-right: 5px;
 	border-color: #202020;

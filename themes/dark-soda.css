@@ -1,26 +1,29 @@
 .cm-s-dark-soda .CodeMirror-scroll{
 	border-color: #202020;
 }
-.cm-s-dark-soda ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+
+.CodeMirror .CodeMirror-vscrollbar{ width: 10px; bottom: 10px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
+.CodeMirror .CodeMirror-hscrollbar{ height:10px; right:10px !important;} /*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
+.CodeMirror ::-webkit-scrollbar { width: 10px; height:10px;} /* The width of vertical scrollbars and height of horizontal scrollbars*/
+.CodeMirror-scrollbar-filler {height:10px !important; width:10px !important;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
+.CodeMirror-gutter-filler{ height:10px !important;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
+
+
+.cm-s-dark-soda ::-webkit-scrollbar-track, .cm-s-dark-soda .CodeMirror-gutter-filler, .cm-s-dark-soda .CodeMirror-scrollbar-filler {
+    background: transparent;
 }
-.cm-s-dark-soda .CodeMirror-gutter-filler {
-    height: 10px !important;
-}
-.cm-s-dark-soda ::-webkit-scrollbar-track, .cm-s-dark-soda .CodeMirror-gutter-filler {
-    background: #191919;
-}
+
 .cm-s-dark-soda ::-webkit-scrollbar-thumb {
-    background: #3C3F41;
+    background: #191919;
     border-radius: 5px;
 }
-.cm-s-dark-soda ::-webkit-scrollbar-thumb:hover{
-	background: #494d4f;
+.cm-s-dark-soda ::-webkit-scrollbar-thumb:hover {
+	background: #121212;
 }
-.cm-s-dark-soda ::-webkit-scrollbar-thumb:active{
-	background: #6d757a;
+.cm-s-dark-soda ::-webkit-scrollbar-thumb:active {
+	background: #0f0f0f;
 }
+
 
 
 #status-bar{ /* Bottom status bar */
@@ -210,7 +213,7 @@ code {
 .cm-s-dark-soda span.cm-bracket {color: #f9faf4;}
 .cm-s-dark-soda span.cm-tag {color: #ff007f !important;}
 .cm-s-dark-soda span.cm-attribute {color: #a7ec21;}
-.cm-s-dark-soda span.cm-matchhighlight {background-color: rgba(61,61,61.23);}
+.cm-s-dark-soda span.cm-matchhighlight {background-color: rgba(61,61,61,23);}
 
 .cm-s-dark-soda span.CodeMirror-matchingbracket {
     color: #a7ec21;
@@ -225,7 +228,6 @@ code {
 
 
 .cm-s-dark-soda span.CodeMirror-searching {
-  background-color: none;
   background: none;
   box-shadow: 0 0 0 1px #fff;
 }
