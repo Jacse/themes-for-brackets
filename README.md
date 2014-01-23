@@ -7,11 +7,11 @@ List of themes
 * Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
 * Night Sky <br />![Night Sky Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/night-sky.png)
 * Dark Soda <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
-* Rubyblue
-* Visual Studio
+* Rubyblue <br />![Rubyblue Theme] (https://raw.github.com/Jacse/themes-for-brackets/master/images/rubyblue.png)
+* Visual Studio <br />![Visual Studio Theme] (https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
+* Cobalt <br />![Cobalt Theme] (https://raw.github.com/Jacse/themes-for-brackets/master/images/cobalt.png)
+* Light Table <br />![Light Table Theme] (https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
 * Solarized Dark
-* Cobalt
-* Light Table
 * MBO
 * Dracula
 * Brunante
