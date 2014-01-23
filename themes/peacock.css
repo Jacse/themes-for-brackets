@@ -19,7 +19,7 @@ CodeMirror CSS: Paweł Chętkowski
 	.CodeMirror .CodeMirror-hscrollbar{ height:8px; right:8px !important;} /*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
 	.CodeMirror ::-webkit-scrollbar { width: 8px; height:8px;} /* The width of vertical scrollbars and height of horizontal scrollbars*/
 	.CodeMirror-scrollbar-filler {height:8px !important; width:8px !important; background:none;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
-	.CodeMirror-gutter-filler{ height:8px !important;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
+	.CodeMirror-gutter-filler{ height:8px !important;background:none;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
 	.CodeMirror ::-webkit-scrollbar-track {background: none;} /* The track that scrollbars run in */
 	.CodeMirror ::-webkit-scrollbar-thumb {background: #403c37;} /* The scrollbar thumb */
 
@@ -42,7 +42,8 @@ CodeMirror CSS: Paweł Chętkowski
 .CodeMirror .cm-keyword {color:#26A6A6;} /*Element call ex. array, class, public function, if, elseif, !important*/
 .CodeMirror .cm-matchingtag{background:#2b2a27 !important;}
 .CodeMirror-selected{background:#403c37 !important;} /*Selected lines - may need !important*/
-.CodeMirror-gutter-elt,.CodeMirror-activeline-background{background:#2b2a27 !important;} /*Active line - may need !important*/
+.CodeMirror-gutter-elt{background:#2b2a27 !important;}
+.CodeMirror-activeline-background{background:rgba(255,255,255,0.1) !important;} /*Active line - may need !important*/
 .CodeMirror .CodeMirror-matchingtag{background:#403c37 !important;} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
 div.CodeMirror span.CodeMirror-matchingbracket{background:#403c37 !important;} /*Matching brackets, open/close*/
 
