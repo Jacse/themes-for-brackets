@@ -7,15 +7,16 @@ List of themes
 * Ambiance <br />![Ambiance Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png)
 * Night Sky <br />![Night Sky Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/night-sky.png)
 * Dark Soda <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
-* Rubyblue
-* Visual Studio
-* Solarized Dark
-* Cobalt
-* Light Table
-* MBO
-* Dracula
-* Brunante
-* Default
+* Rubyblue <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ruby-blue.png)
+* Visual Studio <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
+* Solarized Dark <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/solarized-dark.png)
+* Cobalt <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/cobalt.png)
+* Light Table <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/light-table.png)
+* MBO <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/mbo.png)
+* Dracula <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dracula.png)
+* Brunante <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/brunante.png)
+* Superman <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/superman.png)
+* Default <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/default.png)
 
 How to make you own theme
 ==================
