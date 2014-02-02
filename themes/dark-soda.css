@@ -237,6 +237,9 @@ code {
 	background-color: #242424;
 }
 
+.cm-s-dark-soda.CodeMirror .CodeMirror-linenumber {
+	padding-left: 15px;
+}
 
 .cm-s-dark-soda span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext {
     background-color: #ffe69d;
