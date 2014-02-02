@@ -101,6 +101,10 @@
 	background:none;
 }
 
+.cm-s-ambiance.CodeMirror .CodeMirror-linenumber {
+	padding-left: 25px;
+}
+
 /* Other */
 
 .inline-widget{ /* Quick-edit etc. */

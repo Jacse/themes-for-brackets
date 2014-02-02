@@ -73,3 +73,7 @@
 	border-right: 7px solid #165471;
 	color:#7BD827;
 }
+
+.cm-s-rubyblue.CodeMirror .CodeMirror-linenumber {
+	padding-left: 25px;
+}

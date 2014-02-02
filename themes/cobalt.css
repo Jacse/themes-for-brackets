@@ -65,3 +65,7 @@
     color:white;
 	background:rgba(255,255,255,0.2);
 }
+
+.cm-s-cobalt.CodeMirror .CodeMirror-linenumber {
+	padding-left: 25px;
+}

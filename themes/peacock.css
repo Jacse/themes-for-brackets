@@ -65,3 +65,7 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:#403c37 !important;} /
 
     /*Inline widget - extended color picker*/
 .inline-widget .color-editor{background:#403c37;} /*Extended color editor area*/
+
+.cm-s-peacock.CodeMirror .CodeMirror-linenumber {
+	padding-left: 25px;
+}
