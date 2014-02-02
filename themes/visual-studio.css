@@ -65,6 +65,10 @@
 	background-color: #fefefe;
 }
 
+.cm-s-visual-studio.CodeMirror .CodeMirror-linenumber {
+	padding-left: 18px;
+}
+
 .CodeMirror .CodeMirror-matchingbracket{
 	color: black;
 	background-color: #dedede;

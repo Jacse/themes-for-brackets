@@ -238,7 +238,7 @@ code {
 }
 
 .cm-s-dark-soda.CodeMirror .CodeMirror-linenumber {
-	padding-left: 25px;
+	padding-left: 18px;
 }
 
 .cm-s-dark-soda span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext {

@@ -72,7 +72,7 @@
 }
 .cm-s-light-table.CodeMirror .CodeMirror-linenumber {
 	color: #99997a;
-	padding-left: 25px;
+	padding-left: 18px;
 }
 .cm-s-light-table.CodeMirror .CodeMirror-activeline{
 	background: rgba(255,255,255,.1);

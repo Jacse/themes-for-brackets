@@ -60,7 +60,7 @@
 .cm-s-dracula .cm-xml-attribute { color: #ff79c6 !important; }
 
 .cm-s-dracula.CodeMirror .CodeMirror-linenumber {
-	padding-left: 25px;
+	padding-left: 18px;
 }
 
 div.CodeMirror span.CodeMirror-matchingbracket { border: 1px solid #15CA1A !important; border-radius: 4px; color: #ccc !important;}

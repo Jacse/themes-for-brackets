@@ -66,7 +66,7 @@ a.more-info{
 }
 
 .cm-s-night-sky.CodeMirror .CodeMirror-linenumber {
-	padding-left: 25px;
+	padding-left: 18px;
 }
 
 .cm-s-night-sky.CodeMirror, #editor-holder #not-editor { background-color: rgb(30, 34, 29); color: #F8F8F8;}
