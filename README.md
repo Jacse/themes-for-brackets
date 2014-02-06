@@ -42,6 +42,7 @@ Troubleshooting
 ==================
 * There are no commands in the themes menu
  - Try re-opening Brackets, that should help it.
+ - If that doesn't help and you're on a Mac, you might need to create the /Applications/Brackets.app/Contents/www/extensions/dev folder.
 * Line numbers are looking weird or scrollbars are not styled/have dissapeared
  - Try hitting F5 (Save changes before doing so!).
 
