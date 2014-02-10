@@ -133,6 +133,9 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   background: #586e75;
 }
 
+.cm-s-solarized-dark.CodeMirror .CodeMirror-linenumber {
+	padding-left: 18px;
+}
 
 
 /* Editor styling */

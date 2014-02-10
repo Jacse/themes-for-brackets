@@ -59,6 +59,10 @@
 .cm-s-dracula .cm-js-attribute { color: #50fa7b !important; }
 .cm-s-dracula .cm-xml-attribute { color: #ff79c6 !important; }
 
+.cm-s-dracula.CodeMirror .CodeMirror-linenumber {
+	padding-left: 18px;
+}
+
 div.CodeMirror span.CodeMirror-matchingbracket { border: 1px solid #15CA1A !important; border-radius: 4px; color: #ccc !important;}
 
 div.CodeMirror span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext { background-color: #3a3d4e !important;}

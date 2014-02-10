@@ -93,3 +93,7 @@ div.CodeMirror span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedte
     background-color: #c3c3c3;
     color: #242424;
 }
+
+.cm-s-mbo.CodeMirror .CodeMirror-linenumber {
+	padding-left: 18px;
+}
