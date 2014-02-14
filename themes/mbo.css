@@ -73,7 +73,7 @@ a.more-info{
 .cm-s-mbo .cm-tag {color: #9DDFE9}
 .cm-s-mbo .cm-attribute {color: #ffb928;}
 
-.cm-s-mbo .cm-matchhighlight {background-color: rgba(61,61,61.23);}
+.cm-s-mbo .cm-matchhighlight {background-color: rgba(61,61,61,0.23);}
 
 div.CodeMirror span.CodeMirror-matchingbracket {
     color: #F54B07;

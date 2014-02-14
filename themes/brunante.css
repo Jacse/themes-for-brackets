@@ -9,7 +9,7 @@
 /* color editor widget */
 .color-editor {background-color: #242424; color: #997643}
 .color-editor aside header .large-swatch,
-  .color-editor aside ul.swatches li .swatch-bg .swatch {
+.color-editor aside ul.swatches li .swatch-bg .swatch {
       box-shadow: none;
       border-right: 1px solid black;
       border-left: 1px solid #666;
