@@ -41,20 +41,21 @@ define(function (require, exports, module) {
 		customThemesDir = brackets.app.getApplicationSupportDirectory() + "/custom themes/";
 
 	
+	var Themes = {};
+	
 	// If there is no currently selected theme, use default
-	var __theme = preferences.getValue("theme");
-    if (__theme === undefined) {
+	Themes.currentTheme = preferences.getValue("theme");
+    if (Themes.currentTheme === undefined) {
         preferences.setValue("theme", "default");
-        return;
+		Themes.currentTheme = "default";
     }
+	
 	var __custom = preferences.getValue("isCustom");
     if (__custom === undefined) {
         preferences.setValue("isCustom", false);
-        return;
+        __custom = false;
     }
 	
-	var Themes = {};
-	Themes.currentTheme = __theme;
 	Themes.getName = function (theme) {
 		theme = theme || Themes.currentTheme;
 		theme = theme.replace(new RegExp("-", "g"), " ");
@@ -109,6 +110,7 @@ define(function (require, exports, module) {
         }
 		$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
+		
         Themes.load(Themes.currentTheme, __custom);
     };
 	
