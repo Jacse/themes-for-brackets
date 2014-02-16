@@ -72,6 +72,11 @@ define(function (require, exports, module) {
 		} else {
 			$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
 			preferences.setValue("isCustom", false);
+			if (theme !== "visual-studio" && theme !== "default") {
+				$("#baseStyle").attr("href", ExtensionUtils.getModulePath(module, "") + "dark.css");
+			} else {
+				$("#baseStyle").attr("href", "");
+			}
 		}
 		Themes.setCommand(Themes.currentTheme, true);
 		preferences.setValue("theme", Themes.currentTheme);
@@ -110,6 +115,7 @@ define(function (require, exports, module) {
         }
 		$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
+		$("body").append('<link id="baseStyle" rel="stylesheet"/>');
 		
         Themes.load(Themes.currentTheme, __custom);
     };

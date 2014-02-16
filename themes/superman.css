@@ -53,11 +53,11 @@ div.modal-bar div#replace-group input#replace-with{
     color: #efefef;
     font-size: 12px;
     font-weight:normal;
-    font-family: "ubuntu";    
+    font-family: "ubuntu", Monaco,Menlo,Consolas,"Courier New",monospace;    
 }
 #titlebar a.dropdown-toggle{
     font-weight: normal;
-    font-style: "ubuntu";
+    font-style: "ubuntu", Monaco,Menlo,Consolas,"Courier New",monospace;
 }
 
 /********************** Sidebar **********************/
@@ -148,7 +148,7 @@ div.modal-bar div#replace-group input#replace-with{
 .CodeMirror{
     color: #888; 
     background-color: #000;  
-    font-family: "ubuntu mono";
+    font-family: "ubuntu mono", Monaco,Menlo,Consolas,"Courier New",monospace;;
     background-color: #0f1b2f;
 }
 .CodeMirror-lines{}
@@ -224,8 +224,11 @@ div.CodeMirror span.CodeMirror-matchingbracket{} /*Matching brackets, open/close
     background-color: rgba(13,97,199,0.2) !important;
 } /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{
-    /*background-color: #222 !important;*/
+    background-color:  rgba(57, 112, 180, 0.63) !important;
 } /*Active line - may need !important*/
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	background-color: rgb(67, 126, 199);
+}
 .CodeMirror-gutter-elt{
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);

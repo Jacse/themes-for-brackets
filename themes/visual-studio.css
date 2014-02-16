@@ -108,3 +108,8 @@
   background: none;
 }
 
+.inline-widget .shadow {
+	background: none !important;
+}
+	]}
+
