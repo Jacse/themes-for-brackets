@@ -14,7 +14,6 @@
 
 .CodeMirror div.CodeMirror-cursor { border-left: 1px solid #FFF !important; }
 .CodeMirror-selected { background: #3a3d4e !important; color: #eee !important; }
-.CodeMirror-lines{ line-height: 14px !important; }
 
 .cm-s-dracula .cm-keyword { color: #8be9fd !important; font-style: italic; }
 

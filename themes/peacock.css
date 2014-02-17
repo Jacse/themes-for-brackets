@@ -9,7 +9,6 @@ CodeMirror CSS: Paweł Chętkowski
 	color:#ede0ce;
 	font-family: 'Source Code Pro', 'Ubuntu Mono', 'Monaco', 'Menlo', 'Consolas', "Courier New", monospace;
 	font-size: 14px;
-	line-height: 20px;
 }/*Main coding area, without line count.*/
 
 .CodeMirror div.CodeMirror-cursor {border-left: 1px solid #ede0ce; z-index: 3;}
