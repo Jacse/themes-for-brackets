@@ -106,36 +106,45 @@ define(function (require, exports, module) {
             themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
         }
         for (i = 0; i < len; i++) {
-			var name = themesNameArray[i];
-			if (name.indexOf(".css") > -1) { //I know this is a stupid way to check whether a theme is custom, but hey!
-				addCommand(themesNameArray[i].replace(".css", ""), true);
-			} else {
-				addCommand(themesNameArray[i]);
-			}
+		if (themesNameArray[i].indexOf(".css") > -1) { //I know this is a stupid way to check whether a theme is custom, but hey!
+			addCommand(themesNameArray[i].replace(".css", ""), true);
+		} else {
+			addCommand(themesNameArray[i]);
+		}
         }
-		$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
+	$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-		$("body").append('<link id="baseStyle" rel="stylesheet"/>');
+	$("body").append('<link id="baseStyle" rel="stylesheet"/>');
 		
         Themes.load(Themes.currentTheme, __custom);
     };
 	
 
     // Get standard themes
+    console.log("Getting contents of themes directory...");
 	FileSystem.getDirectoryForPath(moduleThemesDir).getContents(function (err, contents) {
+		if (err) {
+			console.log("Error getting themes:" + err);
+		}
 		var themesInDir = [], i;
 		for (i = 0; i < contents.length; i++) {
 			themesInDir.push(contents[i].name.replace(".css", ""));
 		}
 		
 		//Make sure custom themes directory exists
+		console.log("Creating custom themes directory...");
 		FileSystem.getDirectoryForPath(customThemesDir).create(function () {
 			// Get custom themes
+			console.log("Getting contents of custom themes directory...");
 			FileSystem.getDirectoryForPath(customThemesDir).getContents(function (err, contents) {
+				if (err) {
+					console.log("Error getting custom themes:" + err);
+				}
 				var themesInDir2 = [], i;
 				for (i = 0; i < contents.length; i++) {
 					themesInDir2.push(contents[i].name);
 				}
+				console.log("Adding all themes to themes menu...");
 				Themes.getDirFiles(themesInDir.concat(themesInDir2));
 			});
 		});
