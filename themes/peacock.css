@@ -60,10 +60,22 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:#403c37 !important;} /
 /*#codehint-menu-bar .dropdown-menu li a:hover {background:#403c37;} /*Code hint menu option, dropdown visible when writing code. Treat like <li>*/
 
     /*Inline editor(Ex. Quick Edit - Ctrl + E)*/
-.inline-widget{background:#403c37;} /*Inline widget wrap, won't affect line count bar*/
 
-    /*Inline widget - extended color picker*/
-.inline-widget .color-editor{background:#403c37;} /*Extended color editor area*/
+.cm-s-peacock.CodeMirror .inline-widget{
+	background: #403c37;
+	color: #ccc;
+}
+.cm-s-peacock.CodeMirror .inline-widget h1,
+.cm-s-peacock.CodeMirror .inline-widget h2,
+.cm-s-peacock.CodeMirror .inline-widget h3{
+	color: #ccc;
+}
+.cm-s-peacock.CodeMirror .inline-widget p,
+.cm-s-peacock.CodeMirror .inline-widget dt,
+.cm-s-peacock.CodeMirror .inline-widget li,
+.cm-s-peacock.CodeMirror .inline-widget code{
+	color: #fff;
+}
 
 .cm-s-peacock.CodeMirror .CodeMirror-linenumber {
 	padding-left: 18px;
