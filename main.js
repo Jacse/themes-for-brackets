@@ -106,15 +106,15 @@ define(function (require, exports, module) {
             themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
         }
         for (i = 0; i < len; i++) {
-		if (themesNameArray[i].indexOf(".css") > -1) { //I know this is a stupid way to check whether a theme is custom, but hey!
-			addCommand(themesNameArray[i].replace(".css", ""), true);
-		} else {
-			addCommand(themesNameArray[i]);
-		}
+            if (themesNameArray[i].indexOf(".css") > -1) { //I know this is a stupid way to check whether a theme is custom, but hey!
+                addCommand(themesNameArray[i].replace(".css", ""), true);
+            } else {
+                addCommand(themesNameArray[i]);
+            }
         }
-	$("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
+	    $("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-	$("body").append('<link id="baseStyle" rel="stylesheet"/>');
+	    $("body").append('<link id="baseStyle" rel="stylesheet"/>');
 		
         Themes.load(Themes.currentTheme, __custom);
     };

@@ -111,3 +111,11 @@ span.cm-token-highlight:before { border-color: #94a3dd !important; }
 .CodeMirror .webkit-html-warning-message{
     color: #411f07 !important;
 }
+
+.cm-s-dracula.CodeMirror-focused .CodeMirror-activeline-background {
+    background-color: #363843;
+}
+.cm-s-dracula.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color:white !important;
+    background: #282828 !important;
+}
