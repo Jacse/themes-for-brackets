@@ -10,3 +10,5 @@
 .inline-widget .swatch, .inline-widget .large-swatches {
 	box-shadow: none !important;
 }
+
+.cm-matchhighlight {color:black !important;} /* Brackets match highlighter support */
