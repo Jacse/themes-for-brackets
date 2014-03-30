@@ -4,7 +4,7 @@
 .CodeMirror-gutters{
 	border-right:none
 }
-#status-indicators,#status-info{
+#status-indicators, #status-indicators div:not(#status-inspection), #status-info{
 	background:transparent;
 	color:inherit;
 }
