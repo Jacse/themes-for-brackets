@@ -39,7 +39,7 @@ CodeMirror CSS: Paweł Chętkowski
 .CodeMirror .cm-attribute{color:#FF5D38;} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#26A6A6;} /*Element call ex. array, class, public function, if, elseif, !important*/
 .CodeMirror .cm-matchingtag{background:#2b2a27 !important;}
-.CodeMirror-selected{background:#403c37 !important;} /*Selected lines - may need !important*/
+.CodeMirror-selected{background:rgba(255,255,255,0.1) !important;} /*Selected lines - may need !important*/
 .CodeMirror-gutter-elt{background:#2b2a27 !important;}
 .CodeMirror-activeline-background{background:rgba(255,255,255,0.1) !important;} /*Active line - may need !important*/
 .CodeMirror .CodeMirror-matchingtag{background:#403c37 !important;} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
@@ -78,4 +78,16 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:#403c37 !important;} /
 
 .cm-s-peacock.CodeMirror .CodeMirror-linenumber {
 	padding-left: 18px;
+}
+
+/*add highlight dark*/
+.toolbar .nav .dropdown-menu li a:hover,
+.context-menu .dropdown-menu li a:hover,
+.codehint-menu .dropdown-menu li a:hover,
+.toolbar .nav .dropdown-menu li a.highlight,
+.context-menu .dropdown-menu li a.highlight,
+.codehint-menu .dropdown-menu li a.highlight {
+  color: #222;
+  background: #0081c2;
+  font-weight: bolder;
 }
