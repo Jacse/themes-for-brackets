@@ -79,3 +79,14 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:#403c37 !important;} /
 .cm-s-peacock.CodeMirror .CodeMirror-linenumber {
 	padding-left: 18px;
 }
+/*add highlight dark*/
+.toolbar .nav .dropdown-menu li a:hover,
+.context-menu .dropdown-menu li a:hover,
+.codehint-menu .dropdown-menu li a:hover,
+.toolbar .nav .dropdown-menu li a.highlight,
+.context-menu .dropdown-menu li a.highlight,
+.codehint-menu .dropdown-menu li a.highlight {
+  color: #222;
+  background: #0081c2;
+  font-weight: bolder;
+}
