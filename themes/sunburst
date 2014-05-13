@@ -33,7 +33,7 @@ Good luck, have fun!
 
 
     /*Main area*/
-.CodeMirror{ background:#161616;font-family:monaco;color:#f5f5f5;
+.CodeMirror{ background:#161616;font-family:consolas;color:#f5f5f5;
 line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
 .CodeMirror-lines{}/*Code lines, syntax coloring has higher priority then .CodeMirror-lines*/
 
