@@ -77,7 +77,7 @@ Good luck, have fun!
 
 
 .CodeMirror .cm-tag{color:#89BDFF} /*Tags ex. ul or <ul>*/
-.CodeMirror .cm-attribute{color:#65B042} /*Attribute ex. rel, href, name*/
+.CodeMirror .cm-attribute{color:#E0C589} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#65B042} /*Element call ex. array, class, public function, if, elseif, !important*/
 .CodeMirror .cm-matchingtag{background:#363636}
 
