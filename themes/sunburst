@@ -33,7 +33,7 @@ Good luck, have fun!
 
 
 /*Main area*/
-.CodeMirror{ background:#292929;font-family:monaco;color:#f5f5f5;
+.CodeMirror{ background:#161616;font-family:consolas;color:#f5f5f5;
     line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
 .CodeMirror-lines{}/*Code lines, syntax coloring has higher priority then .CodeMirror-lines*/
 
@@ -79,9 +79,9 @@ Good luck, have fun!
 .CodeMirror .cm-tag{color:#89BDFF} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{color:#65B042} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#65B042} /*Element call ex. array, class, public function, if, elseif, !important*/
-.CodeMirror .cm-matchingtag{background:#363636;bdotted 1px #666;color:white}
+.CodeMirror .cm-matchingtag{background:#363636}
 
-.CodeMirror .CodeMirror-matchingtag{background:#363636;border-bottom: dotted 1px #666;color:white} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
+.CodeMirror .CodeMirror-matchingtag{background:#363636;border-bottom: dotted 1px #666} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
 div.CodeMirror span.CodeMirror-matchingbracket{background:#363636;border-bottom: dotted 1px #666;color:white} /*Matching brackets, open/close*/
 
 .CodeMirror-selected{background-color:#ccc;opacity: 0.20;} /*Selected lines - may need !important*/
