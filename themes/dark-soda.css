@@ -221,9 +221,7 @@ code {
 }
 
 .cm-s-dark-soda span.CodeMirror-matchingtag {
-	color: #a7ec21 !important;
-    text-decoration:underline;
-	background:none;
+	background: rgba(255,255,255,0.15);
 }
 
 

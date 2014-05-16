@@ -49,7 +49,7 @@ define(function (require, exports, module) {
         preferences.setValue("theme", "default");
 		Themes.currentTheme = "default";
     }
-	
+
 	var __custom = preferences.getValue("isCustom");
     if (__custom === undefined) {
         preferences.setValue("isCustom", false);
@@ -88,11 +88,14 @@ define(function (require, exports, module) {
 		CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
 	};
 
-	function addCommand(theme, isCustom) {
+	function addCommand(theme, isCustom, firstCustom) {
 		var command = "jacse.themes-for-brackets.changetheme_" + theme;
 		CommandManager.register(Themes.getName(theme), command, function () {
 			Themes.load(theme, isCustom);
 		});
+        if (firstCustom) {
+            menu.addMenuDivider();
+        }
 		menu.addMenuItem(command);
 	}
 	
@@ -101,15 +104,24 @@ define(function (require, exports, module) {
     Themes.getDirFiles = function (themesNameArray) {
         var i,
             len = themesNameArray.length,
-            findDefault = themesNameArray.indexOf('default');
+            findDefault = themesNameArray.indexOf('default'),
+            firstCustom = true;
         if (findDefault !== -1) { //make sure default theme is on top
             themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
         }
         for (i = 0; i < len; i++) {
             if (themesNameArray[i].indexOf(".css") > -1) { //I know this is a stupid way to check whether a theme is custom, but hey!
-                addCommand(themesNameArray[i].replace(".css", ""), true);
+                if (firstCustom) {
+                    addCommand(themesNameArray[i].replace(".css", ""), true, true);
+                    firstCustom = false;
+                } else {
+                    addCommand(themesNameArray[i].replace(".css", ""), true);
+                }
             } else {
                 addCommand(themesNameArray[i]);
+            }
+            if (i === 0) { //Add menu divider after default theme
+                menu.addMenuDivider();
             }
         }
 	    $("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
