@@ -33,8 +33,7 @@ Good luck, have fun!
 
 
 /*Main area*/
-.CodeMirror{ background:#161616;font-family:consolas;color:#f5f5f5;
-    line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
+.CodeMirror{ background:#161616;color:#f5f5f5;line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
 .CodeMirror-lines{}/*Code lines, syntax coloring has higher priority then .CodeMirror-lines*/
 
 .CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; z-index: 3;} /*Cursor stling*/
@@ -49,8 +48,7 @@ Good luck, have fun!
 .CodeMirror ::-webkit-scrollbar-thumb { background-color: #606266;border-radius: 4px} /* The scrollbar thumb */
 
 .CodeMirror-scrollbar-filler {height:8px !important; width:8px !important; background:#3B3D3F;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
-.CodeMirror-gutter-filler{ height:8px !important;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
-
+.CodeMirror-gutter-filler{ height:8px !important; background:#3B3D3F;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
 
 
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{background-color:#292929}/*Left vertical bar with line count*/
