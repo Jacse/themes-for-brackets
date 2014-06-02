@@ -21,15 +21,16 @@
     background: transparent;
 }
 .cm-s-light-table .CodeMirror-scroll{
-	margin-right: 5px;
 	border-color: #202020;
 }
 .cm-s-light-table .CodeMirror-vscrollbar{
-	overflow-y: hidden;
+	width: 10px;
+    bottom: 10px !important;
 }
 .cm-s-light-table ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
+    background: transparent !important;
 }
 .cm-s-light-table .CodeMirror-gutter-filler {
     height: 10px !important;
@@ -47,6 +48,27 @@
 .cm-s-light-table ::-webkit-scrollbar-thumb:active{
 	background: #6d757a;
 }
+
+.CodeMirror-scrollbar-filler {
+	height:10px !important;
+	width:10px !important;
+	background:none;
+}
+.CodeMirror .CodeMirror-hscrollbar{ height:10px; right:10px !important;} /*Scrollbar horizontal*/
+
+.CodeMirror ::-webkit-scrollbar {width: 8px; height:8px;}
+.CodeMirror ::-webkit-scrollbar-track {background: none;}
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background:none;}
+.CodeMirror ::-webkit-scrollbar-thumb {background: #56595a; border-radius: 4px}
+.CodeMirror ::-webkit-scrollbar-thumb:hover {background: #666666; border-radius: 4px}
+
+.CodeMirror-scrollbar-filler {
+	height:8px !important;
+	width:8px !important;
+	background:none;
+}
+.CodeMirror .CodeMirror-hscrollbar{ height:8px; right:8px !important;} /*Scrollbar horizontal*/
+
 
 .cm-s-light-table.CodeMirror .inline-widget{
 	background: #272727;
