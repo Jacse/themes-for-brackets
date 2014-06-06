@@ -84,7 +84,7 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: do
 
 .CodeMirror-selected{background-color:#727171;opacity: 0.20;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#ccc;opacity: 0.1} /*Active line - may need !important*/
-.CodeMirror-gutter-elt{} /*Active line, line count section*/
+.CodeMirror-gutter-elt{background-color:#404040!important;color: #f5f5f5!important} /*Active line, line count section*/
 div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !important*/
 
 
