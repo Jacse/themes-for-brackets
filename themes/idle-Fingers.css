@@ -53,7 +53,7 @@ Good luck, have fun!
 
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{background-color:#323232}/*Left vertical bar with line count*/
 .CodeMirror-gutter{background-color:#323232} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
-.CodeMirror-linenumbers{background-color:#323232;border-left: 1px solid #504c4c;z-index: 8} /*Line count bar only, without "gutter"*/
+.CodeMirror-linenumbers{background-color:#323232;} /*Line count bar only, without "gutter"*/
 .CodeMirror-foldgutter{background-color:#323232;} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
 
 
@@ -85,7 +85,7 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: do
 
 .CodeMirror-selected{background-color:#ccc;opacity: 0.20;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#ccc;opacity: 0.1} /*Active line - may need !important*/
-.CodeMirror-gutter-elt{} /*Active line, line count section*/
+.CodeMirror-gutter-elt{ background:#323232!important;color: #f5f5f5!important} /*Active line, line count section*/
 div.CodeMirror span.CodeMirror-searching{} /*Search result highlight- may need !important*/
 
 
