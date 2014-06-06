@@ -80,8 +80,8 @@ Good luck, have fun!
 .CodeMirror .cm-keyword {color:#cae682} /*Element call ex. array, class, public function, if, elseif, !important*/
 .CodeMirror .cm-matchingtag{background:#363636}
 
-.CodeMirror .CodeMirror-matchingtag{background:#363636;border-bottom: dotted 1px #666} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
-div.CodeMirror span.CodeMirror-matchingbracket{background:#363636;border-bottom: dotted 1px #666;color:white} /*Matching brackets, open/close*/
+.CodeMirror .CodeMirror-matchingtag{background:none;border-bottom: dotted 1px #666} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
+div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: dotted 1px #666;color:white} /*Matching brackets, open/close*/
 
 .CodeMirror-selected{background-color:#727171;opacity: 0.20;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#ccc;opacity: 0.1} /*Active line - may need !important*/
