@@ -54,7 +54,7 @@ Good luck, have fun!
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{background-color:#242424}/*Left vertical bar with line count*/
 .CodeMirror-gutter{background-color:#242424;} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
 .CodeMirror-linenumbers{background-color:#242424} /*Line count bar only, without "gutter"*/
-.CodeMirror-foldgutter{background-color:#242424;border-right:3px solid #333} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
+.CodeMirror-foldgutter{background-color:#242424;} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
 
 
 /*Syntax elements & action*/
