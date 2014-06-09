@@ -1,43 +1,45 @@
-/** SIDEBAR **/
+/* SIDEBAR */
 #sidebar, #working-set-header, #open-files-container, #main-toolbar{
-	background:#1F4661;
-	text-shadow:none;
+    background:#1F4661;
+    text-shadow:none;
 }
 #working-set-header, #open-files-container{ /* Working files */
-	background:#16314a;
+    background:#16314a;
 }
 #project-files-header, #working-set-header{/* "working files" header and folder header*/
-	color:#E0E0E0!important;
+    color:#E0E0E0!important;
 }
-#project-files-header{ border-top: 4px solid #3E7087;} /* Delimiter between "working files" and project files */
+#project-files-header{ /* Delimiter between "working files" and project files */
+    border-top: 4px solid #3E7087;
+}
 #project-dropdown-toggle:hover{ /* Open url when hover */
     color:#FFF!important;
     background:rgba(255,255,255,0.1);
-	border:1px solid rgba(255,255,255,0.3);
+    border:1px solid rgba(255,255,255,0.3);
 }
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
-#open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working fiels"*/
-	color:#FFF!important;
+#open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "Working Files" */
+    color:#FFF!important;
 }
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
-	background:#3E7087;
+    background:#3E7087;
 }
 .sidebar-selection-triangle.triangle-visible::before{
-	border-left:12px solid #3E7087;
+    border-left:12px solid #3E7087;
 }
 
 
 #status-bar{ /* Bottom status bar */
     background:#1F4661;
     border-top:1px solid #3E7087;
-	color:#FFF;
+    color:#FFF;
 }
 
 .inline-widget{ /* Quick-edit styles */
-	background:#1F4661;
+    background:#1F4661;
 }
 
-/** CodeMirror styles **/
+/* CodeMirror styles */
 
 .cm-s-rubyblue.CodeMirror { background: #112435; color: white; }
 .cm-s-rubyblue div.CodeMirror-selected { background: #38566F !important; }
@@ -65,15 +67,36 @@
 
 .cm-s-rubyblue span.CodeMirror-matchingtag {
     color:white;
-	background:rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.2);
 }
 
 .cm-s-rubyblue.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-	background:none;
-	border-right: 7px solid #165471;
-	color:#7BD827;
+    background:none;
+    border-right: 7px solid #165471;
+    color:#7BD827;
 }
 
 .cm-s-rubyblue.CodeMirror .CodeMirror-linenumber {
-	padding-left: 25px;
+    padding-left: 25px;
+}
+
+/* Bottom Bar */
+.bottom-panel .toolbar .title {
+    color: white;
+}
+
+.bottom-panel .toolbar {
+    background-color: #38566F;
+}
+
+.close {
+    color: white;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+#shortcuts thead th {
+    background-color: #112435;
+}
+#shortcuts thead a {
+    color: white;
 }
