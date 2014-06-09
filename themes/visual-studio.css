@@ -1,30 +1,30 @@
 /** SIDEBAR **/
 #sidebar{
-	background:#f6f6f6;
-	text-shadow:none;
+    background:#f6f6f6;
+    text-shadow:none;
 }
 #working-set-header, #open-files-container{ /* Working files */
-	background:#f0f0f0;
+    background:#f0f0f0;
 }
 #project-files-header, #working-set-header{/* "working files" header and folder header*/
-	color:#777!important;
+    color:#777!important;
 }
 #project-files-header{ border-top: 1px solid rgba(0,0,0,0.2);} /* Delimiter between "working files" and project files */
 #project-dropdown-toggle:hover{ /* Open url when hover */
     color:#555!important;
     background:#e8e8e8;
-	border:1px solid #c9c9c9;
+    border:1px solid #c9c9c9;
 }
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
-#open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working fiels"*/
-	color:#222!important;
+#open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working files"*/
+    color:#222!important;
 }
 
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
-	background:#cccedb;
+    background:#cccedb;
 }
 .sidebar-selection-triangle.triangle-visible::before{
-	border-left:12px solid #cccedb;
+    border-left:12px solid #cccedb;
 }
 
 /** TOOLBAR **/
@@ -43,7 +43,7 @@
 
 /** QUICK EDIT ETC: **/
 .inline-widget{
-	background:#F4F4F4;
+    background:#F4F4F4;
 }
 
 /** CODEMIRROR **/
@@ -57,31 +57,31 @@
 }
 
 .CodeMirror .CodeMirror-gutters{
-	background-color: #fefefe;
+    background-color: #fefefe;
 }
 
 .CodeMirror .CodeMirror-linenumber{
-	color: #0E97A1;
-	background-color: #fefefe;
+    color: #0E97A1;
+    background-color: #fefefe;
 }
 
 .cm-s-visual-studio.CodeMirror .CodeMirror-linenumber {
-	padding-left: 18px;
+    padding-left: 18px;
 }
 
 .CodeMirror .CodeMirror-matchingbracket{
-	color: black;
-	background-color: #dedede;
+    color: black;
+    background-color: #dedede;
 }
 
 .CodeMirror .CodeMirror-linebackground{
-	outline: 2px solid #dddddd;
-  	z-index: 3;
+    outline: 2px solid #dddddd;
+    z-index: 3;
 }
 
 .cm-s-visual-studio span.CodeMirror-matchingtag {
-	color:#800000 !important;
-	background: rgba(0,0,0,0.2);
+    color:#800000 !important;
+    background: rgba(0,0,0,0.2);
 }
 
 .CodeMirror span.cm-atom { color: blue; }
@@ -97,17 +97,17 @@
 .CodeMirror span.cm-property { color: black; }
 
 .CodeMirror span.cm-matchhighlight{
-  	background-color: yellow;
+    background-color: yellow;
 }
 
-.CodeMirror-selected { 
+.CodeMirror-selected {
     background: #9ccfff !important;
 }
 
 .cm-s-visual-studio.CodeMirror-focused .CodeMirror-activeline-background {
-  background: none;
+    background: none;
 }
 
 .inline-widget .shadow {
-	background: none !important;
+    background: none !important;
 }
