@@ -42,30 +42,30 @@
 /* CodeMirror styles */
 
 .cm-s-rubyblue.CodeMirror { background: #112435; color: white; }
-.cm-s-rubyblue div.CodeMirror-selected { background: #38566F !important; }
+.cm-s-rubyblue .CodeMirror-selected { background: #38566F !important; }
 .cm-s-rubyblue .CodeMirror-gutters { background: #1F4661; border-right: 7px solid #3E7087; }
 .cm-s-rubyblue .CodeMirror-linenumber { color: white; }
 .cm-s-rubyblue .CodeMirror-cursor { border-left: 1px solid white !important; }
 
-.cm-s-rubyblue span.cm-comment { color: #999; font-style:italic; }
-.cm-s-rubyblue span.cm-atom { color: #F4C20B; }
-.cm-s-rubyblue span.cm-number, .cm-s-rubyblue span.cm-attribute { color: #82C6E0; }
-.cm-s-rubyblue span.cm-keyword { color: #F0F; }
-.cm-s-rubyblue span.cm-string { color: #F08047; }
-.cm-s-rubyblue span.cm-meta { color: #F0F; }
-.cm-s-rubyblue span.cm-variable-2, .cm-s-rubyblue span.cm-tag { color: #7BD827; }
-.cm-s-rubyblue span.cm-variable-3, .cm-s-rubyblue span.cm-def { color: white; }
-.cm-s-rubyblue span.cm-error { color: #AF2018; }
-.cm-s-rubyblue span.cm-bracket { color: #F0F; }
-.cm-s-rubyblue span.cm-link { color: #F4C20B; }
-.cm-s-rubyblue span.CodeMirror-matchingbracket { color:#F0F !important; }
-.cm-s-rubyblue span.cm-builtin, .cm-s-rubyblue span.cm-special { color: #FF9D00; }
+.cm-s-rubyblue .cm-comment { color: #999; font-style:italic; }
+.cm-s-rubyblue .cm-atom { color: #F4C20B; }
+.cm-s-rubyblue .cm-number, .cm-s-rubyblue .cm-attribute { color: #82C6E0; }
+.cm-s-rubyblue .cm-keyword { color: #F0F; }
+.cm-s-rubyblue .cm-string { color: #F08047; }
+.cm-s-rubyblue .cm-meta { color: #F0F; }
+.cm-s-rubyblue .cm-variable-2, .cm-s-rubyblue .cm-tag { color: #7BD827; }
+.cm-s-rubyblue .cm-variable-3, .cm-s-rubyblue .cm-def { color: white; }
+.cm-s-rubyblue .cm-error { color: #AF2018; }
+.cm-s-rubyblue .cm-bracket { color: #F0F; }
+.cm-s-rubyblue .cm-link { color: #F4C20B; }
+.cm-s-rubyblue .CodeMirror-matchingbracket { color:#F0F !important; }
+.cm-s-rubyblue .cm-builtin, .cm-s-rubyblue .cm-special { color: #FF9D00; }
 
 .cm-s-rubyblue.CodeMirror-focused .CodeMirror-activeline-background {
     background-color: rgba(255,255,255,0.1);
 }
 
-.cm-s-rubyblue span.CodeMirror-matchingtag {
+.cm-s-rubyblue .CodeMirror-matchingtag {
     color:white;
     background:rgba(255,255,255,0.2);
 }
