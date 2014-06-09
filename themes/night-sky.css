@@ -6,6 +6,21 @@
 #main-toolbar{
 	background-color:#3c3f41;
 }
+#titlebar{
+	background:#3c3f41;
+	color:rgba(255,255,255,0.9);
+}
+#titlebar .nav .dropdown .dropdown-toggle{
+	color:rgba(255,255,255,0.9);
+}
+#titlebar .nav .dropdown .dropdown-toggle:hover {
+	background: #fff;
+	border-color: #fff;
+	color: #000;
+}
+#titlebar .nav .dropdown.open .dropdown-toggle{
+	color: #000;
+}
 #status-bar{
     background:#3c3f41;
 	color:rgba(255,255,255,0.9);
