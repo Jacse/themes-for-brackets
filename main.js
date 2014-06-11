@@ -35,26 +35,30 @@ define(function (require, exports, module) {
         ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
         FileSystem          = brackets.getModule("filesystem/FileSystem");
 
-	var preferences = PreferencesManager.getPreferenceStorage("extensions.Themes-for-brackets"),
+	var prefs = PreferencesManager.getExtensionPrefs("Themes-for-brackets"),
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/"),
 		customThemesDir = brackets.app.getApplicationSupportDirectory() + "/custom themes/";
 
 	
 	var Themes = {};
+    
+    //Define preferences
+    prefs.definePreference("theme", "string", "default");
+    prefs.definePreference("isCustom", "boolean", false);
 	
 	// If there is no currently selected theme, use default
-	Themes.currentTheme = preferences.getValue("theme");
-    if (Themes.currentTheme === undefined) {
-        preferences.setValue("theme", "default");
-		Themes.currentTheme = "default";
-    }
+	Themes.currentTheme = prefs.get("theme");
+//    if (Themes.currentTheme === undefined) {
+//        prefs.set("theme", "default");
+//		Themes.currentTheme = "default";
+//    }
 
-	var __custom = preferences.getValue("isCustom");
-    if (__custom === undefined) {
-        preferences.setValue("isCustom", false);
-        __custom = false;
-    }
+	var __custom = prefs.get("isCustom");
+//    if (__custom === undefined) {
+//        prefs.set("isCustom", false);
+//        __custom = false;
+//    }
 	
 	Themes.getName = function (theme) {
 		theme = theme || Themes.currentTheme;
@@ -68,10 +72,10 @@ define(function (require, exports, module) {
 		Themes.currentTheme = theme;
 		if (isCustom) {
 			$("#currentTheme").attr("href", customThemesDir + Themes.currentTheme + ".css");
-			preferences.setValue("isCustom", true);
+			prefs.set("isCustom", true);
 		} else {
 			$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
-			preferences.setValue("isCustom", false);
+			prefs.set("isCustom", false);
 			if (theme !== "visual-studio" && theme !== "default") {
 				$("#baseStyle").attr("href", ExtensionUtils.getModulePath(module, "") + "dark.css");
 			} else {
@@ -79,8 +83,9 @@ define(function (require, exports, module) {
 			}
 		}
 		Themes.setCommand(Themes.currentTheme, true);
-		preferences.setValue("theme", Themes.currentTheme);
+		prefs.set("theme", Themes.currentTheme);
 		CodeMirror.defaults.theme = Themes.currentTheme;
+        prefs.save();
 		$("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
 	};
 	
