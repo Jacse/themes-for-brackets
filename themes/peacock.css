@@ -75,6 +75,7 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:none; text-decoration:
 	color: #fff;
 }
 
-.cm-s-peacock.CodeMirror .CodeMirror-linenumber {
-	padding-left: 18px;
+.cm-s-peacock.CodeMirror .CodeMirror-gutter-elt {
+    padding: 0 8px 0 10px;
 }
+.CodeMirror pre {padding: 0 15px 0 5px;}

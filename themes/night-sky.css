@@ -59,6 +59,8 @@ a.more-info{
 
 /** CodeMirror styles **/
 
+.cm-s-night-sky.CodeMirror pre {padding:0 15px 0 5px}
+
 .cm-s-night-sky .CodeMirror-matchingtag{
 	background:none;
 	text-decoration:underline;
@@ -73,6 +75,7 @@ a.more-info{
 .cm-s-night-sky .CodeMirror-selected { background: #253B76 !important; }
 .cm-s-night-sky .CodeMirror-gutters { background: #2d2e30; border-right: 1 px solid rgba(0,0,0,0.4); }
 .cm-s-night-sky .CodeMirror-linenumber { color: #888; }
+.cm-s-night-sky .CodeMirror pre {}
 .cm-s-night-sky .CodeMirror-cursor { border-left: 1px solid #A7A7A7 !important; }
 
 .cm-s-night-sky .cm-keyword { color: #FBDE2D; }

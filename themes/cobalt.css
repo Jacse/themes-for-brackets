@@ -40,6 +40,9 @@
 .cm-s-cobalt.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-cobalt.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
   background: rgba(255, 255, 255, 0.1);
 }
+.cm-s-cobalt.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    color:white;
+}
 
 /** CodeMirror styles **/
 .cm-s-cobalt.CodeMirror { background: #002240; color: white; }
@@ -66,6 +69,8 @@
 	background:rgba(255,255,255,0.2);
 }
 
-.cm-s-cobalt.CodeMirror .CodeMirror-linenumber {
-	padding-left: 18px;
+.cm-s-cobalt.CodeMirror pre {padding:0 15px 0 5px}
+
+.cm-s-cobalt.CodeMirror .CodeMirror-gutter-elt {
+	padding: 0 5px 0 7px;
 }

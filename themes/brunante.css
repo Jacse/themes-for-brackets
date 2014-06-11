@@ -63,6 +63,8 @@
 	color:#f9ee98;
 }
 
-.cm-s-brunante.CodeMirror .CodeMirror-linenumber {
-	padding-left: 18px;
+.cm-s-brunante.CodeMirror pre {padding:0 15px 0 5px}
+
+.cm-s-brunante.CodeMirror .CodeMirror-gutter-elt {
+	padding: 0 4px 0 12px;
 }

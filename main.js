@@ -67,6 +67,7 @@ define(function (require, exports, module) {
 	};
 	
 	Themes.load = function (theme, isCustom) {
+        $("#editor-holder .CodeMirror").removeClass("cm-s-default");
 		$("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
 		Themes.setCommand(Themes.currentTheme, false);
 		Themes.currentTheme = theme;

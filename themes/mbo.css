@@ -94,6 +94,8 @@ div.CodeMirror span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedte
     color: #242424;
 }
 
-.cm-s-mbo.CodeMirror .CodeMirror-linenumber {
-	padding-left: 18px;
+.cm-s-mbo.CodeMirror pre {padding:0 15px 0 5px}
+
+.cm-s-mbo.CodeMirror .CodeMirror-gutter-elt {
+	padding: 0 5px 0 10px;
 }
