@@ -101,7 +101,7 @@ span.cm-token-highlight:before { border-color: #94a3dd !important; }
 .cm-tab:before { border-bottom: 1px solid #555 !important;}
 
 .cm-highlight {
-    -webkit-animation: "fadeout-revised" 3s 0s !important;  /* NOTE: Lint error but it is ok */
+    -webkit-animation: "fadeout-revised" 3s 0s !important;
 }
 
 .cm-highlight *:not(.CodeMirror-linenumber){                /* NOTE: Lint error but it is ok */
