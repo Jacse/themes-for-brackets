@@ -1,3 +1,4 @@
+/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false*/
 /*
 Solarized theme for code-mirror
 http://ethanschoonover.com/solarized
@@ -5,10 +6,10 @@ http://ethanschoonover.com/solarized
 
 /* Extended styles */
 #working-set-header, #open-files-container{ /* Working files */
-	background:rgba(0,0,0,0.12);
+    background:rgba(0,0,0,0.12);
 }
 #sidebar, #main-toolbar, #status-bar, .inline-widget{
-	background:#073642;
+    background:#073642;
 }
 #project-files-header{ border-top: 1px solid #073642;} /* Delimiter between "working files" and project files */
 #project-dropdown-toggle:hover{ /* Open url when hover */
@@ -22,15 +23,15 @@ http://ethanschoonover.com/solarized
 }
 
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
-	background:#134957;
+    background:#134957;
 }
 .sidebar-selection-triangle.triangle-visible::before{
-	border-left:12px solid #134957;
+    border-left:12px solid #134957;
 }
 
 .cm-s-solarized-dark span.CodeMirror-matchingtag {
-	color:#EEE !important;
-	background:none;
+    color:#EEE !important;
+    background:none;
 }
 
 /*
@@ -134,7 +135,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 }
 
 .cm-s-solarized-dark.CodeMirror .CodeMirror-linenumber {
-	padding-left: 18px;
+    padding-left: 18px;
 }
 
 
@@ -196,7 +197,7 @@ view-port
 }
 
 #editor-holder #not-editor {
-	background:none;
+    background:none;
 }
 
 .cm-s-solarized-dark.CodeMirror,

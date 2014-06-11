@@ -1,3 +1,4 @@
+/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false*/
 .CodeMirror-scroll {
     background-color: #f8f8f8;
 }
