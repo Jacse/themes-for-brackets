@@ -1,4 +1,3 @@
-/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false,overqualified-elements:false,qualified-headings:false*/
 #status-bar, .cm-s-mbo .CodeMirror-gutters, #main-toolbar{
     background:#333;
     color:rgba(255,255,255,0.9);
@@ -84,8 +83,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 
 div.CodeMirror span.CodeMirror-searching {
-  background-color: none;
-  background: none;
+  background: none none; /* NOTE Fix for Lint error probably can just be a single none */
   box-shadow: 0 0 0 1px #fff;
 }
 

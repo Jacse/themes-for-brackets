@@ -1,4 +1,3 @@
-/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false,overqualified-elements:false,qualified-headings:false*/
 /*
 Solarized theme for code-mirror
 http://ethanschoonover.com/solarized
@@ -112,7 +111,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 .cm-s-solarized-dark .cm-em {
   color: #999;
   text-decoration: underline;
-  text-decoration-style: dotted;
+  text-decoration-style: dotted; /* Lint error but it is fine */
 }
 .cm-s-solarized-dark .cm-strong { color: #eee; }
 .cm-s-solarized-dark .cm-tab:before {
