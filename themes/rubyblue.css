@@ -1,3 +1,4 @@
+/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false, */
 /* SIDEBAR */
 #sidebar, #working-set-header, #open-files-container, #main-toolbar{
     background:#1F4661;
@@ -27,7 +28,6 @@
 .sidebar-selection-triangle.triangle-visible::before{
     border-left:12px solid #3E7087;
 }
-
 
 #status-bar{ /* Bottom status bar */
     background:#1F4661;
