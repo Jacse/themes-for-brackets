@@ -36,78 +36,78 @@ define(function (require, exports, module) {
         ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
         FileSystem          = brackets.getModule("filesystem/FileSystem");
 
-	var prefs = PreferencesManager.getExtensionPrefs("Themes-for-brackets"),
+    var prefs = PreferencesManager.getExtensionPrefs("Themes-for-brackets"),
         menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
         moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/"),
-		customThemesDir = brackets.app.getApplicationSupportDirectory() + "/custom themes/";
+        customThemesDir = brackets.app.getApplicationSupportDirectory() + "/custom themes/";
 
-	
-	var Themes = {};
-    
+
+    var Themes = {};
+
     //Define preferences
     prefs.definePreference("theme", "string", "default");
     prefs.definePreference("isCustom", "boolean", false);
-	
-	// If there is no currently selected theme, use default
-	Themes.currentTheme = prefs.get("theme");
+
+    // If there is no currently selected theme, use default
+    Themes.currentTheme = prefs.get("theme");
 //    if (Themes.currentTheme === undefined) {
 //        prefs.set("theme", "default");
-//		Themes.currentTheme = "default";
+//        Themes.currentTheme = "default";
 //    }
 
-	var __custom = prefs.get("isCustom");
+    var __custom = prefs.get("isCustom");
 //    if (__custom === undefined) {
 //        prefs.set("isCustom", false);
 //        __custom = false;
 //    }
-	
-	Themes.getName = function (theme) {
-		theme = theme || Themes.currentTheme;
-		theme = theme.replace(new RegExp("-", "g"), " ");
-		return theme.charAt(0).toUpperCase() + theme.slice(1);
-	};
-	
-	Themes.load = function (theme, isCustom) {
-        $("#editor-holder .CodeMirror").removeClass("cm-s-default");
-		$("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
-		Themes.setCommand(Themes.currentTheme, false);
-		Themes.currentTheme = theme;
-		if (isCustom) {
-			$("#currentTheme").attr("href", customThemesDir + Themes.currentTheme + ".css");
-			prefs.set("isCustom", true);
-		} else {
-			$("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
-			prefs.set("isCustom", false);
-			if (theme !== "visual-studio" && theme !== "default") {
-				$("#baseStyle").attr("href", ExtensionUtils.getModulePath(module, "") + "dark.css");
-			} else {
-				$("#baseStyle").attr("href", "");
-			}
-		}
-		Themes.setCommand(Themes.currentTheme, true);
-		prefs.set("theme", Themes.currentTheme);
-		CodeMirror.defaults.theme = Themes.currentTheme;
-        prefs.save();
-		$("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
-	};
-	
-	Themes.setCommand = function (theme, val) {
-		CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
-	};
 
-	function addCommand(theme, isCustom, firstCustom) {
-		var command = "jacse.themes-for-brackets.changetheme_" + theme;
-		CommandManager.register(Themes.getName(theme), command, function () {
-			Themes.load(theme, isCustom);
-		});
+    Themes.getName = function (theme) {
+        theme = theme || Themes.currentTheme;
+        theme = theme.replace(new RegExp("-", "g"), " ");
+        return theme.charAt(0).toUpperCase() + theme.slice(1);
+    };
+
+    Themes.load = function (theme, isCustom) {
+        $("#editor-holder .CodeMirror").removeClass("cm-s-default");
+        $("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
+        Themes.setCommand(Themes.currentTheme, false);
+        Themes.currentTheme = theme;
+        if (isCustom) {
+            $("#currentTheme").attr("href", customThemesDir + Themes.currentTheme + ".css");
+            prefs.set("isCustom", true);
+        } else {
+            $("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
+            prefs.set("isCustom", false);
+            if (theme !== "visual-studio" && theme !== "default") {
+                $("#baseStyle").attr("href", ExtensionUtils.getModulePath(module, "") + "dark.css");
+            } else {
+                $("#baseStyle").attr("href", "");
+            }
+        }
+        Themes.setCommand(Themes.currentTheme, true);
+        prefs.set("theme", Themes.currentTheme);
+        CodeMirror.defaults.theme = Themes.currentTheme;
+        prefs.save();
+        $("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
+    };
+
+    Themes.setCommand = function (theme, val) {
+        CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
+    };
+
+    function addCommand(theme, isCustom, firstCustom) {
+        var command = "jacse.themes-for-brackets.changetheme_" + theme;
+        CommandManager.register(Themes.getName(theme), command, function () {
+            Themes.load(theme, isCustom);
+        });
         if (firstCustom) {
             menu.addMenuDivider();
         }
-		menu.addMenuItem(command);
-	}
-	
-	
-	// Pass file names as an array and create the themes
+        menu.addMenuItem(command);
+    }
+
+
+    // Pass file names as an array and create the themes
     Themes.getDirFiles = function (themesNameArray) {
         var i,
             len = themesNameArray.length,
@@ -131,42 +131,42 @@ define(function (require, exports, module) {
                 menu.addMenuDivider();
             }
         }
-	    $("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
+        $("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
         $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-	    $("body").append('<link id="baseStyle" rel="stylesheet"/>');
-		
+        $("body").append('<link id="baseStyle" rel="stylesheet"/>');
+
         Themes.load(Themes.currentTheme, __custom);
     };
-	
+
 
     // Get standard themes
     console.log("Getting contents of themes directory...");
-	FileSystem.getDirectoryForPath(moduleThemesDir).getContents(function (err, contents) {
-		if (err) {
-			console.log("Error getting themes:" + err);
-		}
-		var themesInDir = [], i;
-		for (i = 0; i < contents.length; i++) {
-			themesInDir.push(contents[i].name.replace(".css", ""));
-		}
-		
-		//Make sure custom themes directory exists
-		console.log("Creating custom themes directory...");
-		FileSystem.getDirectoryForPath(customThemesDir).create(function () {
-			// Get custom themes
-			console.log("Getting contents of custom themes directory...");
-			FileSystem.getDirectoryForPath(customThemesDir).getContents(function (err, contents) {
-				if (err) {
-					console.log("Error getting custom themes:" + err);
-				}
-				var themesInDir2 = [], i;
-				for (i = 0; i < contents.length; i++) {
-					themesInDir2.push(contents[i].name);
-				}
-				console.log("Adding all themes to themes menu...");
-				Themes.getDirFiles(themesInDir.concat(themesInDir2));
-			});
-		});
-	});
-	
+    FileSystem.getDirectoryForPath(moduleThemesDir).getContents(function (err, contents) {
+        if (err) {
+            console.log("Error getting themes:" + err);
+        }
+        var themesInDir = [], i;
+        for (i = 0; i < contents.length; i++) {
+            themesInDir.push(contents[i].name.replace(".css", ""));
+        }
+
+        //Make sure custom themes directory exists
+        console.log("Creating custom themes directory...");
+        FileSystem.getDirectoryForPath(customThemesDir).create(function () {
+            // Get custom themes
+            console.log("Getting contents of custom themes directory...");
+            FileSystem.getDirectoryForPath(customThemesDir).getContents(function (err, contents) {
+                if (err) {
+                    console.log("Error getting custom themes:" + err);
+                }
+                var themesInDir2 = [], i;
+                for (i = 0; i < contents.length; i++) {
+                    themesInDir2.push(contents[i].name);
+                }
+                console.log("Adding all themes to themes menu...");
+                Themes.getDirFiles(themesInDir.concat(themesInDir2));
+            });
+        });
+    });
+
 });
