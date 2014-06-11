@@ -111,7 +111,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 .cm-s-solarized-dark .cm-em {
   color: #999;
   text-decoration: underline;
-  text-decoration-style: dotted; /* Lint error but it is fine */
+  text-decoration-style: dotted; /* NOTE: Lint error but it is fine */
 }
 .cm-s-solarized-dark .cm-strong { color: #eee; }
 .cm-s-solarized-dark .cm-tab:before {
