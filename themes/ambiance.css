@@ -1,4 +1,4 @@
-/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false*/
+/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false,overqualified-elements:false,qualified-headings:false*/
 /*Side- and statusbar*/
 #working-set-header, #open-files-container{ /* Working files */
     background:rgba(0,0,0,0.2);
@@ -41,12 +41,12 @@
 }
 
 .cm-s-ambiance .CodeMirror-linenumber {
-  text-shadow: 0px 1px 1px #4d4d4d;
+  text-shadow: 0 1px 1px #4d4d4d;
   color: #222;
   padding: 0 5px;
 }
 .cm-s-ambiance .inline-text-editor .CodeMirror-linenumber {
-  text-shadow: 0px 1px 1px #2d2d2d;
+  text-shadow: 0 1px 1px #2d2d2d;
   color: #111;
 }
 

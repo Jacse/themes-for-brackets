@@ -1,4 +1,4 @@
-/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false*/
+/*csslint ids:false,important: false,fallback-colors:false,adjoining-classes: false,overqualified-elements:false,qualified-headings:false*/
 #status-bar{ /* Bottom status bar */
     border-top:1px solid #484b4d;
     background:#3C3F41;
