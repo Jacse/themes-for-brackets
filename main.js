@@ -24,12 +24,13 @@
  */
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
-/*global define, $, brackets, window, CodeMirror */
+/*global define, $, brackets, window, */
 
 define(function (require, exports, module) {
     "use strict";
 
     var CommandManager      = brackets.getModule("command/CommandManager"),
+        CodeMirror          = brackets.getModule("thirdparty/CodeMirror2/lib/codemirror"),
         Menus               = brackets.getModule("command/Menus"),
         PreferencesManager  = brackets.getModule("preferences/PreferencesManager"),
         ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
