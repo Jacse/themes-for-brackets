@@ -42,7 +42,8 @@ define(function (require, exports, module) {
         customThemesDir = brackets.app.getApplicationSupportDirectory() + "/custom themes/";
 
 
-    var Themes = {};
+    var Themes = {},
+        __custom = prefs.get("isCustom");
 
     //Define preferences
     prefs.definePreference("theme", "string", "default");
@@ -50,16 +51,6 @@ define(function (require, exports, module) {
 
     // If there is no currently selected theme, use default
     Themes.currentTheme = prefs.get("theme");
-//    if (Themes.currentTheme === undefined) {
-//        prefs.set("theme", "default");
-//        Themes.currentTheme = "default";
-//    }
-
-    var __custom = prefs.get("isCustom");
-//    if (__custom === undefined) {
-//        prefs.set("isCustom", false);
-//        __custom = false;
-//    }
 
     Themes.getName = function (theme) {
         theme = theme || Themes.currentTheme;
@@ -137,7 +128,6 @@ define(function (require, exports, module) {
 
         Themes.load(Themes.currentTheme, __custom);
     };
-
 
     // Get standard themes
     console.log("Getting contents of themes directory...");
