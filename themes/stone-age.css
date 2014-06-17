@@ -117,10 +117,6 @@ div.modal-bar div#replace-group input#replace-with {
 }
 
 /* Einzelne Datein/Ordner - available files/folders */
-#sidebar #project-files-container .jstree-icon {}
-#sidebar #project-files-container li.jstree-closed {}
-#sidebar #project-files-container li.jstree-open {}
-
 #sidebar #project-files-container ul li a {
     background-color: none;
     color: #999;
@@ -239,7 +235,6 @@ div.modal-bar div#replace-group input#replace-with {
     border-top: 1px solid #2A2C2D;
 }
 
-.CodeMirror-lines {}
 .CodeMirror pre {padding: 0 15px 0 5px;}
 
 /* Selected - Markiert */
@@ -277,10 +272,6 @@ div.CodeMirror span.CodeMirror-matchingbracket { color: #F0F; }                 
 div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #dc322f; }                /* non matching brackets, by mouse control */
 
 /************** Main scrollbars - Scrollbereich **************/
-.CodeMirror .CodeMirror-vscrollbar {}
-.CodeMirror .CodeMirror-hscrollbar {}
-.CodeMirror-scrollbar-filler {}
-.CodeMirror-gutter-filler {}
 
 /************** Layouts die mehrere bereiche abdecken **************/
 /******* all scrollbars - Alle Scrollbereiche -
@@ -346,9 +337,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #dc322f; }           
     padding-left: 15px;
      padding-right: 5px;
 }
-
-.CodeMirror-linenumbers {} /*Line count bar only, without "gutter"*/
-.CodeMirror-foldgutter {} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
 
 /*Active line nummber - Aktive zahlen spalte - may need !important*/
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
@@ -420,9 +408,6 @@ div.CodeMirror span.CodeMirror-searching { background-color: #a6d9e3 !important;
     background-color: #D7D7D7;
 }
 
-#problems-panel .inspector-section { /* hidden */ } /* Table with errors - additional classes for look: table-striped table-condensed row-highlight, fimilar for people working with Boostrap */
-#problems-panel .toolbar .table-container { } /* Table container with errors */
-
 /* Error panel toolbar with title and X - header */
 #problems-panel .toolbar { background-color: #3C3F41; }
 
@@ -432,7 +417,6 @@ div.CodeMirror span.CodeMirror-searching { background-color: #a6d9e3 !important;
     border-top: none;
 }
 
-#problems-panel table tr .selected {} /* Line number for error row */
 /*T here are no separated classes for error and code excerpt, the only hint I can give is: error is second child and excerpt is 3rd child of tr. */
 
 /******** Right click menu - rechts klick menü ********/
@@ -461,7 +445,6 @@ div.CodeMirror span.CodeMirror-searching { background-color: #a6d9e3 !important;
 }
 
 /*Single hint in dropdown menu, automaticlly puts already typed text into <strong>*/
-#codehint-menu-bar .dropdown-menu li a span.code-hint-item {}
 
 /* Scrollbar is definied in main area, use this one for individual design ***/
 #codehint-menu-bar ::-webkit-scrollbar { background: none !important;}
@@ -478,8 +461,6 @@ div.CodeMirror span.CodeMirror-searching { background-color: #a6d9e3 !important;
 .inline-widget .css-prop-defn dt { color: #48adff !important; }
 .inline-widget .css-prop-defn b { color: #37ad3e !important; }
 .inline-widget .css-prop-defn code { color: #ea7e06 !important; }
-.inline-widget .css-prop-summary {} /* left part */
-.inline-widget .css-prop-values {} /* right part */
 .inline-widget .css-prop-defn .divider-holder.no-focus .divider { border-color: #5C5C5C; } /* Stripe in the middle */
 
 /********* Inline editor(Ex. Quick Edit - Ctrl + E) - No Color - Schnell Bearbeitungs menü *********/
@@ -491,9 +472,6 @@ div.CodeMirror span.CodeMirror-searching { background-color: #a6d9e3 !important;
 
 /* Inline text editor header - Titel leiste rechtes eck */
 .inline-editor-header { background-color: #313638; }
-.inline-editor-header a.filename {} /* Filename */
-.inline-editor-header a.filename span.line-number {} /* Line number next to filename */
-.inline-editor-header button.btn {} /* Button responsible for "New rule" */
 
 /* Inline editor "gutter", won't affect line count in inline editor */
 .inline-widget .CodeMirror-gutter {
@@ -525,29 +503,13 @@ div.CodeMirror span.CodeMirror-searching { background-color: #a6d9e3 !important;
 .inline-widget .related-container ul li:hover { border: 1px solid rgba(255, 255, 255, 0.35); }
 .inline-widget .related-container ul li.selected { border: 1px solid rgba(255, 255, 255, 0.35); } /* Currently selected style rule from related container - text */
 
-.inline-widget .related-container .related ul li {} /* List element with rule */
 .inline-widget .related-container .related ul li .related-file { color: #90AEB8; } /* File information for rule */
 .inline-widget .related-container .related ul li.selected .related-file { background-color: transparent !important; border-color: transparent !important; color: #81B4C7; } /* Selected File information for rule */
 
 
 /********* extended color picker -Inline widget- Schnell Farbauswahl *********/
 .inline-widget .color-editor { background-color: #313638; }                    /* Extended color editor area */
-.inline-widget .color-editor .sliders .color-selection-field {}                /* Color selection square - big one */
-.inline-widget .color-editor .sliders .color-selection-field .selected {}    /* Color selection square - big one */
-.inline-widget .color-editor .hue-slider {}                                    /* Hue slider */
-.inline-widget .color-editor .opacity-slider {}                                /* Opacity slider*/
-.inline-widget .color-editor input.color-value {}                            /* Input for color value */
-.inline-widget .color-editor ul.button-bar {}                                /* Buttons for RGBa, HEX, HSLA */
-.inline-widget .color-editor ul.button-bar li a {}                            /* Single buttons <li> */
-.inline-widget .color-editor ul.button-bar li a.rgba {}                        /* RGBa button */
-.inline-widget .color-editor ul.button-bar li a.hex {}                        /* HEX button */
-.inline-widget .color-editor ul.button-bar li a.hsla {}                        /* HSLA button */
 .inline-widget .color-editor .large-swatches { border: 1px solid #666868; }    /* Big swatches with currently picked and original color */
-.inline-widget .color-editor .large-swatches .current-color {}                /* Current color swatch */
-.inline-widget .color-editor .large-swatches .original-color {}                /* Original color swatch */
-.inline-widget .color-editor ul.swatches {}                                    /* Small swatches with color suggestions */
-.inline-widget .color-editor ul.swatches li .swatch-bg {}                    /* Swatch sample */
-.inline-widget .color-editor ul.swatches li span.value {}                    /* Swatch label with color value */
 
 /********* Points-Dots - Punkte *********/
 #working-set-header, #open-files-container,        /* Open files header, Open files */
