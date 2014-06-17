@@ -137,13 +137,10 @@ define(function (require, exports, module) {
         }
         var themesInDir = [], i;
         for (i = 0; i < contents.length; i++) {
-<<<<<<< HEAD
             themesInDir.push(contents[i].name.replace(".css", ""));
-=======
             if (contents[i].name !== ".csslintrc") {
                 themesInDir.push(contents[i].name.replace(".css", ""));
             }
->>>>>>> ef87f85f85ec107116033d3a67e38fe3eb0c2e2e
         }
 
         //Make sure custom themes directory exists
