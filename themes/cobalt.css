@@ -1,40 +1,40 @@
 /** SIDEBAR **/
 #sidebar, #working-set-header, #open-files-container, #main-toolbar{
-	background:#0b3d6a;
-	text-shadow:none;
+    background:#0b3d6a;
+    text-shadow:none;
 }
 #working-set-header, #open-files-container{ /* Working files */
-	background:#1b5589;
+    background:#1b5589;
 }
 #project-files-header, #working-set-header{/* "working files" header and folder header*/
-	color:#E0E0E0!important;
+    color:#E0E0E0!important;
 }
 #project-files-header{ border-top: 1px solid rgba(0,0,0,0.2);} /* Delimiter between "working files" and project files */
 #project-dropdown-toggle:hover{ /* Open url when hover */
     color:#FFF!important;
     background:rgba(255,255,255,0.1);
-	border:1px solid rgba(255,255,255,0.3);
+    border:1px solid rgba(255,255,255,0.3);
 }
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working fiels"*/
-	color:#FFF!important;
+    color:#FFF!important;
 }
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
-	background:#4284bf;
+    background:#4284bf;
 }
 .sidebar-selection-triangle.triangle-visible::before{
-	border-left:12px solid #4284bf;
+    border-left:12px solid #4284bf;
 }
 
 
 #status-bar{ /* Bottom status bar */
     background:#0b3d6a;
     border-top:1px solid #aaa;
-	color:#FFF;
+    color:#FFF;
 }
 
 .inline-widget{ /* Quick-edit styles */
-	background:rgba(255,255,255, 0.06);
+    background:rgba(255,255,255, 0.06);
 }
 
 .cm-s-cobalt.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-cobalt.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
@@ -66,11 +66,11 @@
 
 .cm-s-cobalt span.CodeMirror-matchingtag {
     color:white;
-	background:rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.2);
 }
 
 .cm-s-cobalt.CodeMirror pre {padding:0 15px 0 5px}
 
 .cm-s-cobalt.CodeMirror .CodeMirror-gutter-elt {
-	padding: 0 5px 0 7px;
+    padding: 0 5px 0 7px;
 }

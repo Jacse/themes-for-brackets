@@ -60,11 +60,11 @@
 .cm-s-brunante.CodeMirror span.CodeMirror-matchingtag {background-color: #cda869; color: black; }
 .cm-s-brunante.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
     background-color: #27282E;
-	color:#f9ee98;
+    color:#f9ee98;
 }
 
 .cm-s-brunante.CodeMirror pre {padding:0 15px 0 5px}
 
 .cm-s-brunante.CodeMirror .CodeMirror-gutter-elt {
-	padding: 0 4px 0 12px;
+    padding: 0 4px 0 12px;
 }
