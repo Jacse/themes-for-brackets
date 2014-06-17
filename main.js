@@ -137,7 +137,6 @@ define(function (require, exports, module) {
         }
         var themesInDir = [], i;
         for (i = 0; i < contents.length; i++) {
-            themesInDir.push(contents[i].name.replace(".css", ""));
             if (contents[i].name !== ".csslintrc") {
                 themesInDir.push(contents[i].name.replace(".css", ""));
             }
