@@ -54,7 +54,6 @@
 	width:10px !important;
 	background:none;
 }
-.CodeMirror .CodeMirror-hscrollbar{ height:10px; right:10px !important;} /*Scrollbar horizontal*/
 
 .CodeMirror ::-webkit-scrollbar {width: 8px; height:8px;}
 .CodeMirror ::-webkit-scrollbar-track {background: none;}
