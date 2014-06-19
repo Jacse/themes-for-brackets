@@ -5,18 +5,13 @@ Good luck, have fun!
 
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
     background:#2f3234;
-      
 }
 
 .sidebar-selection-triangle .triangle-visible::before{
     border-left:12px solid #2f3234;
-    
 }
 
-
 /*Sidebar*/
-
-
 
 #sidebar{background-color:#25292a;color:#586e75;} /*General sidebar style*/
 #sidebar #working-set-header{background-color:#25292a;color:#586e75;} /*"Working files" header*/
@@ -35,8 +30,6 @@ Good luck, have fun!
     text-shadow: 0 0 1px #000;
 }
 
-
-
 /*Main area*/
 .CodeMirror{background-color:#25292a!important;color:#979797;line-height:1.3em;}/*Main coding area, without line count.*/
 
@@ -53,12 +46,10 @@ Good luck, have fun!
 .CodeMirror-scrollbar-filler {height:8px !important; width:8px !important; background:#3B3D3F;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
 .CodeMirror-gutter-filler{ height:8px !important; background:#3B3D3F;color:#657A81;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
 
-
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{background-color:#25292a}/*Left vertical bar with line count*/
 .CodeMirror-gutter{background-color:#25292a;color: #586E75!important} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
 .CodeMirror-linenumbers{background-color:#25292a;color:#657A81!important;} /*Line count bar only, without "gutter"*/
 .CodeMirror-foldgutter{background-color:#25292a} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
-
 
 /*Syntax elements & action*/
 
@@ -69,13 +60,11 @@ Good luck, have fun!
 .CodeMirror .cm-variable{color:#75715E} /*Variable name ex. class Variable_name */
 .CodeMirror .cm-variable-2{color:#979797} /*Variable declaration ex. $variable */
 .CodeMirror .cm-property{color:#979797} /*Property ex. color in color:#f00;*/
-.CodeMirror .cm-operator{color:#738A13} /*Operators ex. dots (:) between property and atom value*/ 
+.CodeMirror .cm-operator{color:#738A13} /*Operators ex. dots (:) between property and atom value*/
 .CodeMirror .cm-comment{color:#7D8C93} /*Comment*/
 .CodeMirror .cm-string{color:#678CB1} /*String elements ex. "description" in name="description" - including quotation*/
 .CodeMirror .cm-meta{color:#93A1A1} /*Meta elements like ex.: <!DOCTYPE html>*/
 .CodeMirror .cm-qualifier{color:#C4C4C4}/*Final qualifier like css class ex.: .cm-qualifier*/
-
-
 
 .CodeMirror .cm-tag{color:#93A1A1;} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{color:#C4C4C4;}/* Attribute ex. rel, href, name*/
@@ -88,7 +77,6 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: so
 .CodeMirror-selected{background-color:#222218!important;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#2f393c!important;} /*Active line - may need !important*/
 .CodeMirror-gutter-elt{background-color:#25292a!important;color: #586e75!important; padding: 0 15px 0 10px;} /*Active line, line count section*/
-
 
 /*Status bar - bottom*/
 #status-bar{background-color:#25292a;color:#7D8C93;}/*Bottom status bar*/
