@@ -78,7 +78,6 @@ Good luck, have fun!
 
 
 .CodeMirror .cm-tag{color:#93A1A1;} /*Tags ex. ul or <ul>*/
-.CodeMirror .cm-attribute{color:#;} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-attribute{color:#C4C4C4;}/* Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#C4C4C4;} /*Element call ex. array, class, public function, if, elseif, !important*/
 .CodeMirror .cm-matchingtag{background:#363636;}
