@@ -71,7 +71,7 @@ Good luck, have fun!
 .CodeMirror .cm-property{color:#111111} /*Property ex. color in color:#f00;*/
 .CodeMirror .cm-operator{color:#738A13} /*Operators ex. dots (:) between property and atom value*/ 
 .CodeMirror .cm-comment{color:#007410} /*Comment*/
-.CodeMirror .cm-string{color:#1164ad; text-shadow: 0px 1px 1px #949D9D;} /*String elements ex. "description" in name="description" - including quotation*/
+.CodeMirror .cm-string{color:#ededed;} /*String elements ex. "description" in name="description" - including quotation*/
 .CodeMirror .cm-meta{color:#1C1CE8} /*Meta elements like ex.: <!DOCTYPE html>*/
 .CodeMirror .cm-qualifier{color:#1164ad; text-shadow: 1px 1px 1px #a9acb7;}/*Final qualifier like css class ex.: .cm-qualifier*/
 
