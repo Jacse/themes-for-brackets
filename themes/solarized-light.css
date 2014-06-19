@@ -5,26 +5,20 @@ Good luck, have fun!
 
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
     background:#ece7d5;
-    
-   
 }
 
 .sidebar-selection-triangle.triangle-visible::before{
     border-left:12px solid #ece7d5;
-    
 }
 
-
 /*Sidebar*/
-
-
 
 #sidebar{background-color:#fdf6e3;color:#586e75;} /*General sidebar style*/
 #sidebar #working-set-header{background-color:#fdf6e3;color:#586e75;} /*"Working files" header*/
 #sidebar #open-files-container{background-color:#fdf6e3;color: #586e75;} /*Working files style*/
 
 /*Project file header*/
-#sidebar #project-files-header{background-color:#ece7d5;color:#657A81;} /*Browser header, path select, search, X etc.*/
+#sidebar #project-files-header{background-color:#ece7d5;color:#657A81;text-shadow: none;} /*Browser header, path select, search, X etc.*/
 
 /*Project files container*/
 #sidebar #project-files-container{background-color:#fdf6e3;color:#657A81;} /*Project files - WITHOUT header*/
@@ -33,10 +27,8 @@ Good luck, have fun!
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working files"*/
     color:#657A81;
-    text-shadow: 0px 1px 1px #efdea9;
+    text-shadow: 0 1px 1px #efdea9;
 }
-
-
 
 /*Main area*/
 .CodeMirror{ background:#fdf6e3;color:#657A81;line-height:1.3em;}/*Main coding area, without line count.*/
@@ -60,7 +52,6 @@ Good luck, have fun!
 .CodeMirror-linenumbers{background-color:#fdf6e3;color:#657A81!important;} /*Line count bar only, without "gutter"*/
 .CodeMirror-foldgutter{background-color:#fdf6e3} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
 
-
 /*Syntax elements & action*/
 
 .CodeMirror .cm-bracket { color: #93A1A1 !important ; } /* the < > */
@@ -76,8 +67,6 @@ Good luck, have fun!
 .CodeMirror .cm-meta{color:#93A1A1} /*Meta elements like ex.: <!DOCTYPE html>*/
 .CodeMirror .cm-qualifier{color:#738A13}/*Final qualifier like css class ex.: .cm-qualifier*/
 
-
-
 .CodeMirror .cm-tag{color:#268BD2;} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{color:#93A1A1} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#738A13} /*Element call ex. array, class, public function, if, elseif, !important*/
@@ -89,7 +78,6 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: so
 .CodeMirror-selected{background-color:#073642!important;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#ece7d5!important;} /*Active line - may need !important*/
 .CodeMirror-gutter-elt{background-color:#fdf6e3!important;color: #586e75!important; padding: 0 15px 0 10px;} /*Active line, line count section*/
-
 
 /*Status bar - bottom*/
 #status-bar{background-color:#fdf6e3;color:#657A81;}/*Bottom status bar*/
