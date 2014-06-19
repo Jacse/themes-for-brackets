@@ -137,7 +137,9 @@ define(function (require, exports, module) {
         }
         var themesInDir = [], i;
         for (i = 0; i < contents.length; i++) {
-            themesInDir.push(contents[i].name.replace(".css", ""));
+            if (contents[i].name !== ".DS_Store") {
+                themesInDir.push(contents[i].name.replace(".css", ""));
+            }
         }
 
         //Make sure custom themes directory exists
@@ -151,7 +153,9 @@ define(function (require, exports, module) {
                 }
                 var themesInDir2 = [], i;
                 for (i = 0; i < contents.length; i++) {
-                    themesInDir2.push(contents[i].name);
+                    if (contents[i].name !== ".DS_Store") {
+                        themesInDir2.push(contents[i].name);
+                    }
                 }
                 console.log("Adding all themes to themes menu...");
                 Themes.getDirFiles(themesInDir.concat(themesInDir2));
