@@ -118,7 +118,7 @@ div.modal-bar div#replace-group input#replace-with {
 
 /* Einzelne Datein/Ordner - available files/folders */
 #sidebar #project-files-container ul li a {
-    background-color: inherit;
+    background-color: transparent;
     color: #999;
     border: 1px solid rgba(0, 0, 0, 0);
 }
