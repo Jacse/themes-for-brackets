@@ -137,9 +137,7 @@ define(function (require, exports, module) {
         }
         var themesInDir = [], i;
         for (i = 0; i < contents.length; i++) {
-            if (contents[i].name !== ".csslintrc") {
-                themesInDir.push(contents[i].name.replace(".css", ""));
-            }
+            themesInDir.push(contents[i].name.replace(".css", ""));
         }
 
         //Make sure custom themes directory exists
