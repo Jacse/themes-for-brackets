@@ -32,7 +32,7 @@ Good luck, have fun!
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working files"*/
     color:#586e75;
-    text-shadow: 0px 0px 1px #000;
+    text-shadow: 0 0 1px #000;
 }
 
 
