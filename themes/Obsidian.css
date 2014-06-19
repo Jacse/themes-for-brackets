@@ -5,26 +5,19 @@ Good luck, have fun!
 
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
     background:#2f3234;
-    
-   
 }
 
 .sidebar-selection-triangle.triangle-visible::before{
     border-left:12px solid #2f3234;
-    
 }
-
-
 /*Sidebar*/
-
-
 
 #sidebar{background-color:#293134;color:#586e75;} /*General sidebar style*/
 #sidebar #working-set-header{background-color:#293134;color:#586e75;} /*"Working files" header*/
 #sidebar #open-files-container{background-color:#293134;color: #677777;} /*Working files style*/
 
 /*Project file header*/
-#sidebar #project-files-header{background-color:#2f3234;color:#657A81;} /*Browser header, path select, search, X etc.*/
+#sidebar #project-files-header{background-color:#2f3234;color:#fff;} /*Browser header, path select, search, X etc.*/
 
 /*Project files container*/
 #sidebar #project-files-container{background-color:#293134;color:#657A81;} /*Project files - WITHOUT header*/
@@ -32,11 +25,9 @@ Good luck, have fun!
 
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working files"*/
-    color:#586e75;
-    text-shadow: 0px 0px 1px #000;
+    color:#fff;
+    text-shadow: 0 0 1px #000;
 }
-
-
 
 /*Main area*/
 .CodeMirror{ background:#293134;color:#E0E2E4;line-height:1.3em;}/*Main coding area, without line count.*/
@@ -54,12 +45,10 @@ Good luck, have fun!
 .CodeMirror-scrollbar-filler {height:8px !important; width:8px !important; background:#3B3D3F;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
 .CodeMirror-gutter-filler{ height:8px !important; background:#3B3D3F;color:#657A81;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
 
-
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters{background-color:#293134}/*Left vertical bar with line count*/
 .CodeMirror-gutter{background-color:#293134;color: #586E75!important} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
 .CodeMirror-linenumbers{background-color:#293134;color:#657A81!important;} /*Line count bar only, without "gutter"*/
 .CodeMirror-foldgutter{background-color:#293134} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
-
 
 /*Syntax elements & action*/
 
@@ -76,8 +65,6 @@ Good luck, have fun!
 .CodeMirror .cm-meta{color:#93A1A1} /*Meta elements like ex.: <!DOCTYPE html>*/
 .CodeMirror .cm-qualifier{color:#738A13}/*Final qualifier like css class ex.: .cm-qualifier*/
 
-
-
 .CodeMirror .cm-tag{color:#93C763;} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{color:#678CB1} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#93C763} /*Element call ex. array, class, public function, if, elseif, !important*/
@@ -89,7 +76,6 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: so
 .CodeMirror-selected{background-color:#616161!important;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#2f393c!important;} /*Active line - may need !important*/
 .CodeMirror-gutter-elt{background-color:#293134!important;color: #586e75!important; padding: 0 15px 0 10px;} /*Active line, line count section*/
-
 
 /*Status bar - bottom*/
 #status-bar{background-color:#293134;color:#7D8C93;}/*Bottom status bar*/
