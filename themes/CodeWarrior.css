@@ -75,10 +75,7 @@ Good luck, have fun!
 .CodeMirror .cm-meta{color:#1C1CE8} /*Meta elements like ex.: <!DOCTYPE html>*/
 .CodeMirror .cm-qualifier{color:#1164ad; text-shadow: 1px 1px 1px #a9acb7;}/*Final qualifier like css class ex.: .cm-qualifier*/
 
-
-
 .CodeMirror .cm-tag{color:#1C1CE8;} /*Tags ex. ul or <ul>*/
-.
 .CodeMirror .cm-attribute{color:#3874A0;}/* Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#2626BF;} /*Element call ex. array, class, public function, if, elseif, !important*/
 .CodeMirror .cm-matchingtag{background:#363636;}
