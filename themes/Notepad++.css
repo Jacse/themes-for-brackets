@@ -28,7 +28,6 @@ Good luck, have fun!
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working files"*/
     color:#000!important;
-    font-size: 1.1em;
     text-shadow: none;
     }
 
