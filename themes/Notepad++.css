@@ -1,0 +1,96 @@
+/*
+BearTheme is bare theme for styling Adobe Brackets (Code Mirror) editor. Some elements need be overwritien, if you find comment with "may need !important", give it a try.
+Good luck, have fun!
+*/
+
+.sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
+    background:#dbdada;
+    
+}
+
+.sidebar-selection-triangle .triangle-visible::before{
+    border-left:12px solid #2f3234;
+}
+
+/*Sidebar*/
+
+#sidebar{background-color:#E4E4E4;color:#000;} /*General sidebar style*/
+#sidebar #working-set-header{background-color:#dbdada;color:#000;} /*"Working files" header*/
+#sidebar #open-files-container{background-color:#E4E4E4;color: #677777;} /*Working files style*/
+
+/*Project file header*/
+#sidebar #project-files-header{background-color:#dbdada;color:#000;text-shadow: none;} /*Browser header, path select, search, X etc.*/
+
+/*Project files container*/
+#sidebar #project-files-container{background-color:#E4E4E4;color:#000;} /*Project files - WITHOUT header*/
+
+
+.jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
+#open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working files"*/
+    color:#000!important;
+    font-size: 1.1em;
+    text-shadow: none;
+    }
+
+/*Main area*/
+.CodeMirror{background-color:#fff!important;color:#000;line-height:1.3em;font-size: 14px;}/*Main coding area, without line count.*/
+
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid #8000FF; z-index: 3;} /*Cursor stling*/
+
+/*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
+.CodeMirror .CodeMirror-vscrollbar{width: 8px; bottom:8px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
+.CodeMirror .CodeMirror-hscrollbar{height:8px; right:8px !important;} /*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
+
+.CodeMirror ::-webkit-scrollbar {color: #606266; width: 8px; height:8px;} /* The width of vertical scrollbars and height of horizontal scrollbars*/
+.CodeMirror ::-webkit-scrollbar-track {background-color:#DBDADA} /* The track that scrollbars run in */
+.CodeMirror ::-webkit-scrollbar-thumb { background-color: #606266;border-radius: 4px} /* The scrollbar thumb */
+
+.CodeMirror-scrollbar-filler {height:8px !important; width:8px !important; background:#3B3D3F;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
+.CodeMirror-gutter-filler{ height:8px !important; background:#E4E4E4;color:#657A81;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
+
+.CodeMirror .CodeMirror-scroll .CodeMirror-gutters{background-color:#E4E4E4}/*Left vertical bar with line count*/
+.CodeMirror-gutter{background-color:#E4E4E4;color: #586E75!important} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
+.CodeMirror-linenumbers{background-color:#E4E4E4;color:#657A81!important;} /*Line count bar only, without "gutter"*/
+.CodeMirror-foldgutter{background-color:#E4E4E4} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
+
+/*Syntax elements & action*/
+
+.CodeMirror .cm-bracket { color: #93A1A1; } /* the < > */
+.CodeMirror .cm-atom{color:#000000} /*Atribbute value ex. #f00 in color:#f00;*/
+.CodeMirror .cm-def{color:#75715E;} /*variable definition*/
+.CodeMirror .cm-number{color:#FF0000 } /*Numbers*/
+.CodeMirror .cm-variable{color:#000;} /*Variable name ex. class Variable_name */
+.CodeMirror .cm-variable-2{color:#000;} /*Variable declaration ex. $variable */
+.CodeMirror .cm-property{color:#8080C0} /*Property ex. color in color:#f00;*/
+.CodeMirror .cm-operator{color:#000} /*Operators ex. dots (:) between property and atom value*/
+.CodeMirror .cm-comment{color:#008000} /*Comment*/
+.CodeMirror .cm-string{color:#8000FF} /*String elements ex. "description" in name="description" - including quotation*/
+.CodeMirror .cm-meta{color:#000} /*Meta elements like ex.: <!DOCTYPE html>*/
+.CodeMirror .cm-qualifier{color:#0080FF}/*Final qualifier like css class ex.: .cm-qualifier*/
+
+.CodeMirror .cm-tag{color:#0000FF;} /*Tags ex. ul or <ul>*/
+.CodeMirror .cm-attribute{color:#FF0000;}/* Attribute ex. rel, href, name*/
+.CodeMirror .cm-keyword {color:#000080;font-style:italic;font-weight: bold} /*Element call ex. array, class, public function, if, elseif, !important*/
+.CodeMirror .cm-matchingtag{background:#363636;}
+
+.CodeMirror .CodeMirror-matchingtag{background:none;border-bottom: solid 1px #269186} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
+div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: solid 1px #666;color:#ff3426} /*Matching brackets, open/close*/
+
+.CodeMirror-selected{background-color:#C0C0C0!important;} /*Selected lines - may need !important*/
+.CodeMirror-activeline-background{background-color:#E8E8FF!important;} /*Active line - may need !important*/
+.CodeMirror-gutter-elt{background-color:#E4E4E4!important;color: #586e75!important; padding: 0 15px 0 10px;} /*Active line, line count section*/
+
+/*Status bar - bottom*/
+#status-bar{background-color:#E4E4E4;color:#000;}/*Bottom status bar*/
+
+/*Right toolbar - live preview, extensions*/
+#main-toolbar{background-color:#E4E4E4} /*Whole toolbar*/
+
+/*Inline editor(Ex. Quick Edit - Ctrl + E)*/
+.inline-widget{background:#E4E4E4;color:#000;} /*Inline widget wrap, won't affect line count bar*/
+
+/*Global rules apply to inline editor scroll, just use .inline-widget class to target only bar options of this area. Example below.*/
+.inline-widget .CodeMirror-gutter{background:#DBDADA;color:#000;} /*Inline editor "gutter", won't affect line count in inline editor*/
+.inline-widget .CodeMirror-linenumbers{background:#DBDADA !important;color:#000;} /*Inline editor line numbers bar - no "gutter"*/
+
+.inline-widget .related-container{background:#DBDADA} /*Related container with similar rules*/
