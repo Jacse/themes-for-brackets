@@ -10,6 +10,6 @@ Coding Guidelines:
 * Install csslint extension and make sure there are no errors.
 
 How to use csslint
-1 Clone the git repository https://github.com/Jacse/themes-for-brackets.git
-1 In brackets select open folder and open the themes-for-brackets folder that contains this CONTRIBUTING.MD and the .csslintrc file
-1 With .csslintrc in the root folder and the extension installed in brackets it will now work!
+1. Clone the git repository https://github.com/Jacse/themes-for-brackets.git
+1. In brackets select open folder and open the themes-for-brackets folder that contains this CONTRIBUTING.MD and the .csslintrc file
+1. With .csslintrc in the root folder and the extension installed in brackets it will now work!
