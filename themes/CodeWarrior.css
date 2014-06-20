@@ -5,18 +5,13 @@ Good luck, have fun!
 
 .sidebar-selection, .sidebar-selection-triangle{ /* Selected file or folder */
     background:#919a9a;
-      
 }
 
 .sidebar-selection-triangle .triangle-visible::before{
     border-left:12px solid #919a9a;
-    
 }
 
-
 /*Sidebar*/
-
-
 
 #sidebar{background-color:#949D9D;color:#fff;} /*General sidebar style*/
 #sidebar #working-set-header{background-color:#949D9D;color:#fff;} /*"Working files" header*/
@@ -28,14 +23,11 @@ Good luck, have fun!
 /*Project files container*/
 #sidebar #project-files-container{background-color:#949D9D;color:#fff;} /*Project files - WITHOUT header*/
 
-
 .jstree-brackets li a, .jstree-brackets li .extension, .jstree-brackets li a.jstree-clicked, /* Files, folder and extensions */
 #open-files-container li a, #open-files-container li .extension, #open-files-container li a.jstree-clicked{ /* Files, folder and extensions in "working files"*/
     color:#fff;
-    text-shadow: 0px 1px 1px #000;
+    text-shadow: 0 1px 1px #000;
 }
-
-
 
 /*Main area*/
 .CodeMirror{background-color:#9CA3A3!important;color:#111111;font-size: 13px;}/*Main coding area, without line count.*/
@@ -59,7 +51,6 @@ Good luck, have fun!
 .CodeMirror-linenumbers{color:#fff!important;} /*Line count bar only, without "gutter"*/
 .CodeMirror-foldgutter{background-color:#fff} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
 
-
 /*Syntax elements & action*/
 
 .CodeMirror .cm-bracket { color: #1C1CE8; } /* the < > */
@@ -69,7 +60,7 @@ Good luck, have fun!
 .CodeMirror .cm-variable{color:#009092} /*Variable name ex. class Variable_name */
 .CodeMirror .cm-variable-2{color:#111111} /*Variable declaration ex. $variable */
 .CodeMirror .cm-property{color:#111111} /*Property ex. color in color:#f00;*/
-.CodeMirror .cm-operator{color:#738A13} /*Operators ex. dots (:) between property and atom value*/ 
+.CodeMirror .cm-operator{color:#738A13} /*Operators ex. dots (:) between property and atom value*/
 .CodeMirror .cm-comment{color:#007410} /*Comment*/
 .CodeMirror .cm-string{color:#ededed;} /*String elements ex. "description" in name="description" - including quotation*/
 .CodeMirror .cm-meta{color:#1C1CE8} /*Meta elements like ex.: <!DOCTYPE html>*/
