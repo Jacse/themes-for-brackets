@@ -9,6 +9,7 @@
 * Please use 4 spaces instead of tabs.
 * Make sure there is a new line at the end of the file.
 * Install csslint extension and make sure there are no errors.
+* Themes should be all lower case and use a - instead of a space for example: theme-name.css
 
 ###How to use csslint
 
