@@ -35,8 +35,7 @@
 }
 
 .inline-widget a.close {
-color: black;
-text-shadow: none;
+    color: black !important;
 }
 
 /* CodeMirror styles */
