@@ -35,7 +35,7 @@
 .inline-widget a.close {
     color: black !important;
 }
-/* CodeMirror styles */
+/* CodeMirror styles \Brackets\www\thirdparty\CodeMirror2\theme\rubyblue.css */
 .CodeMirror pre {padding: 0 15px 0 5px;}
 
 .cm-s-rubyblue.CodeMirror { background: #112435; color: white; }
@@ -59,7 +59,7 @@
 .cm-s-rubyblue span.cm-error { color: #AF2018; }
 
 .cm-s-rubyblue .CodeMirror-activeline-background {background: #173047 !important;}
-
+/* End CodeMirror styles */
 
 .cm-s-rubyblue.CodeMirror-focused .CodeMirror-activeline-background {
     background-color: rgba(255,255,255,0.1);
