@@ -1,8 +1,10 @@
 ###We reccommend the following brackets extensions to aid in debugging:
 
 * https://github.com/cfjedimaster/brackets-csslint
-* https://github.com/mikaeljorhult/brackets-todo
 * https://github.com/dsbonev/whitespace-normalizer
+* https://github.com/mikaeljorhult/brackets-todo (optional)
+* https://github.com/DennisKehrig/brackets-show-whitespace (optional)
+* https://github.com/couzteau/brackets-git-info (optional)
 
 ###Coding Guidelines:
 
