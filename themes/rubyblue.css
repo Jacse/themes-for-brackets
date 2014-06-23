@@ -34,6 +34,11 @@
     color:#FFF;
 }
 
+.inline-widget a.close {
+color: black;
+text-shadow: none;
+}
+
 /* CodeMirror styles */
 .CodeMirror pre {padding: 0 15px 0 5px;}
 
