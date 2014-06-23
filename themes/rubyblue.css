@@ -34,10 +34,6 @@
     color:#FFF;
 }
 
-.inline-widget { /* Quick-edit styles */
-    background: #1F4661;
-}
-
 /* CodeMirror styles */
 .CodeMirror pre {padding: 0 15px 0 5px;}
 
