@@ -68,3 +68,14 @@
 .cm-s-brunante.CodeMirror .CodeMirror-gutter-elt {
     padding: 0 4px 0 12px;
 }
+/* Quick Docs */
+.css-prop-values dl dt {
+    color: #8DA6CE;
+}
+.inline-widget p {
+    color:#ccc;
+}
+.css-prop-defn code,.css-prop-defn h1 {
+    color: #ac805b;
+}
+
