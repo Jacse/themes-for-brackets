@@ -65,7 +65,7 @@ Good luck, have fun!
 .CodeMirror .cm-comment{color:#008000} /*Comment*/
 .CodeMirror .cm-string{color:#8000FF} /*String elements ex. "description" in name="description" - including quotation*/
 .CodeMirror .cm-meta{color:#000} /*Meta elements like ex.: <!DOCTYPE html>*/
-.CodeMirror .cm-qualifier{color:#0080FF}/*Final qualifier like css class ex.: .cm-qualifier*/
+.CodeMirror .cm-qualifier{color:#FF0000}/*Final qualifier like css class ex.: .cm-qualifier*/
 
 .CodeMirror .cm-tag{color:#0000FF;} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{color:#FF0000;}/* Attribute ex. rel, href, name*/
@@ -77,7 +77,7 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: so
 
 .CodeMirror-selected{background-color:#C0C0C0!important;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#E8E8FF!important;} /*Active line - may need !important*/
-.CodeMirror-gutter-elt{background-color:#E4E4E4!important;color: #586e75!important; padding: 0 15px 0 10px;} /*Active line, line count section*/
+.CodeMirror-gutter-elt{background-color:#E4E4E4!important;color: #586e75!important; } /*Active line, line count section*/
 
 /*Status bar - bottom*/
 #status-bar{background-color:#E4E4E4;color:#000;}/*Bottom status bar*/
