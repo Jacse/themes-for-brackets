@@ -56,7 +56,7 @@ div.CodeMirror span.CodeMirror-matchingbracket{background:#403c37;} /*Matching b
 
     /*Inline editor(Ex. Quick Edit - Ctrl + E)*/
 
-.cm-s-peacock.CodeMirror .inline-widget{
+.CodeMirror .inline-widget{
     background: #403c37;
     color: #ccc;
 }
