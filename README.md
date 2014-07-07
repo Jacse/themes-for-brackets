@@ -5,13 +5,13 @@ With Themes for Brackets you can apply themes to Brackets via a menu in the top 
 How to install
 ==================
 Installing Themes for Brackets is easy. All you have to do is this:
-* file->extension manager..., or click the lego brick icon in the right toolbar
+* file -> extension manager..., or click the lego brick icon in the right toolbar
 * Click the tab called "available"
 * Type "themes" in the top right search bar
 * Locate "Themes for Brackets" (not to be confused with just "Themes", which is a completely other extension, which doesn't style all of Brackets) and click the install button next to it
 
 If you are having trouble installing the extension that way, you can follow theses steps instead (the first approach is to be preffered)
-* file->extension manager..., or click the lego brick icon in the right toolbar
+* file -> extension manager..., or click the lego brick icon in the right toolbar
 * Install from url...
 * Copy https://github.com/Jacse/themes-for-brackets in there and click OK
 
