@@ -21,3 +21,9 @@
 1. Clone the git repository https://github.com/Jacse/themes-for-brackets.git
 2. In brackets select open folder and open the themes-for-brackets folder that contains this CONTRIBUTING.md and the .csslintrc file
 3. With .csslintrc in the root folder and the extension installed in brackets it will now work!
+
+###Creating your own theme is easy.
+1. Have a look at Pawel's bare Brackets theme [here](https://github.com/trimek/BearTheme/blob/master/BearTheme.css).
+2. Copy it, customize it and add it to the custom themes folder
+  3. On windows it is located at `C:\Users\\[USERNAME]\AppData\Roaming\Brackets\custom themes`
+  4. On a mac it is located at `~/Library/Application Support/Brackets/custom themes`
