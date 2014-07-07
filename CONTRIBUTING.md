@@ -26,5 +26,6 @@
 ###Creating your own theme is easy.
 1. Have a look at Pawel's bare Brackets theme [here](https://github.com/trimek/BearTheme/blob/master/BearTheme.css).
 2. Copy it, customize it, and add it to the custom themes folder
-  3. On windows it is located at `C:\Users\[USERNAME]\AppData\Roaming\Brackets\custom themes`
-  4. On a mac it is located at `~/Library/Application Support/Brackets/custom themes`
+  3. On Windows it is located at `C:\Users\[USERNAME]\AppData\Roaming\Brackets\custom themes`
+  4. On OS X it is located at `~/Library/Application Support/Brackets/custom themes`
+  5. On Linux it is located at `/home/[USERNAME]/.config/Brackets/custom themes` 
