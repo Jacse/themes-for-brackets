@@ -1,5 +1,6 @@
 ## Please Ask before submitting a new theme
 * We are currently not looking to add any new themes. See https://github.com/Jacse/themes-for-brackets/issues/85
+* If you feel that we are missing a theme or would like to add one please open an issue before you spend time creating a new theme.
 
 ###We reccommend the following brackets extensions to aid in debugging:
 
