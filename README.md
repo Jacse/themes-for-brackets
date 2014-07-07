@@ -20,10 +20,7 @@ List of themes
 
 How to make you own theme
 ==================
-Creating your own theme is easy.<br/>
-Have a look at Pawel's bare Brackets theme [here](https://github.com/trimek/BearTheme/blob/master/BearTheme.css).<br/>
-Copy it, customize it and add it to the custom themes folder (on windows it is located at C:\Users\\[USERNAME]\AppData\Roaming\Brackets\custom themes) (on a mac it is located at ~/Library/Application Support/Brackets/custom themes).
-
+* Please see [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 How to install
 ==================
