@@ -1,3 +1,6 @@
+## Please Ask before submitting a new theme
+* We are currently not looking to add any new themes.
+
 ###We reccommend the following brackets extensions to aid in debugging:
 
 * https://github.com/cfjedimaster/brackets-csslint
