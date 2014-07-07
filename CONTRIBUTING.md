@@ -1,5 +1,5 @@
 ## Please Ask before submitting a new theme
-* We are currently not looking to add any new themes.
+* We are currently not looking to add any new themes. See #85
 
 ###We reccommend the following brackets extensions to aid in debugging:
 
