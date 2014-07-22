@@ -28,4 +28,4 @@
 2. Copy it, customize it, and add it to the custom themes folder
   3. On Windows it is located at `C:\Users\[USERNAME]\AppData\Roaming\Brackets\custom themes`
   4. On OS X it is located at `~/Library/Application Support/Brackets/custom themes`
-  5. On Linux it is located at `/home/[USERNAME]/.config/Brackets/custom themes` 
+  5. On Linux it is located at `~/.config/Brackets/custom themes` 
