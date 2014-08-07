@@ -1,6 +1,6 @@
 Themes for Brackets
 ==================
-With Themes for Brackets you can apply themes to Brackets via a menu in the top bar.
+Themes for Brackets was originally an extension which brought themes to the Brackets editor before it had native support for themes. Now Themes for Brackets is a collection of great themes that style all of the Brackets window. 
 
 How to install
 ==================
@@ -8,7 +8,7 @@ Installing Themes for Brackets is easy. All you have to do is this:
 * file -> extension manager..., or click the lego brick icon in the right toolbar
 * Click the tab called "available"
 * Type "themes" in the top right search bar
-* Locate "Themes for Brackets" (not to be confused with just "Themes", which is a completely other extension, which doesn't style all of Brackets) and click the install button next to it
+* Locate "Themes for Brackets"  and click the install button next to it
 
 If you are having trouble installing the extension that way, you can follow theses steps instead (the first approach is to be preffered)
 * file -> extension manager..., or click the lego brick icon in the right toolbar
@@ -17,9 +17,6 @@ If you are having trouble installing the extension that way, you can follow thes
 
 Troubleshooting
 ==================
-* There are no commands in the themes menu
- - Try re-opening Brackets, that should help.
- - If that doesn't help and you're on a Mac, you might need to create the `/Applications/Brackets.app/Contents/www/extensions/dev` folder.
 * Line numbers are looking weird or scrollbars are not styled/have dissapeared
  - Try hitting F5 (Save changes before doing so!).
 
@@ -36,12 +33,10 @@ List of themes
 * Night Sky <br />![Night Sky Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/night-sky.png)
 * Dark Soda <br />![Dark Soda Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png)
 * Rubyblue <br />![Rubyblue Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/rubyblue.png)
-* Visual Studio <br />![Visual Studio Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/visual-studio.png)
 * Solarized Dark <br />![Solarized Dark Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/solarized-dark.png)
 * Cobalt <br />![Cobalt Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/cobalt.png)
 * Light Table <br />![Light Table Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/light-table.png)
 * MBO <br />![MBO Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/mbo.png)
 * Dracula <br />![Dracula Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dracula.png)
 * Brunante <br />![Brunante Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/brunante.png)
-* Superman <br />![Superman Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/superman.png)
 * Default <br />![Default Theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/default.png)
