@@ -28,9 +28,9 @@ http://ethanschoonover.com/solarized
     border-left:12px solid #134957;
 }
 
-.cm-s-solarized-dark span.CodeMirror-matchingtag {
+.cm-s-Themes-for-Brackets-solarized-dark span.CodeMirror-matchingtag {
     color:#EEE !important;
-    background:none;
+    background:none !Important;
 }
 
 /*
@@ -57,83 +57,83 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 
 /* Color scheme for code-mirror */
 
-.cm-s-solarized-dark {
+.cm-s-Themes-for-Brackets-solarized-dark, .cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-scroll {
   line-height: 1.45em;
   color: #839496;
   background-color:  #002b36;
   text-shadow: #002b36 0 1px;
 }
 
-.cm-s-solarized-dark .CodeMirror-widget {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-widget {
   text-shadow: none;
 }
 
 
-.cm-s-solarized-dark .cm-keyword { color: #cb4b16 }
-.cm-s-solarized-dark .cm-atom { color: #d33682; }
-.cm-s-solarized-dark .cm-number { color: #d33682; }
-.cm-s-solarized-dark .cm-def { color: #2aa198; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-keyword { color: #cb4b16 }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-atom { color: #d33682; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-number { color: #d33682; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-def { color: #2aa198; }
 
-.cm-s-solarized-dark .cm-variable { color: #268bd2; }
-.cm-s-solarized-dark .cm-variable-2 { color: #b58900; }
-.cm-s-solarized-dark .cm-variable-3 { color: #6c71c4; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-variable { color: #268bd2; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-variable-2 { color: #b58900; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-variable-3 { color: #6c71c4; }
 
-.cm-s-solarized-dark .cm-property { color: #2aa198; }
-.cm-s-solarized-dark .cm-operator {color: #6c71c4;}
+.cm-s-Themes-for-Brackets-solarized-dark .cm-property { color: #2aa198; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-operator {color: #6c71c4;}
 
-.cm-s-solarized-dark .cm-comment { color: #586e75; font-style:italic; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-comment { color: #586e75; font-style:italic; }
 
-.cm-s-solarized-dark .cm-string { color: #859900; }
-.cm-s-solarized-dark .cm-string-2 { color: #b58900; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-string { color: #859900; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-string-2 { color: #b58900; }
 
-.cm-s-solarized-dark .cm-meta { color: #859900; }
-.cm-s-solarized-dark .cm-error,
-.cm-s-solarized-dark .cm-invalidchar {
+.cm-s-Themes-for-Brackets-solarized-dark .cm-meta { color: #859900; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-error,
+.cm-s-Themes-for-Brackets-solarized-dark .cm-invalidchar {
   color: #586e75;
   border-bottom: 1px dotted #dc322f;
 }
-.cm-s-solarized-dark .cm-qualifier { color: #b58900; }
-.cm-s-solarized-dark .cm-builtin { color: #d33682; }
-.cm-s-solarized-dark .cm-bracket { color: #cb4b16; }
-.cm-s-solarized-dark .CodeMirror-matchingbracket { color: #859900; }
-.cm-s-solarized-dark .CodeMirror-nonmatchingbracket { color: #dc322f; }
-.cm-s-solarized-dark .cm-tag { color: #93a1a1 }
-.cm-s-solarized-dark .cm-attribute {  color: #2aa198; }
-.cm-s-solarized-dark .cm-header { color: #586e75; }
-.cm-s-solarized-dark .cm-quote { color: #93a1a1; }
-.cm-s-solarized-dark .cm-hr {
+.cm-s-Themes-for-Brackets-solarized-dark .cm-qualifier { color: #b58900; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-builtin { color: #d33682; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-bracket { color: #cb4b16; }
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-matchingbracket { color: #859900; }
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-nonmatchingbracket { color: #dc322f; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-tag { color: #93a1a1 }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-attribute {  color: #2aa198; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-header { color: #586e75; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-quote { color: #93a1a1; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-hr {
   color: transparent;
   border-top: 1px solid #586e75;
   display: block;
 }
-.cm-s-solarized-dark .cm-link { color: #93a1a1; cursor: pointer; }
-.cm-s-solarized-dark .cm-special { color: #6c71c4; }
-.cm-s-solarized-dark .cm-em {
+.cm-s-Themes-for-Brackets-solarized-dark .cm-link { color: #93a1a1; cursor: pointer; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-special { color: #6c71c4; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-em {
   color: #999;
   text-decoration: underline;
   text-decoration-style: dotted; /* NOTE: Lint error but it is fine */
 }
-.cm-s-solarized-dark .cm-strong { color: #eee; }
-.cm-s-solarized-dark .cm-tab:before {
+.cm-s-Themes-for-Brackets-solarized-dark .cm-strong { color: #eee; }
+.cm-s-Themes-for-Brackets-solarized-dark .cm-tab:before {
   content: "➤";   /*visualize tab character*/
   color: #586e75;
 }
 
-.cm-s-solarized-dark .CodeMirror-focused .CodeMirror-selected {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-focused .CodeMirror-selected {
+  background: #386774 !important;
+  color: inherit;
+}
+
+.cm-s-Themes-for-Brackets-solarized-dark ::selection {
   background: #386774;
   color: inherit;
 }
 
-.cm-s-solarized-dark ::selection {
-  background: #386774;
-  color: inherit;
-}
-
-.cm-s-solarized-dark .CodeMirror-selected {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-selected {
   background: #586e75;
 }
 
-.cm-s-solarized-dark.CodeMirror .CodeMirror-linenumber {
+.cm-s-Themes-for-Brackets-solarized-dark.CodeMirror .CodeMirror-linenumber {
     padding-left: 18px;
 }
 
@@ -143,12 +143,12 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 
 
 /* Little shadow on the view-port of the buffer view */
-.cm-s-solarized-dark .CodeMirror {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror {
   box-shadow: inset 7px 0 12px -6px #000;
 }
 
 /* Gutter border and some shadow from it  */
-.cm-s-solarized-dark .CodeMirror-gutters {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-gutters {
   box-shadow: 0 10px 20px black;
   border-right: 1px solid;
 }
@@ -156,30 +156,30 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 /* Gutter colors and line number styling based of color scheme (dark / light) */
 
 /* Dark */
-.cm-s-solarized-dark .CodeMirror-gutters {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-gutters {
   background-color: #073642;
   border-color: #00232c;
   padding: 0 5px 0 5px;
 }
 
-.cm-s-solarized-dark .CodeMirror-linenumber {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-linenumber {
   text-shadow: #021014 0 -1px;
 }
 
 /* Common */
-.cm-s-solarized-dark .CodeMirror-linenumber {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-linenumber {
   color: #586e75;
 }
 
-.cm-s-solarized-dark .CodeMirror-gutter .CodeMirror-gutter-text {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-gutter .CodeMirror-gutter-text {
   color: #586e75;
 }
 
-.cm-s-solarized-dark .CodeMirror-lines {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-lines {
   padding-left: 5px;
 }
 
-.cm-s-solarized-dark .CodeMirror-lines .CodeMirror-cursor {
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-lines .CodeMirror-cursor {
   border-left: 1px solid #819090;
 }
 
@@ -187,10 +187,10 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 Active line. Negative margin compensates left padding of the text in the
 view-port
 */
-.cm-s-solarized-dark.CodeMirror-focused .CodeMirror-activeline-background {
+.cm-s-Themes-for-Brackets-solarized-dark.CodeMirror-focused .CodeMirror-activeline-background {
   background: rgba(255, 255, 255, 0.05);
 }
-.cm-s-solarized-dark.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt{
+.cm-s-Themes-for-Brackets-solarized-dark.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt{
   background:none;
   color:#ddd;
 }
@@ -199,8 +199,9 @@ view-port
     background:none;
 }
 
-.cm-s-solarized-dark.CodeMirror,
-.cm-s-solarized-dark .CodeMirror-gutters,
+.cm-s-Themes-for-Brackets-solarized-dark.CodeMirror,
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-gutters,
+.cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-scroll,
 #status-bar,
 #sidebar,
 #main-toolbar,

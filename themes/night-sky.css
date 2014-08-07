@@ -74,43 +74,43 @@ a.more-info{
 
 /** CodeMirror styles **/
 
-.cm-s-night-sky.CodeMirror pre {padding:0 15px 0 5px}
+.cm-s-Themes-for-Brackets-night-sky.CodeMirror pre {padding:0 15px 0 5px}
 
-.cm-s-night-sky .CodeMirror-matchingtag{
-    background:none;
+.cm-s-Themes-for-Brackets-night-sky .CodeMirror-matchingtag, .cm-s-Themes-for-Brackets-night-sky .CodeMirror-matchingbracket {
+    background: transparent !important;
     text-decoration:underline;
     color: #8DA6CE !important;
 }
 
-.cm-s-night-sky.CodeMirror .CodeMirror-linenumber {
+.cm-s-Themes-for-Brackets-night-sky.CodeMirror .CodeMirror-linenumber {
     padding-left: 18px;
 }
 
-.cm-s-night-sky.CodeMirror, #editor-holder #not-editor { background-color: rgb(30, 34, 29); color: #F8F8F8;}
-.cm-s-night-sky .CodeMirror-selected { background: #253B76 !important; }
-.cm-s-night-sky .CodeMirror-gutters { background: #2d2e30; border-right: 1px solid rgba(0,0,0,0.4); }
-.cm-s-night-sky .CodeMirror-linenumber { color: #888; }
-.cm-s-night-sky .CodeMirror-cursor { border-left: 1px solid #A7A7A7 !important; }
+.cm-s-Themes-for-Brackets-night-sky.CodeMirror, #editor-holder #not-editor, .cm-s-Themes-for-Brackets-night-sky .CodeMirror-scroll { background-color: rgb(30, 34, 29); color: #F8F8F8;}
+.cm-s-Themes-for-Brackets-night-sky .CodeMirror-selected { background: #253B76 !important; }
+.cm-s-Themes-for-Brackets-night-sky .CodeMirror-gutters { background: #2d2e30; border-right: 1px solid rgba(0,0,0,0.4); }
+.cm-s-Themes-for-Brackets-night-sky .CodeMirror-linenumber { color: #888; }
+.cm-s-Themes-for-Brackets-night-sky .CodeMirror-cursor { border-left: 1px solid #A7A7A7 !important; }
 
-.cm-s-night-sky .cm-keyword { color: #FBDE2D; }
-.cm-s-night-sky .cm-atom { color: #D8FA3C; }
-.cm-s-night-sky .cm-number { color: #D8FA3C; }
-.cm-s-night-sky .cm-def { color: #8DA6CE; }
-.cm-s-night-sky .cm-variable { color: #FF6400; }
-.cm-s-night-sky .cm-operator { color: #FBDE2D;}
-.cm-s-night-sky .cm-comment { color: #AEAEAE; }
-.cm-s-night-sky .cm-string { color: #61CE3C; }
-.cm-s-night-sky .cm-string-2 { color: #61CE3C; }
-.cm-s-night-sky .cm-meta { color: #D8FA3C; }
-.cm-s-night-sky .cm-error { background: #9D1E15; color: #F8F8F8; }
-.cm-s-night-sky .cm-builtin { color: #8DA6CE; }
-.cm-s-night-sky .cm-tag { color: #8DA6CE; }
-.cm-s-night-sky .cm-attribute { color: #8DA6CE; }
-.cm-s-night-sky .cm-header { color: #FF6400; }
-.cm-s-night-sky .cm-hr { color: #AEAEAE; }
-.cm-s-night-sky .cm-link { color: #8DA6CE; }
+.cm-s-Themes-for-Brackets-night-sky .cm-keyword { color: #FBDE2D; }
+.cm-s-Themes-for-Brackets-night-sky .cm-atom { color: #D8FA3C; }
+.cm-s-Themes-for-Brackets-night-sky .cm-number { color: #D8FA3C; }
+.cm-s-Themes-for-Brackets-night-sky .cm-def { color: #8DA6CE; }
+.cm-s-Themes-for-Brackets-night-sky .cm-variable { color: #FF6400; }
+.cm-s-Themes-for-Brackets-night-sky .cm-operator { color: #FBDE2D;}
+.cm-s-Themes-for-Brackets-night-sky .cm-comment { color: #AEAEAE; }
+.cm-s-Themes-for-Brackets-night-sky .cm-string { color: #61CE3C; }
+.cm-s-Themes-for-Brackets-night-sky .cm-string-2 { color: #61CE3C; }
+.cm-s-Themes-for-Brackets-night-sky .cm-meta { color: #D8FA3C; }
+.cm-s-Themes-for-Brackets-night-sky .cm-error { background: #9D1E15; color: #F8F8F8; }
+.cm-s-Themes-for-Brackets-night-sky .cm-builtin { color: #8DA6CE; }
+.cm-s-Themes-for-Brackets-night-sky .cm-tag { color: #8DA6CE; }
+.cm-s-Themes-for-Brackets-night-sky .cm-attribute { color: #8DA6CE; }
+.cm-s-Themes-for-Brackets-night-sky .cm-header { color: #FF6400; }
+.cm-s-Themes-for-Brackets-night-sky .cm-hr { color: #AEAEAE; }
+.cm-s-Themes-for-Brackets-night-sky .cm-link { color: #8DA6CE; }
 
-.cm-s-night-sky.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-night-sky.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+.cm-s-Themes-for-Brackets-night-sky.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-Themes-for-Brackets-night-sky.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
     background-color: #3C3F41;
     color: #d9d9d9;
 }

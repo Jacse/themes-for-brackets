@@ -8,44 +8,44 @@
 }
 
 
-.cm-s-light-table.CodeMirror, #editor-holder #not-editor {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror, #editor-holder #not-editor, .cm-s-Themes-for-Brackets-light-table .CodeMirror-scroll {
     background-color: #202020;
     color:#ccc;
     padding-left: 8px;
 }
-.cm-s-light-table .CodeMirror-sizer{
+.cm-s-Themes-for-Brackets-light-table .CodeMirror-sizer{
     padding-bottom: 40px;
 }
 
 .CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler {
     background: transparent;
 }
-.cm-s-light-table .CodeMirror-scroll{
+.cm-s-Themes-for-Brackets-light-table .CodeMirror-scroll{
     border-color: #202020;
 }
-.cm-s-light-table .CodeMirror-vscrollbar{
+.cm-s-Themes-for-Brackets-light-table .CodeMirror-vscrollbar{
     width: 10px;
     bottom: 10px !important;
 }
-.cm-s-light-table ::-webkit-scrollbar {
+.cm-s-Themes-for-Brackets-light-table ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     background: transparent !important;
 }
-.cm-s-light-table .CodeMirror-gutter-filler {
+.cm-s-Themes-for-Brackets-light-table .CodeMirror-gutter-filler {
     height: 10px !important;
 }
-.cm-s-light-table ::-webkit-scrollbar-track, .cm-s-light-table .CodeMirror-gutter-filler {
-    background: #202020;
+.CodeMirror ::-webkit-scrollbar-track, .CodeMirror .CodeMirror-gutter-filler {
+    background: #202020 !important;
 }
-.cm-s-light-table ::-webkit-scrollbar-thumb {
+.CodeMirror ::-webkit-scrollbar-thumb {
     background: #3C3F41;
     border-radius: 5px;
 }
-.cm-s-light-table ::-webkit-scrollbar-thumb:hover{
+.cm-s-Themes-for-Brackets-light-table ::-webkit-scrollbar-thumb:hover{
     background: #494d4f;
 }
-.cm-s-light-table ::-webkit-scrollbar-thumb:active{
+.cm-s-Themes-for-Brackets-light-table ::-webkit-scrollbar-thumb:active{
     background: #6d757a;
 }
 
@@ -69,100 +69,100 @@
 .CodeMirror .CodeMirror-hscrollbar{ height:8px; right:8px !important;} /*Scrollbar horizontal*/
 
 
-.cm-s-light-table.CodeMirror .inline-widget{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget{
     background: #272727;
     color: #ccc;
 }
-.cm-s-light-table.CodeMirror .inline-widget h1,
-.cm-s-light-table.CodeMirror .inline-widget h2,
-.cm-s-light-table.CodeMirror .inline-widget h3{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget h1,
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget h2,
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget h3{
     color: #ccc;
 }
-.cm-s-light-table.CodeMirror .inline-widget p,
-.cm-s-light-table.CodeMirror .inline-widget dt,
-.cm-s-light-table.CodeMirror .inline-widget li,
-.cm-s-light-table.CodeMirror .inline-widget code{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget p,
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget dt,
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget li,
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget code{
     color: #fff;
 }
-.cm-s-light-table.CodeMirror .CodeMirror-gutters {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-gutters {
     border-color: #202020;
     background: #202020;
 }
-.cm-s-light-table.CodeMirror .CodeMirror-linenumbers {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-linenumbers {
     background-color: #202020;
 }
-.cm-s-light-table.CodeMirror .CodeMirror-linenumber {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-linenumber {
     color: #99997a;
     padding-left: 18px;
 }
-.cm-s-light-table.CodeMirror .CodeMirror-activeline{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-activeline{
     background: rgba(255,255,255,.1);
 }
-.cm-s-light-table.CodeMirror pre{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror pre{
     /*padding between line number & content*/
     padding: 0 8px;
 }
-.cm-s-light-table span.CodeMirror-matchingtag {
-    color:white!important;
-    background:rgba(255,255,255,0.2);
+.cm-s-Themes-for-Brackets-light-table span.CodeMirror-matchingtag {
+    color: white!important;
+    background:rgba(255,255,255,0.2) !important;
 }
 
-.cm-s-light-table.CodeMirror .CodeMirror-cursor {
-    border-left: 1px solid #ffffff;
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-cursor {
+    border-left: 1px solid #ffffff !important;
 }
-.cm-s-light-table.CodeMirror .CodeMirror-selected {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-selected {
     background: rgba(255,255,255,.2);
 }
 
-.cm-s-light-table.CodeMirror .CodeMirror-matchingbracket {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-matchingbracket {
     border-bottom: 1px solid #33ffff;
-    color: #ccc19b;
+    color: #ccc19b !important;
+    background: transparent !important;
 }
-.cm-s-light-table.CodeMirror .CodeMirror-unmatchingbracket {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-unmatchingbracket {
     border-bottom: 1px solid #cb3233;
     color: #cb3233;
 }
 
-
-.cm-s-light-table.CodeMirror .cm-comment {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-comment {
     color: #968879;
 }
-.cm-s-light-table.CodeMirror .cm-property {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-property {
     color: #aaaaaa;
 }
-.cm-s-light-table.CodeMirror .cm-qualifier {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-qualifier {
     color: #aaeeab;
 }
-.cm-s-light-table.CodeMirror .cm-tag {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-tag {
     color: #7ac1ff;
 }
-.cm-s-light-table.CodeMirror .cm-def {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-def {
     color: #aaccff;
 }
-.cm-s-light-table.CodeMirror .cm-number {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-number {
     color: #ccccab;
 }
-.cm-s-light-table.CodeMirror .cm-atom {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-atom {
     color: #cc9dc7;
 }
-.cm-s-light-table.CodeMirror .cm-keyword{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-keyword{
     color: #aacd80;
 }
-.cm-s-light-table.CodeMirror .cm-string{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-string{
     color: #aadddd;
 }
-.cm-s-light-table.CodeMirror .cm-string-2{
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-string-2{
     color: #7ad1dd;
 }
-.cm-s-light-table.CodeMirror .cm-variable {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-variable {
     color: #ccc19b;
 }
-.cm-s-light-table.CodeMirror .cm-variable-2 {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-variable-2 {
     color: #aaccff;
 }
-.cm-s-light-table.CodeMirror .cm-attribute {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-attribute {
     color: #83e1b2;
 }
-.cm-s-light-table.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-light-table.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+.cm-s-Themes-for-Brackets-light-table.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-Themes-for-Brackets-light-table.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
     background-color: rgba(255,255,255,0.1);
 }

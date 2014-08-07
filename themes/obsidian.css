@@ -30,9 +30,9 @@ Good luck, have fun!
 }
 
 /*Main area*/
-.CodeMirror{ background:#293134;color:#E0E2E4;line-height:1.3em;}/*Main coding area, without line count.*/
+.CodeMirror, .CodeMirror .CodeMirror-scroll{ background:#293134;color:#E0E2E4;line-height:1.3em;}/*Main coding area, without line count.*/
 
-.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; z-index: 3;} /*Cursor stling*/
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white !important;} /*Cursor stling*/
 
 /*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
 .CodeMirror .CodeMirror-vscrollbar{width: 8px; bottom:8px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
@@ -70,8 +70,8 @@ Good luck, have fun!
 .CodeMirror .cm-keyword {color:#93C763} /*Element call ex. array, class, public function, if, elseif, !important*/
 .CodeMirror .cm-matchingtag{background:#363636}
 
-.CodeMirror .CodeMirror-matchingtag{background:none;border-bottom: solid 1px #269186} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
-div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: solid 1px #666;color:#ff3426} /*Matching brackets, open/close*/
+.CodeMirror .CodeMirror-matchingtag{background:none !important;border-bottom: solid 1px #269186} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
+div.CodeMirror span.CodeMirror-matchingbracket{background:none !important;border-bottom: solid 1px #666;color:#ff3426 !important} /*Matching brackets, open/close*/
 
 .CodeMirror-selected{background-color:#616161!important;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#2f393c!important;} /*Active line - may need !important*/

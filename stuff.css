@@ -1,12 +1,13 @@
 .CodeMirror-scroll {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 .CodeMirror-gutters {
     border-right: none;
 }
 #status-indicators,
 #status-indicators div:not(#status-inspection),
-#status-info {
+#status-info,
+#status-indicators {
     background: transparent;
     color: inherit;
 }
@@ -16,12 +17,6 @@
 #working-set-header {
     text-shadow: none;
 }
-/*
-.CodeMirror-gutter-filler,
-.CodeMirror-scrollbar-filler {
-    background: transparent;
-}
-*/
 
 .inline-widget .CodeMirror-scroll .CodeMirror-linenumbers {
     background-color: transparent;

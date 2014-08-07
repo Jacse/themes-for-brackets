@@ -16,10 +16,10 @@ Good luck, have fun!
 #sidebar #project-files-container{background-color:#2D2E30} /*Project files - WITHOUT header*/
 
 /*Main area*/
-.CodeMirror{ background:#161616;color:#f5f5f5;line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
+.CodeMirror, .CodeMirror-scroll{ background:#161616;color:#f5f5f5;line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
 .cm-s-sunburst.CodeMirror pre {padding: 0 15px 0 5px;}
 
-.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; z-index: 3;} /*Cursor stling*/
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white !important;} /*Cursor stling*/
 
 /*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
 .CodeMirror .CodeMirror-vscrollbar{width: 8px; bottom:8px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
@@ -59,10 +59,10 @@ Good luck, have fun!
 .CodeMirror .cm-tag{color:#89BDFF} /*Tags ex. ul or <ul>*/
 .CodeMirror .cm-attribute{color:#E0C589} /*Attribute ex. rel, href, name*/
 .CodeMirror .cm-keyword {color:#65B042} /*Element call ex. array, class, public function, if, elseif, !important*/
-.CodeMirror .cm-matchingtag{background:#363636}
+.CodeMirror .cm-matchingtag{background:#363636 !important}
 
-.CodeMirror .CodeMirror-matchingtag{background:none;border-bottom: dotted 1px #aaa} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
-div.CodeMirror span.CodeMirror-matchingbracket{background:#363636;border-bottom: dotted 1px #666;color:white} /*Matching brackets, open/close*/
+.CodeMirror .CodeMirror-matchingtag{background:none !important;border-bottom: dotted 1px #aaa} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
+div.CodeMirror span.CodeMirror-matchingbracket{background:#363636 !important;border-bottom: dotted 1px #666;color:white !important} /*Matching brackets, open/close*/
 
 .CodeMirror-selected{background-color:#ccc;opacity: 0.20;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#ccc;opacity: 0.1} /*Active line - may need !important*/

@@ -18,9 +18,9 @@ Good luck, have fun!
 
 
 /*Main area*/
-.CodeMirror{ background:#323232;color:#f5f5f5;line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
+.CodeMirror, .CodeMirror-scroll{ background:#323232;color:#f5f5f5;line-height:1.3em;letter-spacing:0.1px;font-weight: lighter}/*Main coding area, without line count.*/
 
-.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; z-index: 3;} /*Cursor stling*/
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid white !important;} /*Cursor stling*/
 
 /*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
 .CodeMirror .CodeMirror-vscrollbar{ width: 8px; bottom:8px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
@@ -53,8 +53,6 @@ Good luck, have fun!
 .CodeMirror .cm-string{color:#A5C261} /*String elements ex. "description" in name="description" - including quotation*/
 .CodeMirror .cm-meta{color:#ffe5bb} /*Meta elements like ex.: <!DOCTYPE html>*/
 .CodeMirror .cm-qualifier{color:#9B703E} /*Final qualifier like css class ex.: .cm-qualifier*/
-
-
 
 
 

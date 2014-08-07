@@ -1,4 +1,4 @@
-#status-bar, .cm-s-mbo .CodeMirror-gutters, #main-toolbar{
+#status-bar, .cm-s-Themes-for-Brackets-mbo .CodeMirror-gutters, #main-toolbar{
     background:#333;
     color:rgba(255,255,255,0.9);
 }
@@ -29,26 +29,25 @@ a.more-info{
     color: #CCC;
 }
 
-.cm-s-mbo .CodeMirror-matchingtag{
-    background:none;
+.cm-s-Themes-for-Brackets-mbo .CodeMirror-matchingtag{
+    background:none !important;
     text-decoration:underline;
     color: #9DDFE9 !important;
 }
 
-.cm-s-mbo.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-mbo.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+.cm-s-Themes-for-Brackets-mbo.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-Themes-for-Brackets-mbo.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
     background:#333;
     color: #d9d9d9;
 }
 
 
-.cm-s-mbo.CodeMirror, #editor-holder #not-editor {
+.cm-s-Themes-for-Brackets-mbo.CodeMirror, #editor-holder #not-editor, .cm-s-Themes-for-Brackets-mbo .CodeMirror-scroll {
     background-color: #2c2c2c;
     color: #ffffe9;
 }
 
 .CodeMirror div.CodeMirror-cursor {
-  border-left: 1px solid #ffffec;
-  z-index: 3;
+  border-left: 1px solid #ffffec !important;
 }
 
 .CodeMirror-selected {
@@ -56,29 +55,30 @@ a.more-info{
     opacity: .23;
 }
 
-.cm-s-mbo .cm-keyword {color: #ffb928;}
-.cm-s-mbo .cm-atom {color: #00a8c6;}
-.cm-s-mbo .cm-number {color: #00a8c6; font-weight: bold;}
-.cm-s-mbo .cm-def {color: #ffffec;}
-.cm-s-mbo .cm-variable {color: #ffffec;}
-.cm-s-mbo .cm-variable-2 {color: #00A8C6;}
-.cm-s-mbo .cm-property {color: #52e3f6;}
-.cm-s-mbo .cm-operator {color: #ff007f; font-weight: bold;}
-.cm-s-mbo .cm-comment {color: #95958a;}
-.cm-s-mbo .cm-string {color: #ffcf6c;}
-.cm-s-mbo .cm-string-2 {color: #ffce6c;}
-.cm-s-mbo .cm-meta {color: #ffffff;}
-.cm-s-mbo .cm-qualifier {color: #ff007f; font-weight: bold;}
-.cm-s-mbo .cm-bracket {color: #fffffc; font-weight: bold;}
-.cm-s-mbo .cm-tag {color: #9DDFE9}
-.cm-s-mbo .cm-attribute {color: #ffb928;}
+.cm-s-Themes-for-Brackets-mbo .cm-keyword {color: #ffb928;}
+.cm-s-Themes-for-Brackets-mbo .cm-atom {color: #00a8c6;}
+.cm-s-Themes-for-Brackets-mbo .cm-number {color: #00a8c6; font-weight: bold;}
+.cm-s-Themes-for-Brackets-mbo .cm-def {color: #ffffec;}
+.cm-s-Themes-for-Brackets-mbo .cm-variable {color: #ffffec;}
+.cm-s-Themes-for-Brackets-mbo .cm-variable-2 {color: #00A8C6;}
+.cm-s-Themes-for-Brackets-mbo .cm-property {color: #52e3f6;}
+.cm-s-Themes-for-Brackets-mbo .cm-operator {color: #ff007f; font-weight: bold;}
+.cm-s-Themes-for-Brackets-mbo .cm-comment {color: #95958a;}
+.cm-s-Themes-for-Brackets-mbo .cm-string {color: #ffcf6c;}
+.cm-s-Themes-for-Brackets-mbo .cm-string-2 {color: #ffce6c;}
+.cm-s-Themes-for-Brackets-mbo .cm-meta {color: #ffffff;}
+.cm-s-Themes-for-Brackets-mbo .cm-qualifier {color: #ff007f; font-weight: bold;}
+.cm-s-Themes-for-Brackets-mbo .cm-bracket {color: #fffffc; font-weight: bold;}
+.cm-s-Themes-for-Brackets-mbo .cm-tag {color: #9DDFE9}
+.cm-s-Themes-for-Brackets-mbo .cm-attribute {color: #ffb928;}
 
-.cm-s-mbo .cm-matchhighlight {background-color: rgba(61,61,61,0.23);}
+.cm-s-Themes-for-Brackets-mbo .cm-matchhighlight {background-color: rgba(61,61,61,0.23);}
 
 div.CodeMirror span.CodeMirror-matchingbracket {
-    color: #F54B07;
+    color: #F54B07 !important;
     font-weight: bold;
     text-decoration: underline;
+    background: transparent !important;
 }
 
 
@@ -93,8 +93,8 @@ div.CodeMirror span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedte
     color: #242424;
 }
 
-.cm-s-mbo.CodeMirror pre {padding:0 15px 0 5px}
+.cm-s-Themes-for-Brackets-mbo.CodeMirror pre {padding:0 15px 0 5px}
 
-.cm-s-mbo.CodeMirror .CodeMirror-gutter-elt {
+.cm-s-Themes-for-Brackets-mbo.CodeMirror .CodeMirror-gutter-elt {
     padding: 0 5px 0 10px;
 }

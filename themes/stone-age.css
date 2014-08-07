@@ -229,7 +229,7 @@ div.modal-bar div#replace-group input#replace-with {
 #editor-holder #not-editor { background-color: rgba(15, 19, 20, 0.1) !important; }
 
 /************** Main coding area - Schreibberreich **************/
-.CodeMirror {
+.CodeMirror, .CodeMirror-scroll {
     color: white;
     background-color: #0F1314;
     border-top: 1px solid #2A2C2D;
@@ -267,9 +267,9 @@ div.modal-bar div#replace-group input#replace-with {
 .CodeMirror .cm-bracket { color: #f0f; }        /* Brackets */
 .CodeMirror .cm-invalidchar,
 .CodeMirror .cm-error { border-bottom: 1px dotted red; }                            /* error */
-.CodeMirror .CodeMirror-matchingtag { background-color: rgba(255, 255, 255, 0.35); }/* Matching tags, open/close. */
-div.CodeMirror span.CodeMirror-matchingbracket { color: #F0F; }                        /* Matching brackets, by mouse control */
-div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #dc322f; }                /* non matching brackets, by mouse control */
+.CodeMirror .CodeMirror-matchingtag { background-color: rgba(255, 255, 255, 0.35) !important; }/* Matching tags, open/close. */
+div.CodeMirror span.CodeMirror-matchingbracket { color: #F0F !important; background: none !important}                        /* Matching brackets, by mouse control */
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: #dc322f !important; }                /* non matching brackets, by mouse control */
 
 /************** Main scrollbars - Scrollbereich **************/
 

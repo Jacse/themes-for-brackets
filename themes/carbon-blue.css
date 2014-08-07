@@ -30,7 +30,7 @@ Good luck, have fun!
   }
 
 /*Main area*/
-.CodeMirror{background-color:#25292a!important;color:#979797;line-height:1.3em;}/*Main coding area, without line count.*/
+.cm-s-Themes-for-Brackets-carbon-blue.CodeMirror, .cm-s-Themes-for-Brackets-carbon-blue .CodeMirror-scroll{background-color:#25292a!important;color:#979797;line-height:1.3em;}/*Main coding area, without line count.*/
 
 .CodeMirror div.CodeMirror-cursor { border-left: 1px solid white; z-index: 3;} /*Cursor stling*/
 

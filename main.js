@@ -29,138 +29,51 @@
 define(function (require, exports, module) {
     "use strict";
 
-    var CommandManager      = brackets.getModule("command/CommandManager"),
-        CodeMirror          = brackets.getModule("thirdparty/CodeMirror2/lib/codemirror"),
-        Menus               = brackets.getModule("command/Menus"),
+    var CodeMirror          = brackets.getModule("thirdparty/CodeMirror2/lib/codemirror"),
+        ExtensionUtils     = brackets.getModule("utils/ExtensionUtils"),
+        FileSystem         = brackets.getModule("filesystem/FileSystem"),
         PreferencesManager  = brackets.getModule("preferences/PreferencesManager"),
-        ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
-        FileSystem          = brackets.getModule("filesystem/FileSystem");
+        ThemeManager     = brackets.getModule("view/ThemeManager");
 
-    var prefs = PreferencesManager.getExtensionPrefs("Themes-for-brackets"),
-        menu = Menus.addMenu("Themes", "themes-for-brackets", Menus.AFTER, Menus.AppMenuBar.VIEW_MENU),
+    var prefs = PreferencesManager.getExtensionPrefs("themes"),
         moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/"),
-        customThemesDir = brackets.app.getApplicationSupportDirectory() + "/custom themes/";
-
-
-    var Themes = {},
-        __custom = prefs.get("isCustom");
-
-    //Define preferences
-    prefs.definePreference("theme", "string", "default");
-    prefs.definePreference("isCustom", "boolean", false);
-
-    // If there is no currently selected theme, use default
-    Themes.currentTheme = prefs.get("theme");
-
-    Themes.getName = function (theme) {
-        theme = theme || Themes.currentTheme;
-        theme = theme.replace(new RegExp("-", "g"), " ");
-        return theme.charAt(0).toUpperCase() + theme.slice(1);
-    };
-
-    Themes.load = function (theme, isCustom) {
-        $("#editor-holder .CodeMirror").removeClass("cm-s-default");
-        $("#editor-holder .CodeMirror").removeClass("cm-s-" + Themes.currentTheme);
-        Themes.setCommand(Themes.currentTheme, false);
-        Themes.currentTheme = theme;
-        if (isCustom) {
-            $("#currentTheme").attr("href", customThemesDir + Themes.currentTheme + ".css");
-            prefs.set("isCustom", true);
-        } else {
-            $("#currentTheme").attr("href", moduleThemesDir + Themes.currentTheme + ".css");
-            prefs.set("isCustom", false);
-            if (theme !== "visual-studio" && theme !== "default") {
-                $("#baseStyle").attr("href", ExtensionUtils.getModulePath(module, "") + "dark.css");
-            } else {
-                $("#baseStyle").attr("href", "");
-            }
-        }
-        Themes.setCommand(Themes.currentTheme, true);
-        prefs.set("theme", Themes.currentTheme);
-        CodeMirror.defaults.theme = Themes.currentTheme;
-        prefs.save();
-        $("#editor-holder .CodeMirror").addClass("cm-s-" + Themes.currentTheme);
-    };
-
-    Themes.setCommand = function (theme, val) {
-        CommandManager.get("jacse.themes-for-brackets.changetheme_" + theme).setChecked(val);
-    };
-
-    function addCommand(theme, isCustom, firstCustom) {
-        var command = "jacse.themes-for-brackets.changetheme_" + theme;
-        CommandManager.register(Themes.getName(theme), command, function () {
-            Themes.load(theme, isCustom);
-        });
-        if (firstCustom) {
-            menu.addMenuDivider();
-        }
-        menu.addMenuItem(command);
-    }
-
-
-    // Pass file names as an array and create the themes
-    Themes.getDirFiles = function (themesNameArray) {
-        var i,
-            len = themesNameArray.length,
-            findDefault = themesNameArray.indexOf('default'),
-            firstCustom = true;
-        if (findDefault !== -1) { //make sure default theme is on top
-            themesNameArray = themesNameArray.splice(findDefault, 1).concat(themesNameArray);
-        }
-        for (i = 0; i < len; i++) {
-            if (themesNameArray[i].indexOf(".css") > -1) { //I know this is a stupid way to check whether a theme is custom, but hey!
-                if (firstCustom) {
-                    addCommand(themesNameArray[i].replace(".css", ""), true, true);
-                    firstCustom = false;
-                } else {
-                    addCommand(themesNameArray[i].replace(".css", ""), true);
+        themes = [];
+    
+    prefs.on("change", function (e, data) {
+        var i = 0, theme;
+        console.log("Possibly changed prefs:", data.ids);
+        for (i = 0; i < data.ids.length; i++) {
+            if (data.ids[i] === "theme") {
+                theme = prefs.get("theme");
+                if (theme.indexOf("Themes-for-Brackets") === 0) {
+                    console.log("Themes for Brackets theme. Loading css...");
+                    $("#TfB-style").attr("href", moduleThemesDir + theme.substr(20) + ".css"); //20 = "Themes-for-Brackets-"
                 }
-            } else {
-                addCommand(themesNameArray[i]);
-            }
-            if (i === 0) { //Add menu divider after default theme
-                menu.addMenuDivider();
             }
         }
-        $("body").append('<link id="themesCss" rel="stylesheet" href="' + ExtensionUtils.getModulePath(module, "") + 'stuff.css"/>');
-        $("body").append('<link id="currentTheme" rel="stylesheet"/>');
-        $("body").append('<link id="baseStyle" rel="stylesheet"/>');
+    });
 
-        Themes.load(Themes.currentTheme, __custom);
-    };
-
-    // Get standard themes
-    console.log("Getting contents of themes directory...");
+    function upperCase(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    
     FileSystem.getDirectoryForPath(moduleThemesDir).getContents(function (err, contents) {
+        var i;
         if (err) {
             console.log("Error getting themes:" + err);
         }
-        var themesInDir = [], i;
         for (i = 0; i < contents.length; i++) {
             if (contents[i].name !== ".DS_Store") {
-                themesInDir.push(contents[i].name.replace(".css", ""));
+                
+                var name = "Themes-for-Brackets-" + contents[i].name.replace(".css", ""),
+                    title = "Themes for Brackets  " + upperCase(contents[i].name.replace(".css", "")).replace(/\-/g, ' ');
+
+                ThemeManager.loadFile(moduleThemesDir + contents[i].name, {name: name, title: title, dark: true});
             }
         }
-
-        //Make sure custom themes directory exists
-        console.log("Creating custom themes directory...");
-        FileSystem.getDirectoryForPath(customThemesDir).create(function () {
-            // Get custom themes
-            console.log("Getting contents of custom themes directory...");
-            FileSystem.getDirectoryForPath(customThemesDir).getContents(function (err, contents) {
-                if (err) {
-                    console.log("Error getting custom themes:" + err);
-                }
-                var themesInDir2 = [], i;
-                for (i = 0; i < contents.length; i++) {
-                    if (contents[i].name !== ".DS_Store") {
-                        themesInDir2.push(contents[i].name);
-                    }
-                }
-                console.log("Adding all themes to themes menu...");
-                Themes.getDirFiles(themesInDir.concat(themesInDir2));
-            });
-        });
     });
+    
+    $("body").append('<link rel="stylesheet" id="TfB-style">');
+    $("body").append('<link rel="stylesheet" href="' + ExtensionUtils.getModulePath(module) + 'stuff.css">');
 
 });
