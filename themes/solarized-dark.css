@@ -180,7 +180,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 }
 
 .cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-lines .CodeMirror-cursor {
-  border-left: 1px solid #819090;
+  border-left: 1px solid #819090 !important;
 }
 
 /*
