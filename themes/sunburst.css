@@ -37,7 +37,7 @@ Good luck, have fun!
 .CodeMirror-gutter{background-color:#292929} /*Left bar with line count - it will affect global line count, BUT line count in inline editor won't be changed.*/
 .CodeMirror-linenumbers{background-color:#292929} /*Line count bar only, without "gutter"*/
 .CodeMirror-foldgutter{background-color:#292929} /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
-
+.CodeMirror-gutter-elt{background-color:#272727;color: #a7a4a4}
 
 /*Syntax elements & action*/
 .CodeMirror .cm-atom{color:#F9EE98} /*Atribbute value ex. #f00 in color:#f00;*/
