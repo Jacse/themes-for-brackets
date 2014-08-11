@@ -127,8 +127,8 @@
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-comment {
     color: #968879;
 }
-.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-property {
-    color: #aaaaaa;
+.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-property,.cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-operator {
+    color:#aaa;
 }
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-qualifier {
     color: #aaeeab;
