@@ -30,15 +30,15 @@ define(function (require, exports, module) {
     "use strict";
 
     var CodeMirror          = brackets.getModule("thirdparty/CodeMirror2/lib/codemirror"),
-        ExtensionUtils     = brackets.getModule("utils/ExtensionUtils"),
-        FileSystem         = brackets.getModule("filesystem/FileSystem"),
+        ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
+        FileSystem          = brackets.getModule("filesystem/FileSystem"),
         PreferencesManager  = brackets.getModule("preferences/PreferencesManager"),
-        ThemeManager     = brackets.getModule("view/ThemeManager");
+        ThemeManager        = brackets.getModule("view/ThemeManager");
 
     var prefs = PreferencesManager.getExtensionPrefs("themes"),
         moduleThemesDir = ExtensionUtils.getModulePath(module, "themes/"),
         themes = [];
-    
+
     prefs.on("change", function (e, data) {
         var i = 0, theme;
         console.log("Possibly changed prefs:", data.ids);
@@ -56,7 +56,7 @@ define(function (require, exports, module) {
     function upperCase(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    
+
     FileSystem.getDirectoryForPath(moduleThemesDir).getContents(function (err, contents) {
         var i;
         if (err) {
@@ -64,7 +64,7 @@ define(function (require, exports, module) {
         }
         for (i = 0; i < contents.length; i++) {
             if (contents[i].name !== ".DS_Store") {
-                
+
                 var name = "Themes-for-Brackets-" + contents[i].name.replace(".css", ""),
                     title = "Themes for Brackets  " + upperCase(contents[i].name.replace(".css", "")).replace(/\-/g, ' ');
 
@@ -72,7 +72,7 @@ define(function (require, exports, module) {
             }
         }
     });
-    
+
     $("body").append('<link rel="stylesheet" id="TfB-style">');
     $("body").append('<link rel="stylesheet" href="' + ExtensionUtils.getModulePath(module) + 'stuff.css">');
 
