@@ -93,6 +93,8 @@ a.more-info{
 .cm-s-Themes-for-Brackets-night-sky .CodeMirror-cursor { border-left: 1px solid #A7A7A7 !important; }
 
 .cm-s-Themes-for-Brackets-night-sky .cm-keyword { color: #FBDE2D; }
+.cm-s-Themes-for-Brackets-night-sky .cm-bracket { color: #FBDE2D; }
+.cm-s-Themes-for-Brackets-night-sky .cm-variable-2 { color: #A777CD; }
 .cm-s-Themes-for-Brackets-night-sky .cm-atom { color: #D8FA3C; }
 .cm-s-Themes-for-Brackets-night-sky .cm-number { color: #D8FA3C; }
 .cm-s-Themes-for-Brackets-night-sky .cm-def { color: #8DA6CE; }
