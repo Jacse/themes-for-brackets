@@ -7,7 +7,6 @@ CodeMirror CSS: Paweł Chętkowski
 .CodeMirror, .CodeMirror-scroll{
     background:#2b2a27;
     color:#ede0ce;
-    font-size: 14px;
 }/*Main coding area, without line count.*/
 
 .CodeMirror div.CodeMirror-cursor {border-left: 1px solid #ede0ce !important;}
