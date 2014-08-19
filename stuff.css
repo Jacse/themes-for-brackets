@@ -1,6 +1,3 @@
-.CodeMirror-scroll {
-    background-color: transparent !important;
-}
 .CodeMirror-gutters {
     border-right: none;
 }
@@ -17,7 +14,6 @@
 #working-set-header {
     text-shadow: none;
 }
-
 .inline-widget .CodeMirror-scroll .CodeMirror-linenumbers {
     background-color: transparent;
 }
