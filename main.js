@@ -26,6 +26,8 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
 /*global define, $, brackets, window, */
 
+//var text = document.createElement('textarea');
+
 define(function (require, exports, module) {
     "use strict";
 
@@ -41,12 +43,10 @@ define(function (require, exports, module) {
 
     prefs.on("change", function (e, data) {
         var i = 0, theme;
-        console.log("Possibly changed prefs:", data.ids);
         for (i = 0; i < data.ids.length; i++) {
             if (data.ids[i] === "theme") {
                 theme = prefs.get("theme");
                 if (theme.indexOf("Themes-for-Brackets") === 0) {
-                    console.log("Themes for Brackets theme. Loading css...");
                     $("#TfB-style").attr("href", moduleThemesDir + theme.substr(20) + ".css"); //20 = "Themes-for-Brackets-"
                 }
             }
@@ -64,6 +64,9 @@ define(function (require, exports, module) {
         }
         for (i = 0; i < contents.length; i++) {
             if (contents[i].name !== ".DS_Store") {
+                //var a = upperCase(contents[i].name.replace(".css", "")).replace(/\-/g, ' ');
+                
+                //text.innerHTML += '* ' + a + ' <br />![' + a + ' theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/' + contents[i].name.replace(".css", "") + '.png) \n';
 
                 var name = "Themes-for-Brackets-" + contents[i].name.replace(".css", ""),
                     title = "Themes for Brackets  " + upperCase(contents[i].name.replace(".css", "")).replace(/\-/g, ' ');

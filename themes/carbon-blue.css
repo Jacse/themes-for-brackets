@@ -71,7 +71,7 @@ Good luck, have fun!
 .CodeMirror .cm-matchingtag{background:#363636;}
 
 .CodeMirror .CodeMirror-matchingtag{background:none;border-bottom: solid 1px #269186} /*Matching tags, open/close. Try !important for bg, color etc. if it doesn't work*/
-div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: solid 1px #666;color:#ff3426} /*Matching brackets, open/close*/
+div.CodeMirror span.CodeMirror-matchingbracket{background:none;border-bottom: solid 1px #666;color:#ff3426 !important} /*Matching brackets, open/close*/
 
 .CodeMirror-selected{background-color:#222218!important;} /*Selected lines - may need !important*/
 .CodeMirror-activeline-background{background-color:#2f393c!important;} /*Active line - may need !important*/
