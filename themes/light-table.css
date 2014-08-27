@@ -6,12 +6,10 @@
 #main-toolbar{
     background-color:#3c3f41;
 }
-
-
 .cm-s-Themes-for-Brackets-light-table.CodeMirror, #editor-holder #not-editor, .cm-s-Themes-for-Brackets-light-table .CodeMirror-scroll {
     background-color: #202020;
     color:#ccc;
-    padding-left: 8px;
+/*    padding-left: 8px;*/
 }
 .cm-s-Themes-for-Brackets-light-table .CodeMirror-sizer{
     padding-bottom: 40px;
@@ -48,27 +46,22 @@
 .cm-s-Themes-for-Brackets-light-table ::-webkit-scrollbar-thumb:active{
     background: #6d757a;
 }
-
 .CodeMirror-scrollbar-filler {
     height:10px !important;
     width:10px !important;
     background:none;
 }
-
 .CodeMirror ::-webkit-scrollbar {width: 8px; height:8px;}
 .CodeMirror ::-webkit-scrollbar-track {background: none;}
 .CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background:none;}
 .CodeMirror ::-webkit-scrollbar-thumb {background: #56595a; border-radius: 4px}
 .CodeMirror ::-webkit-scrollbar-thumb:hover {background: #666666; border-radius: 4px}
-
 .CodeMirror-scrollbar-filler {
     height:8px !important;
     width:8px !important;
     background:none;
 }
 .CodeMirror .CodeMirror-hscrollbar{ height:8px; right:8px !important;} /*Scrollbar horizontal*/
-
-
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .inline-widget{
     background: #272727;
     color: #ccc;
@@ -106,14 +99,12 @@
     color: white!important;
     background:rgba(255,255,255,0.2) !important;
 }
-
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-cursor {
     border-left: 1px solid #ffffff !important;
 }
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-selected {
     background: rgba(255,255,255,.2);
 }
-
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-matchingbracket {
     border-bottom: 1px solid #33ffff;
     color: #ccc19b !important;
@@ -123,7 +114,6 @@
     border-bottom: 1px solid #cb3233;
     color: #cb3233;
 }
-
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .cm-comment {
     color: #968879;
 }
