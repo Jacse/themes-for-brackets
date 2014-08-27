@@ -5,7 +5,6 @@
 #sidebar{
     background:#414141;
 }
-
 .inline-widget{ /* Quick-edit styles */
     background-color:rgb(45, 47, 44);
 }
@@ -19,7 +18,10 @@
     border-right:1px solid rgb(50, 51, 49);
     border-left:1px solid rgb(34, 36, 32);
 }
-
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
 a.more-info{
     background-color: #454545;
     border: 1px solid #555;
