@@ -19,6 +19,10 @@
     border-color: #202020;
     background: #202020;
 }
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
 .cm-s-Themes-for-Brackets-light-table.CodeMirror .CodeMirror-linenumbers {
     background-color: #202020;
 }
