@@ -20,9 +20,6 @@
 .CodeMirror-scrollbar-filler {
     background: transparent;
 }
-.cm-s-Themes-for-Brackets-light-table .CodeMirror-scroll {
-    border-color: #202020;
-}
 .cm-s-Themes-for-Brackets-light-table .CodeMirror-vscrollbar {
     width: 10px;
     bottom: 10px !important;
