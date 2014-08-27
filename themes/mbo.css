@@ -128,9 +128,3 @@ div.CodeMirror span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedte
     background-color: #c3c3c3;
     color: #242424;
 }
-.cm-s-Themes-for-Brackets-mbo.CodeMirror pre {
-    padding: 0 15px 0 5px
-}
-.cm-s-Themes-for-Brackets-mbo.CodeMirror .CodeMirror-gutter-elt {
-    padding: 0 5px 0 10px;
-}
