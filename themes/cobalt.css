@@ -62,6 +62,11 @@
     background: #002D57 !important;
     color: white;
 }
+.cm-s-Themes-for-Brackets-cobalt .CodeMirror-matchingbracket {
+    background-color: transparent;
+    outline: 1px solid grey;
+    color: white !important
+}
 /** CodeMirror styles **/
 
 .cm-s-Themes-for-Brackets-cobalt.CodeMirror,
