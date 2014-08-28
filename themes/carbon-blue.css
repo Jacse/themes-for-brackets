@@ -74,56 +74,6 @@ Good luck, have fun!
 }
 
 /*Cursor styling*/
-
-/*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
-
-.CodeMirror .CodeMirror-vscrollbar {
-    width: 8px;
-    bottom: 8px !important;
-}
-/*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
-
-.CodeMirror .CodeMirror-hscrollbar {
-    height: 8px;
-    right: 8px !important;
-}
-/*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
-
-.CodeMirror::-webkit-scrollbar {
-    color: #606266;
-    width: 8px;
-    height: 8px;
-}
-/* The width of vertical scrollbars and height of horizontal scrollbars*/
-
-.CodeMirror::-webkit-scrollbar-track {
-    background-color: #2f3234
-}
-/* The track that scrollbars run in */
-
-.CodeMirror::-webkit-scrollbar-thumb {
-    background-color: #606266;
-    border-radius: 4px
-}
-/* The scrollbar thumb */
-
-.CodeMirror-scrollbar-filler {
-    height: 8px !important;
-    width: 8px !important;
-    background: #3B3D3F;
-}
-/* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
-
-.CodeMirror-gutter-filler {
-    height: 8px !important;
-    background: #3B3D3F;
-    color: #657A81;
-}
-/* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
-
-.CodeMirror .CodeMirror-scroll .CodeMirror-gutters {
-    background-color: #25292a
-}
 /*Left vertical bar with line count*/
 
 .CodeMirror-gutter {
