@@ -141,7 +141,10 @@ Good luck, have fun!
     background-color: #25292a
 }
 /*It's exactly .CodeMirror-gutter{} without .CodeMirror-linenumbers{}.*/
-
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
 /*Syntax elements & action*/
 
 .CodeMirror .cm-bracket {
