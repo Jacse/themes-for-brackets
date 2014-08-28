@@ -134,3 +134,8 @@
 .cm-s-Themes-for-Brackets-cobalt.CodeMirror .CodeMirror-gutter-elt {
     padding: 0 5px 0 7px;
 }
+/*Transparent Scroll Bar Background*/
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
