@@ -11,6 +11,10 @@
     background: #242424;
     color: #ccc;
 }
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
 /* color editor widget */
 
 .color-editor {
