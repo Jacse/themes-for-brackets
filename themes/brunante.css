@@ -151,9 +151,6 @@
 .cm-s-Themes-for-Brackets-brunante.CodeMirror pre {
     padding: 0 15px 0 5px
 }
-.cm-s-Themes-for-Brackets-brunante.CodeMirror .CodeMirror-gutter-elt {
-    padding: 0 4px 0 12px;
-}
 /* Quick Docs */
 
 .css-prop-values dl dt {
