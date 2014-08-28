@@ -55,7 +55,7 @@
 }
 .inline-widget {
     /* Quick-edit styles */
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, .8);
 }
 .cm-s-Themes-for-Brackets-cobalt.CodeMirror-focused .CodeMirror-activeline-background,
 .cm-s-Themes-for-Brackets-cobalt.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
