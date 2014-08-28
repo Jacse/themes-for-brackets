@@ -69,10 +69,11 @@ Good luck, have fun!
 /*Main coding area, without line count.*/
 
 .CodeMirror div.CodeMirror-cursor {
-    border-left: 1px solid white;
+    border-left: 1px solid white !important;
     z-index: 3;
 }
-/*Cursor stling*/
+
+/*Cursor styling*/
 
 /*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
 
