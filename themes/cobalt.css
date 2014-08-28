@@ -59,9 +59,7 @@
 }
 .cm-s-Themes-for-Brackets-cobalt.CodeMirror-focused .CodeMirror-activeline-background,
 .cm-s-Themes-for-Brackets-cobalt.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-    background: rgba(255, 255, 255, 0.1);
-}
-.cm-s-Themes-for-Brackets-cobalt.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+    background: #002D57 !important;
     color: white;
 }
 /** CodeMirror styles **/
