@@ -224,9 +224,6 @@ code {
     color: #727272;
     background-color: #242424;
 }
-.cm-s-Themes-for-Brackets-dark-soda.CodeMirror .CodeMirror-linenumber {
-    padding-left: 18px;
-}
 .cm-s-Themes-for-Brackets-dark-soda span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext {
     background-color: #ffe69d;
     color: #242424;
