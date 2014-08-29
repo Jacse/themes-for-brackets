@@ -250,3 +250,8 @@ span.cm-token-highlight:before {
     color: white !important;
     background: #282828 !important;
 }
+/*Transparent Scroll Bar Background*/
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
