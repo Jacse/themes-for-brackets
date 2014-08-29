@@ -117,9 +117,6 @@
 .cm-s-Themes-for-Brackets-dracula .cm-xml-attribute {
     color: #ff79c6 !important;
 }
-.cm-s-Themes-for-Brackets-dracula.CodeMirror .CodeMirror-linenumber {
-    padding-left: 18px;
-}
 div.CodeMirror span.CodeMirror-matchingbracket {
     border: 1px solid #15CA1A !important;
     border-radius: 4px;
