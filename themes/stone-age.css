@@ -465,6 +465,12 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 ::-webkit-scrollbar-thumb:active {
     border: 6px solid #101010;
 }
+/*Transparent Scroll Bar Background*/
+
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
 /* the "x" to close, shout work for all avalibal classes  */
 
 .close {
