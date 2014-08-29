@@ -1,46 +1,7 @@
-.CodeMirror .CodeMirror-vscrollbar {
-    width: 10px;
-    bottom: 10px !important;
-}
-/*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
-
-.CodeMirror .CodeMirror-hscrollbar {
-    height: 10px;
-    right: 10px !important;
-}
-/*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
-
-.CodeMirror::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-/* The width of vertical scrollbars and height of horizontal scrollbars*/
-
-.CodeMirror-scrollbar-filler {
-    height: 10px !important;
-    width: 10px !important;
-}
-/* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
-
-.CodeMirror-gutter-filler {
-    height: 10px !important;
-}
-/* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
-
 .cm-s-Themes-for-Brackets-dark-soda::-webkit-scrollbar-track,
 .cm-s-Themes-for-Brackets-dark-soda .CodeMirror-gutter-filler,
 .cm-s-Themes-for-Brackets-dark-soda .CodeMirror-scrollbar-filler {
     background: transparent !important;
-}
-.cm-s-Themes-for-Brackets-dark-soda::-webkit-scrollbar-thumb {
-    background: #191919 !important;
-    border-radius: 5px;
-}
-.cm-s-Themes-for-Brackets-dark-soda::-webkit-scrollbar-thumb:hover {
-    background: #121212;
-}
-.cm-s-Themes-for-Brackets-dark-soda::-webkit-scrollbar-thumb:active {
-    background: #0f0f0f;
 }
 #status-bar {
     /* Bottom status bar */
