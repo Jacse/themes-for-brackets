@@ -267,3 +267,8 @@ div.CodeMirror span.CodeMirror-matchingbracket {
     background: #646464
 }
 /*Related container with similar rules*/
+/*Transparent Scroll Bar Background*/
+.CodeMirror-gutter-filler,
+.CodeMirror-scrollbar-filler {
+    background: transparent;
+}
