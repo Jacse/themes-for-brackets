@@ -225,7 +225,6 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 .CodeMirror-gutter-elt {
     background-color: #242424!important;
     color: #f5f5f5!important;
-    padding: 0 15px 0 10px;
 }
 /*Active line, line count section*/
 
