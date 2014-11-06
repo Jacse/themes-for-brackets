@@ -20,7 +20,7 @@ Troubleshooting
 * Line numbers are looking weird or scrollbars are not styled/have dissapeared
  - Try hitting F5 (Save changes before doing so!).
 
-Didn't find the answer you were looking for? [Open an issue](https://github.com/Jacse/themes-for-brackets/issues) or Send me a mail at jacsebl@hotmail.com I'll be glad to help you out!
+Didn't find the answer you were looking for? Please [open an issue](https://github.com/Jacse/themes-for-brackets/issues).
 
 Contact and contributing your own theme
 ==================
