@@ -79,29 +79,29 @@ div.modal-bar div#replace-group input#replace-with {
 }
 /* Working files - container - Offene Datein */
 
-#sidebar #open-files-container {
+#sidebar #working-set-list-container {
     background-color: #1C2020;
     border-left: 1px solid #2a2c2d;
 }
 /* Open Working file name - Offene datei name */
 
-#sidebar #open-files-container ul li a {
+#sidebar #working-set-list-container ul li a {
     color: #999;
 }
 /* Open Working file extension -(*.html)- Offene datei bezeichnung */
 
-#sidebar #open-files-container ul li a span.extension {
+#sidebar #working-set-list-container ul li a span.extension {
     color: #90AEB8;
 }
-#sidebar #open-files-container ul li a:hover {
+#sidebar #working-set-list-container ul li a:hover {
     color: white;
 }
 /* Open active working file - Offene ausgewählte datei */
 
-#sidebar #open-files-container ul li.selected a {
+#sidebar #working-set-list-container ul li.selected a {
     color: white;
 }
-#sidebar #open-files-container ul li.selected a span.extension {
+#sidebar #working-set-list-container ul li.selected a span.extension {
     color: #81B4C7;
 }
 /* triangle from active open file - dreieck von offenen datein */
