@@ -11,9 +11,11 @@
 .CodeMirror-activeline-background {
     background: none;
 }
-#working-set-header {
-    text-shadow: none;
+.working-set-header-title,
+.working-set-header {
+    background: transparent;
 }
+
 .inline-widget .CodeMirror-scroll .CodeMirror-linenumbers {
     background-color: transparent;
 }
