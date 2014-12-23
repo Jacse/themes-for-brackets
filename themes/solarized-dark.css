@@ -104,6 +104,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     color: #839496;
     background-color: #002b36;
     text-shadow: #002b36 0 1px;
+    padding-left:5px;
 }
 .cm-s-Themes-for-Brackets-solarized-dark .CodeMirror-widget {
     text-shadow: none;
