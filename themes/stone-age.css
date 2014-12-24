@@ -65,10 +65,8 @@ div.modal-bar div#replace-group input#replace-with {
 
 /* "Working files" header - "Offene Datein" header */
 
-#sidebar #working-set-header {
+#sidebar #working-set-header, #working-set-list-container {
     background-color: #1C2020;
-    border-top: 1px solid #2a2c2d;
-    border-left: 1px solid #2a2c2d;
     color: #D7D8D9;
 }
 /* Zahnrad - Options */
@@ -83,40 +81,23 @@ div.modal-bar div#replace-group input#replace-with {
     background-color: #1C2020;
     border-left: 1px solid #2a2c2d;
 }
-/* Open Working file name - Offene datei name */
 
-#sidebar #open-files-container ul li a {
-    color: #999;
-}
-/* Open Working file extension -(*.html)- Offene datei bezeichnung */
-
-#sidebar #open-files-container ul li a span.extension {
-    color: #90AEB8;
-}
-#sidebar #open-files-container ul li a:hover {
-    color: white;
-}
-/* Open active working file - Offene ausgewählte datei */
-
-#sidebar #open-files-container ul li.selected a {
-    color: white;
-}
-#sidebar #open-files-container ul li.selected a span.extension {
-    color: #81B4C7;
-}
-/* triangle from active open file - dreieck von offenen datein */
-
-.sidebar-selection,
-.sidebar-selection-triangle {
-    background: #444749;
-    border-top: 1px solid #444749;
-    border-bottom: 1px solid #4F5356;
-}
-.sidebar-selection-triangle.triangle-visible::before {
-    border-left: 12px solid #444749;
-}
 /************** Project files - container - Projekt datein **************/
 
+.sidebar-selection,
+.filetree-selection {
+    /* Selected file or folder both places */
+    border: none;
+    color: #D7D8D9;
+}
+.sidebar-selection {
+    /* Selected file or folder */
+    background-color: #313638;
+}
+.filetree-selection {
+    /* Selected file or folder i "working files" */
+    background-color: #1C2020;
+}
 /*Available project files - alle verfügbaren datein und ordner des Projektes */
 
 #sidebar #project-files-container {
@@ -140,45 +121,12 @@ div.modal-bar div#replace-group input#replace-with {
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 5px;
 }
-/* Einzelne Datein/Ordner - available files/folders */
-
-#sidebar #project-files-container ul li a {
-    background-color: transparent;
-    color: #999;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
 /* like up just the extension -(*.html)- wie oben nur die endung */
 
 #sidebar #project-files-container ul li a span.extension {
     color: #90AEB8;
 }
-/* file name by hover - datei name bei hover */
-
-#sidebar #project-files-container ul li a.jstree-hovered {
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 5px;
-    color: white;
-}
-/* file name when active - datei name wenn ausgewählt */
-
-#sidebar #project-files-container ul li a.jstree-clicked {
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 5px;
-    background-color: #313638;
-    color: white;
-}
-/* triangle from project files - dreieck von projekt datein */
-
-#sidebar #project-files-container div.sidebar-selection-triangle,
-#sidebar #project-files-container div.sidebar-selection-triangle.triangle-visible {
-    background-image: none;
-    background-color: transparent;
-    border: none;
-}
-#sidebar #project-files-container .sidebar-selection-triangle.triangle-visible:before {
-    border-left: none;
-}
-/************** Right Sidebar - Rechte Toolbar **************/
+/************* Right Sidebar - Rechte Toolbar **************/
 
 /*Whole toolbar*/
 

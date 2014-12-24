@@ -8,12 +8,6 @@ Good luck, have fun!
 #sidebar {
     background-color: #292929
 }
-/*General sidebar style*/
-
-#sidebar #working-set-header {
-    background-color: #292929;
-    color: #aeaeae;
-}
 /*"Working files" header*/
 
 #sidebar #open-files-container {

@@ -5,44 +5,31 @@
     background: #1F4661;
     text-shadow: none;
 }
-#working-set-header,
-#open-files-container {
+#working-set-list-container {
     /* Working files */
     background: #16314a;
-}
-#project-files-header,
-#working-set-header {
-    /* "working files" header and folder header*/
     color: #E0E0E0!important;
 }
+
 #project-files-header {
     /* Delimiter between "working files" and project files */
     border-top: 4px solid #3E7087;
 }
-#project-dropdown-toggle:hover {
+
+#project-files-header .btn-alt-quiet {
+    background: transparent;
+}
+#project-files-header .btn-alt-quiet:hover {
     /* Open url when hover */
     color: #FFF!important;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.jstree-brackets li a,
-.jstree-brackets li .extension,
-.jstree-brackets li a.jstree-clicked,
-/* Files, folder and extensions */
-
-#open-files-container li a,
-#open-files-container li .extension,
-#open-files-container li a.jstree-clicked {
-    /* Files, folder and extensions in "Working Files" */
-    color: #FFF!important;
-}
 .sidebar-selection,
-.sidebar-selection-triangle {
+.filetree-selection {
     /* Selected file or folder */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     background: #3E7087;
-}
-.sidebar-selection-triangle.triangle-visible::before {
-    border-left: 12px solid #3E7087;
 }
 #status-bar {
     /* Bottom status bar */

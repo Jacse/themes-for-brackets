@@ -5,36 +5,34 @@ Good luck, have fun!
 
 /*Sidebar*/
 
-#sidebar {
-    background-color: #323232
+#sidebar, #working-set-list-container {
+    background-color: #323232 !important;
+    color: #aeaeae !important;
 }
-/*General sidebar style*/
 
-#sidebar #working-set-header {
-    background-color: #323232;
-    color: #aeaeae;
-}
-/*"Working files" header*/
-
-#sidebar #open-files-container {
-    background-color: #323232;
-    color: #aeaeae;
-}
 /*Working files style*/
 
 /*Project file header*/
 
-#sidebar #project-files-header {
-    background-color: #393939
+#project-files-header {
+    padding: 0;
 }
-/*Browser header, path select, search, X etc.*/
-
-/*Project files container*/
-
-#sidebar #project-files-container {
-    background-color: #323232
+#project-files-header .btn-alt-quiet {
+    /* Folder button */
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #393939;
+    padding: 10px;
 }
-/*Project files - WITHOUT header*/
+
+.sidebar-selection,
+.filetree-selection {
+    /* Selected file or folder */
+    background: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
 
 /*Main area*/
 

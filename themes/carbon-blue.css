@@ -4,12 +4,11 @@ Good luck, have fun!
 */
 
 .sidebar-selection,
-.sidebar-selection-triangle {
+.filetree-selection {
     /* Selected file or folder */
     background: #2f3234;
-}
-.sidebar-selection-triangle .triangle-visible::before {
-    border-left: 12px solid #2f3234;
+    border-bottom: none;
+    border-top: none;
 }
 /*Sidebar*/
 
@@ -19,24 +18,25 @@ Good luck, have fun!
 }
 /*General sidebar style*/
 
-#sidebar #working-set-header {
+#working-set-header,
+#working-set-list-container {
+    /* Working files */
     background-color: #25292a;
     color: #586e75;
 }
-/*"Working files" header*/
-
-#sidebar #open-files-container {
-    background-color: #25292a;
-    color: #677777;
+#project-files-header {
+    padding: 0;
 }
-/*Working files style*/
-
-/*Project file header*/
-
-#sidebar #project-files-header {
+#project-files-header .btn-alt-quiet {
+    /* Folder button */
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
     background-color: #2f3234;
     color: #657A81;
+    padding: 10px;
 }
+
 /*Browser header, path select, search, X etc.*/
 
 /*Project files container*/

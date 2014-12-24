@@ -1,8 +1,20 @@
 #working-set-header,
-#open-files-container {
+#working-set-list-container
+{
     /* Working files */
-    background: #242424;
+    background: rgba(0,0,0,0.1);
 }
+#project-files-header .btn-alt-quiet {
+    /* the folder button */
+    background: rgba(255,255,255,0.1);
+}
+.sidebar-selection,
+.filetree-selection {
+    /* Selected file or folder */
+    background: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
 #sidebar,
 #main-toolbar,
 #status-bar,

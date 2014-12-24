@@ -13,51 +13,27 @@ Good luck, have fun!
 }
 /*Sidebar*/
 
-#sidebar {
+#sidebar, #working-set-list-container  {
     background-color: #293134;
     color: #586e75;
 }
-/*General sidebar style*/
 
-#sidebar #working-set-header {
-    background-color: #293134;
-    color: #586e75;
+#project-files-header {
+    padding: 0;
 }
-/*"Working files" header*/
-
-#sidebar #open-files-container {
-    background-color: #293134;
-    color: #677777;
+#project-files-header .btn-alt-quiet {
+    /* Folder button */
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #393939;
+    padding: 10px;
 }
-/*Working files style*/
-
-/*Project file header*/
-
-#sidebar #project-files-header {
-    background-color: #2f3234;
-    color: #fff;
-}
-/*Browser header, path select, search, X etc.*/
-
-/*Project files container*/
-
-#sidebar #project-files-container {
-    background-color: #293134;
-    color: #657A81;
-}
-/*Project files - WITHOUT header*/
-
-.jstree-brackets li a,
-.jstree-brackets li .extension,
-.jstree-brackets li a.jstree-clicked,
-/* Files, folder and extensions */
-
-#open-files-container li a,
-#open-files-container li .extension,
-#open-files-container li a.jstree-clicked {
-    /* Files, folder and extensions in "working files"*/
-    color: #fff;
-    text-shadow: 0 0 1px #000;
+.sidebar-selection,
+.filetree-selection {
+    /* Selected file or folder */
+    background: rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 /*Main area*/
 
