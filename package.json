@@ -19,7 +19,7 @@
         "url": "git://github.com/Jacse/themes-for-brackets.git"
     },
     "engines": {
-        "brackets": ">=0.42.0"
+        "brackets": ">=1.0.0"
     },
     "categories": "visual"
 }
