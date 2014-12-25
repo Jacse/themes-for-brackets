@@ -52,6 +52,27 @@
 .cm-s-Themes-for-Brackets-brunante .CodeMirror-linenumber {
     color: #aaa;
 }
+
+/* Scrollbars */
+.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+    background: transparent !important;
+}
+
+.platform-win ::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background: #666;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+    box-shadow: none;
+    background: #777;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:active {
+    box-shadow: none;
+    background: #888;
+}
+
 /* By using these two extreme colours, we make the cursor stand out no matter what the
    background colour is */
 

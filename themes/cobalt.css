@@ -59,6 +59,27 @@
     outline: 1px solid grey;
     color: white !important
 }
+
+/* Scrollbars */
+.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+    background: #0a355c !important;
+}
+
+.platform-win ::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background: #1b5589;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+    box-shadow: none;
+    background: #1e63a0;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:active {
+    box-shadow: none;
+    background: #4284bf;
+}
+
 /** CodeMirror styles **/
 
 .cm-s-Themes-for-Brackets-cobalt.CodeMirror,

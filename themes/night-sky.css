@@ -27,6 +27,27 @@
     color: rgba(255, 255, 255, 0.9);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Scrollbars */
+.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+    background: transparent !important;
+}
+
+.platform-win ::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background: #343739;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+    box-shadow: none;
+    background: #3c3f41;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:active {
+    box-shadow: none;
+    background: #56595a;
+}
+
 .inline-widget {
     /* Quick-edit styles */
     background-color: rgb(45, 47, 44);
@@ -51,47 +72,6 @@ a.more-info {
     text-shadow: none;
     color: #CCC;
 }
-/** Scrollbars **/
-
-.CodeMirror-gutter-filler,
-.CodeMirror-scrollbar-filler {
-    background: transparent;
-}
-.CodeMirror .CodeMirror-vscrollbar {
-    width: 8px;
-    bottom: 8px !important;
-}
-/*Scrollbar vertical*/
-
-.CodeMirror::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-.CodeMirror::-webkit-scrollbar-track {
-    background: none;
-}
-.CodeMirror-gutter-filler,
-.CodeMirror-scrollbar-filler {
-    background: none;
-}
-.CodeMirror::-webkit-scrollbar-thumb {
-    background: #56595a;
-    border-radius: 4px
-}
-.CodeMirror::-webkit-scrollbar-thumb:hover {
-    background: #666666;
-    border-radius: 4px
-}
-.CodeMirror-scrollbar-filler {
-    height: 8px !important;
-    width: 8px !important;
-    background: none;
-}
-.CodeMirror .CodeMirror-hscrollbar {
-    height: 8px;
-    right: 8px !important;
-}
-/*Scrollbar horizontal*/
 
 /** CodeMirror styles **/
 

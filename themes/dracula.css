@@ -11,6 +11,28 @@
     /* Quick-edit styles */
     background: rgb(51, 51, 51);
 }
+
+/* Scrollbars */
+.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+    background: #282828 !important;
+}
+
+.platform-win ::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background: #5d5f60;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+    box-shadow: none;
+    background: #6c6c6c;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:active {
+    box-shadow: none;
+    background: #797979;
+}
+
+
 .cm-s-Themes-for-Brackets-dracula.CodeMirror,
 .cm-s-Themes-for-Brackets-dracula .CodeMirror-scroll {
     background: #282a36 !important;

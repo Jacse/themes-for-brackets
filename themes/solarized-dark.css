@@ -47,6 +47,36 @@ http://ethanschoonover.com/solarized
     color: #EEE !important;
     background: none !Important;
 }
+
+/* Ekstra padding. See #117 */
+.cm-s-Themes-for-Brackets-solarized-dark.CodeMirror pre {
+    padding: 0 15px 0 5px
+}
+
+/* Scrollbars */
+.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+    background: transparent !important;
+}
+
+.platform-win ::-webkit-scrollbar {
+    background: transparent;
+}
+
+.platform-win ::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background: #666;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+    box-shadow: none;
+    background: #777;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:active {
+    box-shadow: none;
+    background: #999;
+}
+
 /*
 Solarized color pallet
 http://ethanschoonover.com/solarized/img/solarized-palette.png

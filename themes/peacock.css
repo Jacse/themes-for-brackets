@@ -16,48 +16,26 @@ CodeMirror CSS: Paweł Chętkowski
 .CodeMirror div.CodeMirror-cursor {
     border-left: 1px solid #ede0ce !important;
 }
-/*Brackets is based on webkit, so you can use scrollbar styling. Example below contains 8px width, grey scrollbar for the main area. You can use it with other section, just remember about z-indexes or things like 'selected' with overlap your scrollbar.*/
 
-.CodeMirror .CodeMirror-vscrollbar {
-    width: 8px;
-    bottom: 8px !important;
+/* Scrollbars */
+.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+    background: transparent !important;
 }
-/*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
 
-.CodeMirror .CodeMirror-hscrollbar {
-    height: 8px;
-    right: 8px !important;
-}
-/*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
-
-.CodeMirror::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-/* The width of vertical scrollbars and height of horizontal scrollbars*/
-
-.CodeMirror-scrollbar-filler {
-    height: 8px !important;
-    width: 8px !important;
-    background: none;
-}
-/* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
-
-.CodeMirror-gutter-filler {
-    height: 8px !important;
-    background: none;
-}
-/* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
-
-.CodeMirror::-webkit-scrollbar-track {
-    background: none;
-}
-/* The track that scrollbars run in */
-
-.CodeMirror::-webkit-scrollbar-thumb {
+.platform-win ::-webkit-scrollbar-thumb {
+    box-shadow: none;
     background: #403c37;
 }
-/* The scrollbar thumb */
+
+.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+    box-shadow: none;
+    background: #504a43;
+}
+
+.platform-win ::-webkit-scrollbar-thumb:active {
+    box-shadow: none;
+    background: #605951;
+}
 
 .CodeMirror .CodeMirror-scroll .CodeMirror-gutters {
     background: #2b2a27;

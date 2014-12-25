@@ -374,51 +374,27 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 /* Scrollbar gutter for the sidebar - Sidebar Scrollbar rinne */
 
-#sidebar::-webkit-scrollbar-track {
-    background-color: transparent;
+/* Scrollbars */
+.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+    background: #5C5C5C !important;
 }
-/* Schrollbar  ::-webkit-scrollbar"  in the main area */
 
-::-webkit-scrollbar {
-    width: 11px !important;
-    height: 11px !important;
-}
-.CodeMirror-scrollbar-filler {
-    height: 11px !important;
-    width: 11px !important;
-    background: #5C5C5C;
-}
-.CodeMirror-vscrollbar {
-    width: 11px;
-    bottom: 11px !important;
-}
-.CodeMirror .CodeMirror-hscrollbar {
-    height: 11px;
-    right: 11px !important;
-}
-/* Scrollbar gutter - Scrollbar rinne */
-
-::-webkit-scrollbar-track {
-    background-color: #5C5C5C;
-}
-/* Scroll object - "background-color" dont work use border to change color - Scrollbar anfasser */
-
-::-webkit-scrollbar-thumb {
-    border: 6px solid #444749;
+.platform-win ::-webkit-scrollbar-thumb {
+    box-shadow: none;
+    background: #444749;
     border-radius: 2px;
 }
-::-webkit-scrollbar-thumb:hover {
-    border: 6px solid #1C2020;
-}
-::-webkit-scrollbar-thumb:active {
-    border: 6px solid #101010;
-}
-/*Transparent Scroll Bar Background*/
 
-.CodeMirror-gutter-filler,
-.CodeMirror-scrollbar-filler {
-    background: transparent;
+.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+    box-shadow: none;
+    background: #353839;
 }
+
+.platform-win ::-webkit-scrollbar-thumb:active {
+    box-shadow: none;
+    background: #292b2c;
+}
+
 /* the "x" to close, shout work for all avalibal classes  */
 
 .close {
