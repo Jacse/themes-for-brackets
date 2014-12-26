@@ -162,3 +162,6 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 .CodeMirror pre {
     padding: 0 15px 0 5px;
 }
+.CodeMirror .cm-variable {
+    color: #ccc19b;
+}
