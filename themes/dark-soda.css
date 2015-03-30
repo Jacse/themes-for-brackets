@@ -16,6 +16,13 @@
     /* Quick-edit styles */
     background: rgb(51, 51, 51);
 }
+.close {
+    /* close icon in inline-widgets */
+    color: #bbb; /* sidebar color */
+}
+.close:hover {
+    color: #ccc;
+}
 .inlineEditorHolder > div > .CodeMirror-wrap {
     background: rgb(51, 51, 51);
 }

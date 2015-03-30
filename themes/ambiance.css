@@ -198,6 +198,14 @@
     /* Quick-edit etc. */
     background-color: #2e2d2d;
 }
+.close {
+    /* close icon in inline-widgets */
+    color: #eed1b3;
+}
+.close:hover {
+    color: #CCC;
+}
+
 .css-prop-defn code,
 .css-prop-defn h1,
 .css-prop-values dl dt {
