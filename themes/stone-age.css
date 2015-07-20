@@ -418,7 +418,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
     box-shadow: 0 10px 20px black;
 }
 .CodeMirror-gutter-elt {
-    padding-left: 15px;
+    padding-left: 4px;
     padding-right: 5px;
 }
 /*Active line nummber - Aktive zahlen spalte - may need !important*/
