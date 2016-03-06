@@ -18,7 +18,7 @@ div.main-view {
 }
 body.in-browser .modal-bar,
 body:not(.has-appshell-menus) .modal-bar {
-    border-top: 1px solid #e0f0fa; /* border-top: 1px solid #0f0; */
+    border-top: 1px solid #e0f0fa;
     padding: 5px 10px;
     color: rgba(0, 0, 0, 0);
 }
@@ -38,15 +38,15 @@ div.modal-bar div#replace-group input#replace-with {
     clear: both;
 }
 #titlebar ul.nav li.dropdown a.dropdown-toggle:hover {
-    background: rgb(224, 240, 250) !important; /* background: rgb(48, 252, 0) !important; */
+    background: rgb(224, 240, 250) !important;
     border-color: #fff;
 }
 #titlebar div.title-wrapper {
     padding: 5px 0 5px 0;
 }
 #titlebar div.title-wrapper span.title {
-    color: #808080; /* color: #efefef; */
-    font-size: 18px; /* font-size: 12px; */
+    color: #808080;
+    font-size: 18px;
     font-weight: normal;
 }
 #titlebar a.dropdown-toggle {
