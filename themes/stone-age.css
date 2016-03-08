@@ -9,49 +9,7 @@ JoQurt - visit us on joqurt.com
 div.main-view {
     background-color: rgba(0, 0, 0, 0);
 }
-/************** TitleBar *************/
 
-#titlebar,
-.modal-bar {
-    padding: 0 0 0 0;
-    background-color: rgba(0, 0, 0, 0);
-}
-body.in-browser .modal-bar,
-body:not(.has-appshell-menus) .modal-bar {
-    border-top: 1px solid #0f0;
-    padding: 5px 10px;
-    color: rgba(0, 0, 0, 0);
-}
-div.modal-bar div#find-group input#find-what,
-div.modal-bar div#replace-group input#replace-with {
-    border: none;
-    box-shadow: none;
-}
-#titlebar ul.nav {
-    float: none;
-    margin-left: 0;
-    background-color: rgba(0, 0, 0, 0);
-}
-#titlebar ul.nav:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-#titlebar ul.nav li.dropdown a.dropdown-toggle:hover {
-    background: rgb(48, 252, 0) !important;
-    border-color: #fff;
-}
-#titlebar div.title-wrapper {
-    padding: 5px 0 5px 0;
-}
-#titlebar div.title-wrapper span.title {
-    color: #efefef;
-    font-size: 12px;
-    font-weight: normal;
-}
-#titlebar a.dropdown-toggle {
-    font-weight: normal;
-}
 /*************************************** Sidebars ***************************************/
 
 /************** Left Sidebar **************/
