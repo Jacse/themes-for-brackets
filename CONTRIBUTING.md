@@ -5,13 +5,14 @@
 ###We recommend the following Brackets extensions to aid in debugging:
 
 * https://github.com/cfjedimaster/brackets-csslint
-* https://github.com/dsbonev/whitespace-normalizer
+* https://github.com/kidwm/brackets-editorconfig
 * https://github.com/mikaeljorhult/brackets-todo (optional)
 * https://github.com/DennisKehrig/brackets-show-whitespace (optional)
 * https://github.com/couzteau/brackets-git-info (optional)
 
 ###Coding Guidelines:
 
+* Please install the EditorConfig extension which will setup brackets for [our standards](.editorconfig).
 * Please use 4 spaces instead of tabs.
 * Make sure there is a new line at the end of the file.
 * Install csslint extension and make sure there are no errors.

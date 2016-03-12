@@ -1,24 +1,24 @@
-#working-set-header,
-#working-set-list-container
+.dark #working-set-header,
+.dark #working-set-list-container
 {
     /* Working files */
     background: rgba(0,0,0,0.1);
 }
-#project-files-header .btn-alt-quiet {
+.dark #project-files-header .btn-alt-quiet {
     /* the folder button */
     background: rgba(255,255,255,0.1);
 }
-.sidebar-selection,
-.filetree-selection {
+.dark .sidebar-selection,
+.dark .filetree-selection {
     /* Selected file or folder */
     background: rgba(0,0,0,0.1);
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-#sidebar,
-#main-toolbar,
-#status-bar,
-#status-info,
+.dark #sidebar,
+.dark #main-toolbar,
+.dark #status-bar,
+.dark #status-info,
 .inline-widget {
     background: #242424;
     color: #ccc;
@@ -51,26 +51,6 @@
 }
 .cm-s-Themes-for-Brackets-brunante .CodeMirror-linenumber {
     color: #aaa;
-}
-
-/* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
-    background: transparent !important;
-}
-
-.platform-win ::-webkit-scrollbar-thumb {
-    box-shadow: none;
-    background: #666;
-}
-
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
-    box-shadow: none;
-    background: #777;
-}
-
-.platform-win ::-webkit-scrollbar-thumb:active {
-    box-shadow: none;
-    background: #888;
 }
 
 /* By using these two extreme colours, we make the cursor stand out no matter what the

@@ -1,15 +1,15 @@
-.cm-s-Themes-for-Brackets-dark-soda::-webkit-scrollbar-track,
+.dark.cm-s-Themes-for-Brackets-dark-soda::-webkit-scrollbar-track,
 .cm-s-Themes-for-Brackets-dark-soda .CodeMirror-gutter-filler,
 .cm-s-Themes-for-Brackets-dark-soda .CodeMirror-scrollbar-filler {
     background: transparent !important;
 }
-#status-bar {
+.dark #status-bar {
     /* Bottom status bar */
     border-top: 1px solid #484b4d;
     background: #3C3F41;
     color: #FFF;
 }
-#main-toolbar {
+.dark #main-toolbar {
     background: #3C3F41;
 }
 .inline-widget {
@@ -41,22 +41,22 @@
 }
 
 /* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+.dark.platform-win .CodeMirror-scrollbar-filler,.dark.platform-win .CodeMirror-gutter-filler, .dark.platform-linux .CodeMirror-scrollbar-filler,.dark.platform-linux .CodeMirror-gutter-filler, .dark.platform-win .CodeMirror-scrollbar-filler, .dark.platform-win .CodeMirror-gutter-filler, .dark.platform-win ::-webkit-scrollbar {
     background: transparent !important;
 }
 
-.platform-win ::-webkit-scrollbar-thumb {
+.dark.platform-win ::-webkit-scrollbar-thumb {
     box-shadow: none;
     background: #5d5f60;
     border-radius: 6px;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+.dark.platform-win ::-webkit-scrollbar-thumb:hover,.dark.platform-win ::-webkit-scrollbar-thumb:focus {
     box-shadow: none;
     background: #6c6c6c;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:active {
+.dark.platform-win ::-webkit-scrollbar-thumb:active {
     box-shadow: none;
     background: #797979;
 }

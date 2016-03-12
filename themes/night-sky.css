@@ -1,54 +1,54 @@
 /** Bars 'n stuff **/
 
-#sidebar {
+.dark #sidebar {
     text-shadow: none;
     /*border-right:1px solid #1e1f20;*/
 }
-#main-toolbar {
+.dark #main-toolbar {
     background-color: #3c3f41;
 }
-#titlebar {
+.dark #titlebar {
     background: #3c3f41;
     color: rgba(255, 255, 255, 0.9);
 }
-#titlebar .nav .dropdown .dropdown-toggle {
+.dark #titlebar .nav .dropdown .dropdown-toggle {
     color: rgba(255, 255, 255, 0.9);
 }
-#titlebar .nav .dropdown .dropdown-toggle:hover {
+.dark #titlebar .nav .dropdown .dropdown-toggle:hover {
     background: #fff;
     border-color: #fff;
     color: #000;
 }
-#titlebar .nav .dropdown.open .dropdown-toggle {
+.dark #titlebar .nav .dropdown.open .dropdown-toggle {
     color: #000;
 }
-#status-bar {
+.dark #status-bar {
     background: #3c3f41;
     color: rgba(255, 255, 255, 0.9);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+.dark.platform-win .CodeMirror-scrollbar-filler,.dark.platform-win .CodeMirror-gutter-filler, .dark.platform-linux .CodeMirror-scrollbar-filler,.dark.platform-linux .CodeMirror-gutter-filler, .dark.platform-win .CodeMirror-scrollbar-filler, .dark.platform-win .CodeMirror-gutter-filler, .dark.platform-win ::-webkit-scrollbar {
     background: transparent !important;
 }
 
-.platform-win ::-webkit-scrollbar-thumb {
+.dark.platform-win ::-webkit-scrollbar-thumb {
     box-shadow: none;
     background: #343739;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+.dark.platform-win ::-webkit-scrollbar-thumb:hover,.dark.platform-win ::-webkit-scrollbar-thumb:focus {
     box-shadow: none;
     background: #3c3f41;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:active {
+.dark.platform-win ::-webkit-scrollbar-thumb:active {
     box-shadow: none;
     background: #56595a;
 }
 
-.inline-widget {
+.dark .inline-widget {
     /* Quick-edit styles */
     background-color: rgb(45, 47, 44);
 }
@@ -85,7 +85,7 @@ a.more-info {
     color: #8DA6CE !important;
 }
 .cm-s-Themes-for-Brackets-night-sky.CodeMirror,
-#editor-holder #not-editor,
+.dark #editor-holder #not-editor,
 .cm-s-Themes-for-Brackets-night-sky .CodeMirror-scroll {
     background-color: rgb(30, 34, 29);
     color: #F8F8F8;

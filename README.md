@@ -32,7 +32,6 @@ List of themes
 * Ambiance <br />![Ambiance theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/ambiance.png) 
 * Brunante <br />![Brunante theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/brunante.png) 
 * Carbon blue <br />![Carbon blue theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/carbon-blue.png) 
-* Cobalt <br />![Cobalt theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/cobalt.png) 
 * Dark soda <br />![Dark soda theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dark-soda.png) 
 * Dracula <br />![Dracula theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/dracula.png) 
 * Idle fingers <br />![Idle fingers theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/idle-fingers.png) 
