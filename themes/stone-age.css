@@ -58,79 +58,79 @@ div.modal-bar div#replace-group input#replace-with {
 
 /* General sidebar style */
 
-#sidebar {
+.dark .dark #sidebar {
     background-color: #313638;
 }
 /************** Working files - Offene Datein **************/
 
 /* "Working files" header - "Offene Datein" header */
 
-#sidebar #working-set-header, #working-set-list-container {
+.dark .dark #sidebar #working-set-header, .dark .dark #working-set-list-container {
     background-color: #1C2020;
     color: #D7D8D9;
 }
 /* Zahnrad - Options */
 
-#sidebar #working-set-option-btn:hover {
+.dark .dark #sidebar #working-set-option-btn:hover {
     border: 1px solid rgba(255, 255, 255, 0.35);
     opacity: 1;
 }
 /* Working files - container - Offene Datein */
 
-#sidebar #open-files-container {
+.dark .dark #sidebar #open-files-container {
     background-color: #1C2020;
     border-left: 1px solid #2a2c2d;
 }
 
 /************** Project files - container - Projekt datein **************/
 
-.sidebar-selection,
-.filetree-selection {
+.dark .sidebar-selection,
+.dark .filetree-selection {
     /* Selected file or folder both places */
     border: none;
     color: #D7D8D9;
 }
-.sidebar-selection {
+.dark .sidebar-selection {
     /* Selected file or folder */
     background-color: #313638;
 }
-.filetree-selection {
+.dark .filetree-selection {
     /* Selected file or folder i "working files" */
     background-color: #1C2020;
 }
 /*Available project files - alle verfügbaren datein und ordner des Projektes */
 
-#sidebar #project-files-container {
+.dark #sidebar #project-files-container {
     background-color: #313638;
     border-left: 1px solid #2a2c2d;
     border-bottom: 1px solid #2a2c2d;
 }
 /* Header */
 
-#sidebar #project-files-header {
+.dark #sidebar #project-files-header {
     background-color: #313638;
     border-top: solid 1px #2A2C2D;
     border-left: 1px solid #2a2c2d;
 }
-#sidebar #project-files-header #project-dropdown-toggle {
+.dark #sidebar #project-files-header #project-dropdown-toggle {
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0);
 }
-#sidebar #project-files-header #project-dropdown-toggle:hover {
+.dark #sidebar #project-files-header #project-dropdown-toggle:hover {
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 5px;
 }
 /* like up just the extension -(*.html)- wie oben nur die endung */
 
-#sidebar #project-files-container ul li a span.extension {
+.dark #sidebar #project-files-container ul li a span.extension {
     color: #90AEB8;
 }
 /************* Right Sidebar - Rechte Toolbar **************/
 
 /*Whole toolbar*/
 
-#main-toolbar {
+.dark #main-toolbar {
     background-color: #313638;
     border-bottom: 1px solid #2a2c2d;
     border-right: 1px solid #2a2c2d;
@@ -138,11 +138,11 @@ div.modal-bar div#replace-group input#replace-with {
 }
 /* live preview, extensions buttons */
 
-#main-toolbar .buttons a {
+.dark #main-toolbar .buttons a {
     border: 1px solid rgba(0, 0, 0, 0);
     opacity: 0.65;
 }
-#main-toolbar .buttons a:hover {
+.dark #main-toolbar .buttons a:hover {
     border: 1px solid rgba(255, 255, 255, 0.35);
     background-color: transparent !important;
     opacity: 1;
@@ -150,27 +150,27 @@ div.modal-bar div#replace-group input#replace-with {
 }
 /************** Status bar - bottom **************/
 
-#status-bar {
+.dark #status-bar {
     background-color: #313638;
     border-bottom: 1px solid #2a2c2d;
 }
-#status-bar #status-info {
+.dark #status-bar #status-info {
     /* Line & column info - Zeilen, Spalten info */
     color: #D7D8D9;
 }
-#status-bar #status-file {
+.dark #status-bar #status-file {
     color: #BEC0C0 !important;
 }
 /* whole lines in document info - alle zeilen angabe */
 
 /* Indent status info(tab or spaces) */
 
-#status-bar #status-indicators #status-indent {
+.dark #status-bar #status-indicators #status-indent {
     color: #999;
     border-right: 1px solid #2C3032;
     border-left: 1px solid #2C3032;
 }
-#status-bar #status-indicators #status-indent:hover {
+.dark #status-bar #status-indicators #status-indent:hover {
     color: white;
     border-right: 1px solid rgba(255, 255, 255, 0.35);
     border-left: 1px solid rgba(255, 255, 255, 0.35);
@@ -178,12 +178,12 @@ div.modal-bar div#replace-group input#replace-with {
 }
 /* Indent status info(overwrite or insert */
 
-#status-bar #status-indicators #status-overwrite {
+.dark #status-bar #status-indicators #status-overwrite {
     color: #999;
     border-right: 1px solid rgba(0, 0, 0, 0);
     border-left: 1px solid #2C3032;
 }
-#status-bar #status-indicators #status-overwrite:hover {
+.dark #status-bar #status-indicators #status-overwrite:hover {
     color: white;
     border-right: 1px solid rgba(255, 255, 255, 0.35);
     border-left: 1px solid rgba(255, 255, 255, 0.35);
@@ -191,17 +191,17 @@ div.modal-bar div#replace-group input#replace-with {
 }
 /* Error's in developer tools*/
 
-#status-bar #status-indicators #error-counter {
+.dark #status-bar #status-indicators #error-counter {
     color: #999;
     border-right: 1px solid rgba(0, 0, 0, 0);
     border-radius: 5px;
 }
-#status-bar #status-indicators #error-counter:hover {
+.dark #status-bar #status-indicators #error-counter:hover {
     color: white;
     border-right: 1px solid rgba(255, 255, 255, 0.35);
     border-left: 1px solid rgba(255, 255, 255, 0.35);
 }
-#status-bar #status-indicators #status-language {
+.dark #status-bar #status-indicators #status-language {
     color: #D7D8D9 !important;
 }
 /* Language info */
@@ -210,10 +210,10 @@ div.modal-bar div#replace-group input#replace-with {
 
 /* Editor when no file is open */
 
-#editor-holder {
+.dark #editor-holder {
     background-color: rgba(15, 19, 20, 0.6) !important;
 }
-#editor-holder #not-editor {
+.dark #editor-holder #not-editor {
     background-color: rgba(15, 19, 20, 0.1) !important;
 }
 /************** Main coding area - Schreibberreich **************/
