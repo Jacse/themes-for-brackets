@@ -1,7 +1,10 @@
 #status-indicators,
 #status-indicators div:not(#status-inspection),
 #status-info,
-#status-indicators {
+.dark #status-indicators,
+.dark #status-indicators div:not(#status-inspection),
+.dark #status-info,
+.dark #status-indicators{
     background: transparent;
     color: inherit;
 }

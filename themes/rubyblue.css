@@ -1,62 +1,62 @@
 /* SIDEBAR */
 
-#sidebar,
-#main-toolbar {
+.dark #sidebar,
+.dark #main-toolbar {
     background: #1F4661;
     text-shadow: none;
 }
-#working-set-list-container {
+.dark #working-set-list-container {
     /* Working files */
     background: #16314a;
     color: #E0E0E0!important;
 }
 
-#project-files-header {
+.dark #project-files-header {
     /* Delimiter between "working files" and project files */
     border-top: 4px solid #3E7087;
 }
 
-#project-files-header .btn-alt-quiet {
+.dark #project-files-header .btn-alt-quiet {
     background: transparent;
 }
-#project-files-header .btn-alt-quiet:hover {
+.dark #project-files-header .btn-alt-quiet:hover {
     /* Open url when hover */
     color: #FFF!important;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.sidebar-selection,
-.filetree-selection {
+.dark .sidebar-selection,
+.dark .filetree-selection {
     /* Selected file or folder */
     border-bottom: 1px solid rgba(255,255,255,0.1);
     background: #3E7087;
 }
-#status-bar {
+.dark #status-bar {
     /* Bottom status bar */
     background: #1F4661;
     border-top: 1px solid #3E7087;
     color: #FFF;
 }
-.inline-widget a.close {
+.dark .inline-widget a.close {
     color: black !important;
 }
 
 /* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+.dark.platform-win .CodeMirror-scrollbar-filler,.dark.platform-win .CodeMirror-gutter-filler, .dark.platform-linux .CodeMirror-scrollbar-filler,.dark.platform-linux .CodeMirror-gutter-filler, .dark.platform-win .CodeMirror-scrollbar-filler, .dark.platform-win .CodeMirror-gutter-filler, .dark.platform-win ::-webkit-scrollbar {
     background: #1F4661 !important;
 }
 
-.platform-win ::-webkit-scrollbar-thumb {
+.dark.platform-win ::-webkit-scrollbar-thumb {
     box-shadow: none;
     background: #3E7087;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+.dark.platform-win ::-webkit-scrollbar-thumb:hover,.dark.platform-win ::-webkit-scrollbar-thumb:focus {
     box-shadow: none;
     background: #417a95;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:active {
+.dark.platform-win ::-webkit-scrollbar-thumb:active {
     box-shadow: none;
     background: #4a849f;
 }

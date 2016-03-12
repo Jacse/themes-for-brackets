@@ -18,21 +18,21 @@ CodeMirror CSS: Paweł Chętkowski
 }
 
 /* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
-    background: transparent !important;
+.dark.platform-win .CodeMirror-scrollbar-filler,.dark.platform-win .CodeMirror-gutter-filler, .dark.platform-linux .CodeMirror-scrollbar-filler,.dark.platform-linux .CodeMirror-gutter-filler, .dark.platform-win .CodeMirror-scrollbar-filler, .dark.platform-win .CodeMirror-gutter-filler, .dark.platform-win ::-webkit-scrollbar {
+   background: transparent !important;
 }
 
-.platform-win ::-webkit-scrollbar-thumb {
+.dark.platform-win ::-webkit-scrollbar-thumb {
     box-shadow: none;
     background: #403c37;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+.dark.platform-win ::-webkit-scrollbar-thumb:hover,.dark.platform-win ::-webkit-scrollbar-thumb:focus {
     box-shadow: none;
     background: #504a43;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:active {
+.dark.platform-win ::-webkit-scrollbar-thumb:active {
     box-shadow: none;
     background: #605951;
 }
@@ -125,7 +125,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 /*Status bar - bottom*/
 
-#status-bar {
+.dark #status-bar {
     background: #2b2a27;
     color: #ede0ce;
     border-top: 1px solid #403c37;

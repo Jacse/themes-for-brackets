@@ -35,6 +35,7 @@ define(function (require, exports, module) {
         ExtensionUtils      = brackets.getModule("utils/ExtensionUtils"),
         FileSystem          = brackets.getModule("filesystem/FileSystem"),
         PreferencesManager  = brackets.getModule("preferences/PreferencesManager"),
+        EditorManager = brackets.getModule("editor/EditorManager"),
         ThemeManager        = brackets.getModule("view/ThemeManager");
 
     var prefs = PreferencesManager.getExtensionPrefs("themes"),
@@ -70,10 +71,6 @@ define(function (require, exports, module) {
                     name: "Themes-for-Brackets-" + contents[i].name.replace(".css", ""),
                     title: "Themes for Brackets  " + upperCase(contents[i].name.replace(".css", "")).replace(/\-/g, ' ')
                 });
-                
-                //text.innerHTML += '* ' + a + ' <br />![' + a + ' theme](https://raw.github.com/Jacse/themes-for-brackets/master/images/' + contents[i].name.replace(".css", "") + '.png) \n';
-                //var name = "Themes-for-Brackets-" + contents[i].name.replace(".css", ""),
-                //   title = "Themes for Brackets  " + upperCase(contents[i].name.replace(".css", "")).replace(/\-/g, ' ');
             }
         }
         
@@ -88,10 +85,14 @@ define(function (require, exports, module) {
             return 0;
         });
         for (i = 0; i < tempArr.length; i++) {
-            ThemeManager.loadFile(moduleThemesDir + tempArr[i].file, {name: tempArr[i].name, title: tempArr[i].title, dark: true});
+            ThemeManager.loadFile(moduleThemesDir + tempArr[i].file, {name: tempArr[i].name, title: tempArr[i].title, theme: {dark: true}});
         }
     });
 
+    ExtensionUtils.loadStyleSheet(module, "stuff.css").then(function () {
+        EditorManager.resizeEditor();
+    });
+    
     $("body").append('<link rel="stylesheet" id="TfB-style">');
     $("body").append('<link rel="stylesheet" href="' + ExtensionUtils.getModulePath(module) + 'stuff.css">');
 

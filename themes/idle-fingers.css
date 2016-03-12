@@ -5,7 +5,7 @@ Good luck, have fun!
 
 /*Sidebar*/
 
-#sidebar, #working-set-list-container {
+.dark #sidebar, .dark #working-set-list-container {
     background-color: #323232 !important;
     color: #aeaeae !important;
 }
@@ -14,10 +14,10 @@ Good luck, have fun!
 
 /*Project file header*/
 
-#project-files-header {
+.dark #project-files-header {
     padding: 0;
 }
-#project-files-header .btn-alt-quiet {
+.dark #project-files-header .btn-alt-quiet {
     /* Folder button */
     border-radius: 0;
     width: 100%;
@@ -26,29 +26,29 @@ Good luck, have fun!
     padding: 10px;
 }
 
-.sidebar-selection,
-.filetree-selection {
+.dark .sidebar-selection,
+.dark .filetree-selection {
     /* Selected file or folder */
     background: rgba(0,0,0,0.1);
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 /* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+.dark.platform-win .CodeMirror-scrollbar-filler,.dark.platform-win .CodeMirror-gutter-filler, .dark.platform-linux .CodeMirror-scrollbar-filler,.dark.platform-linux .CodeMirror-gutter-filler, .dark.platform-win .CodeMirror-scrollbar-filler, .dark.platform-win .CodeMirror-gutter-filler, .dark.platform-win ::-webkit-scrollbar {
     background: transparent !important;
 }
 
-.platform-win ::-webkit-scrollbar-thumb {
+.dark.platform-win ::-webkit-scrollbar-thumb {
     box-shadow: none;
     background: #565656;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+.dark.platform-win ::-webkit-scrollbar-thumb:hover,.dark.platform-win ::-webkit-scrollbar-thumb:focus {
     box-shadow: none;
     background: #656565;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:active {
+.dark.platform-win ::-webkit-scrollbar-thumb:active {
     box-shadow: none;
     background: #f5f5f5;
 }
@@ -205,7 +205,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 /*Status bar - bottom*/
 
-#status-bar {
+.dark #status-bar {
     background-color: #323232;
     color: #aeaeae;
 }
@@ -213,7 +213,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 /*Right toolbar - live preview, extensions*/
 
-#main-toolbar {
+.dark #main-toolbar {
     background-color: #323232
 }
 /*Whole toolbar*/

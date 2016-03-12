@@ -1,29 +1,29 @@
-#status-bar,
+.dark #status-bar,
 .cm-s-Themes-for-Brackets-mbo .CodeMirror-gutters,
-#main-toolbar {
+.dark #main-toolbar {
     background: #333;
     color: rgba(255, 255, 255, 0.9);
 }
-#sidebar {
+.dark #sidebar {
     background: #414141;
 }
 
 /* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
-    background: transparent !important;
+.dark.platform-win .CodeMirror-scrollbar-filler,.dark.platform-win .CodeMirror-gutter-filler, .dark.platform-linux .CodeMirror-scrollbar-filler,.dark.platform-linux .CodeMirror-gutter-filler, .dark.platform-win .CodeMirror-scrollbar-filler, .dark.platform-win .CodeMirror-gutter-filler, .dark.platform-win ::-webkit-scrollbar {
+   background: transparent !important;
 }
 
-.platform-win ::-webkit-scrollbar-thumb {
+.dark.platform-win ::-webkit-scrollbar-thumb {
     box-shadow: none;
     background: #5d5f60;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+.dark.platform-win ::-webkit-scrollbar-thumb:hover,.dark.platform-win ::-webkit-scrollbar-thumb:focus {
     box-shadow: none;
     background: #6c6c6c;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:active {
+.dark.platform-win ::-webkit-scrollbar-thumb:active {
     box-shadow: none;
     background: #797979;
 }
@@ -67,7 +67,7 @@ a.more-info {
     color: #d9d9d9;
 }
 .cm-s-Themes-for-Brackets-mbo.CodeMirror,
-#editor-holder #not-editor,
+.dark #editor-holder #not-editor,
 .cm-s-Themes-for-Brackets-mbo .CodeMirror-scroll {
     background-color: #2c2c2c;
     color: #ffffe9;

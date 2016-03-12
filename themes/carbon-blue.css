@@ -3,8 +3,8 @@ BearTheme is bare theme for styling Adobe Brackets (Code Mirror) editor. Some el
 Good luck, have fun!
 */
 
-.sidebar-selection,
-.filetree-selection {
+.dark .sidebar-selection,
+.dark .filetree-selection {
     /* Selected file or folder */
     background: #2f3234;
     border-bottom: none;
@@ -12,22 +12,22 @@ Good luck, have fun!
 }
 /*Sidebar*/
 
-#sidebar {
+.dark #sidebar {
     background-color: #25292a;
     color: #586e75;
 }
 /*General sidebar style*/
 
-#working-set-header,
-#working-set-list-container {
+.dark #working-set-header,
+.dark #working-set-list-container {
     /* Working files */
     background-color: #25292a;
     color: #586e75;
 }
-#project-files-header {
+.dark #project-files-header {
     padding: 0;
 }
-#project-files-header .btn-alt-quiet {
+.dark #project-files-header .btn-alt-quiet {
     /* Folder button */
     border-radius: 0;
     width: 100%;
@@ -41,40 +41,27 @@ Good luck, have fun!
 
 /*Project files container*/
 
-#sidebar #project-files-container {
+.dark #sidebar #project-files-container {
     background-color: #25292a;
     color: #657A81;
 }
-/*Project files - WITHOUT header*/
-
-.jstree-brackets li a,
-.jstree-brackets li .extension,
-.jstree-brackets li a.jstree-clicked,
-/* Files, folder and extensions */
-
-#open-files-container li a,
-#open-files-container li .extension,
-#open-files-container li a.jstree-clicked {
-    /* Files, folder and extensions in "working files"*/
-    color: #fff;
-}
 
 /* Scrollbars */
-.platform-win .CodeMirror-scrollbar-filler,.platform-win .CodeMirror-gutter-filler, .platform-linux .CodeMirror-scrollbar-filler,.platform-linux .CodeMirror-gutter-filler, .platform-win .CodeMirror-scrollbar-filler, .platform-win .CodeMirror-gutter-filler, .platform-win ::-webkit-scrollbar {
+.dark.platform-win .CodeMirror-scrollbar-filler,.dark.platform-win .CodeMirror-gutter-filler, .dark.platform-linux .CodeMirror-scrollbar-filler,.dark.platform-linux .CodeMirror-gutter-filler, .dark.platform-win .CodeMirror-scrollbar-filler, .dark.platform-win .CodeMirror-gutter-filler, .dark.platform-win ::-webkit-scrollbar {
     background: transparent !important;
 }
 
-.platform-win ::-webkit-scrollbar-thumb {
+.dark.platform-win ::-webkit-scrollbar-thumb {
     box-shadow: none;
     background: #586e75;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:hover,.platform-win ::-webkit-scrollbar-thumb:focus {
+.dark.platform-win ::-webkit-scrollbar-thumb:hover,.dark.platform-win ::-webkit-scrollbar-thumb:focus {
     box-shadow: none;
     background: #657A81;
 }
 
-.platform-win ::-webkit-scrollbar-thumb:active {
+.dark.platform-win ::-webkit-scrollbar-thumb:active {
     box-shadow: none;
     background: #688893;
 }
@@ -228,7 +215,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 /*Status bar - bottom*/
 
-#status-bar {
+.dark #status-bar {
     background-color: #25292a;
     color: #7D8C93;
 }
@@ -236,7 +223,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 
 /*Right toolbar - live preview, extensions*/
 
-#main-toolbar {
+.dark #main-toolbar {
     background-color: #25292a
 }
 /*Whole toolbar*/
