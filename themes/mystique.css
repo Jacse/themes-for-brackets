@@ -1,0 +1,370 @@
+/*
+                      _   _                  
+      /\/\  _   _ ___| |_(_) __ _ _   _  ___ 
+     /    \| | | / __| __| |/ _` | | | |/ _ \
+    / /\/\ \ |_| \__ \ |_| | (_| | |_| |  __/
+    \/    \/\__, |___/\__|_|\__, |\__,_|\___|
+            |___/              |_|           
+
+	Mercurial Canonical: https://bitbucket.org/morrisallison/brackets-mystique-theme
+	Git Mirror: https://github.com/morrisallison/brackets-mystique-theme
+	Copyright (c) 2015 Morris Allison III <author@morrisallison.com>
+	Released under the MIT License.
+*/
+#mystique-theme .drop-shadow {
+  box-shadow: inset 0 0 15px 0px rgba(0, 0, 0, 0.3);
+}
+/*    Structure    */
+.CodeMirror-searching,
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag,
+.cm-invalidchar,
+.cm-error,
+.cm-tab,
+.CodeMirror,
+.CodeMirror-scroll {
+  line-height: 18px;
+}
+.CodeMirror .CodeMirror-code pre {
+  min-height: 18px;
+}
+.CodeMirror-code pre > span,
+.CodeMirror-searching,
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag,
+.cm-invalidchar,
+.cm-error,
+.cm-tab {
+  display: inline-block;
+  height: 18px;
+  box-sizing: border-box;
+}
+.CodeMirror-wrap .CodeMirror-code pre,
+.CodeMirror-wrap .CodeMirror-code span {
+  display: inline;
+  height: auto;
+}
+/*    Style    */
+.CodeMirror,
+.CodeMirror-scroll {
+  background: #292d2f;
+  color: #cacdd3;
+  text-shadow: none;
+}
+.CodeMirror-lines {
+  padding-top: 36px;
+}
+.CodeMirror-linenumber {
+  color: #45484e;
+}
+.CodeMirror-activeline > .CodeMirror-gutter-wrapper > .CodeMirror-linenumber {
+  color: #5b6469;
+}
+.CodeMirror-activeline > .CodeMirror-gutter-wrapper > .CodeMirror-gutter-elt {
+  background: #333a3f;
+  outline: none;
+}
+.CodeMirror-activeline-background {
+  background: #333a3f;
+}
+.cm-bracket {
+  color: #cacdd3;
+}
+.cm-matchhighlight {
+  border-bottom: 1px dotted #adff00;
+}
+.CodeMirror-gutters {
+  background: none;
+  border-right: none;
+}
+.CodeMirror-cursor {
+  border-color: #eee !important;
+}
+.CodeMirror-gutter-elt {
+  background: #292d2f;
+}
+.cm-tab {
+  box-shadow: inset 1px 0 rgba(239, 249, 255, 0.15);
+}
+.cm-builtin {
+  color: #83c3ce;
+}
+.cm-operator {
+  color: #95bfd3;
+}
+.cm-hr,
+.cm-comment {
+  color: rgba(228, 245, 255, 0.32);
+}
+.cm-string {
+  color: #cc8b31;
+}
+.cm-string-2 {
+  color: #f46b1f;
+}
+.cm-number {
+  color: #ff6666;
+}
+.cm-atom {
+  color: #d4b56d;
+}
+.cm-attribute {
+  color: #ffb454;
+}
+.cm-keyword {
+  color: #6b85ff;
+}
+.cm-qualifier,
+.cm-def {
+  color: #cacdd3;
+}
+.cm-invalidchar,
+.cm-error {
+  outline: 1px solid #e66351;
+  background: #c14a3a;
+  color: #ddd;
+}
+.cm-variable {
+  color: #8fbaeb;
+}
+.cm-variable-2 {
+  color: #9bd4cb;
+}
+.cm-variable-3 {
+  color: #e09fc4;
+}
+.cm-property {
+  color: #a3d5a3;
+}
+.cm-meta {
+  color: #809f80;
+}
+.cm-tag {
+  color: #88b6be;
+}
+.cm-tag.cm-bracket {
+  color: #33a5b8;
+}
+.cm-header {
+  color: #6b85ff;
+}
+.cm-quote {
+  color: #a0a6b0;
+}
+.cm-link {
+  color: #4994eb;
+  text-decoration: underline;
+}
+.CodeMirror-selected {
+  background: #475157;
+}
+.CodeMirror.find-highlighting .CodeMirror-selected {
+  background: #b40068;
+  box-shadow: 0 0 0 1px #ff00ce;
+  border-radius: 0;
+}
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+  background: #740d31;
+  outline: 1px solid #8b1840;
+  color: #fff !important;
+}
+.CodeMirror-matchingtag.cm-string,
+.CodeMirror-matchingtag.cm-attribute {
+  color: #ffb454 !important;
+}
+.CodeMirror-searching {
+  background-color: #af7f00;
+  box-shadow: none;
+  outline: 1px solid #dea919;
+  color: #fff !important;
+  border-radius: 0;
+  border-bottom: none;
+}
+.CodeMirror-searching.searching-current-match {
+  background-color: #0087af;
+  outline-color: #0087af;
+}
+/**
+ * Supports the "QuickDocsJS" and "QuickDocsPHP" extensions
+ */
+.CodeMirror-linewidget .inline-widget {
+  background: #222525;
+}
+.CodeMirror-linewidget .inline-widget h1 {
+  color: #c4c7d0;
+}
+.CodeMirror-linewidget .inline-widget dt,
+.CodeMirror-linewidget .inline-widget b,
+.CodeMirror-linewidget .inline-widget strong {
+  color: #c4c7d0;
+}
+.CodeMirror-linewidget .inline-widget p,
+.CodeMirror-linewidget .inline-widget dd,
+.CodeMirror-linewidget .inline-widget .php-prop-summary,
+.CodeMirror-linewidget .inline-widget .php-prop-values,
+.CodeMirror-linewidget .inline-widget .js-prop-summary > div {
+  color: #a3a6ad;
+}
+.CodeMirror-linewidget .inline-widget .css-prop-defn a.more-info {
+  padding-left: 30px;
+}
+.CodeMirror-linewidget .inline-widget .css-prop-defn a.more-info,
+.CodeMirror-linewidget .inline-widget .bottom-links a {
+  background-color: #3f4850;
+  border: 1px solid #192025;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  color: #c9cdcf;
+  text-shadow: 0 1px 0 #232a30;
+}
+.CodeMirror-linewidget .inline-widget .css-prop-defn a.more-info:hover,
+.CodeMirror-linewidget .inline-widget .bottom-links a:hover {
+  background-color: #2a465c;
+  border: 1px solid #0f2231;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  color: #c9cdcf;
+  text-shadow: 0 1px 0 #162938;
+}
+.CodeMirror-linewidget .inline-widget .divider {
+  border-right-color: #0f0f0f;
+  border-left-color: #2f2f36;
+}
+.CodeMirror-linewidget .inline-widget .close {
+  color: #5b6469;
+}
+.CodeMirror-linewidget .inline-widget code {
+  color: #d4b56d;
+}
+.CodeMirror-linewidget .inline-text-editor {
+  background: #222324;
+}
+.CodeMirror-linewidget .inline-text-editor .inline-editor-header {
+  padding: 6px 10px 6px 40px;
+}
+.CodeMirror-linewidget .inline-text-editor .inline-editor-holder {
+  border-top: 1px solid #000;
+  box-shadow: 0 -1px 0 0 #303738;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-linenumber,
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-gutter,
+.CodeMirror-linewidget .inline-text-editor .CodeMirror {
+  background: #222525;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-lines {
+  padding-top: 0;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror {
+  padding: 15px 0 5px 0;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-gutter-elt,
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-linenumber {
+  background: #222525;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-foldgutter-open:after,
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-foldgutter-folded:after,
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-foldgutter-blank:after {
+  color: #454b4e;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-activeline-background {
+  background: #333a3f;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-activeline > .CodeMirror-gutter-wrapper > .CodeMirror-linenumber {
+  color: #5b6469;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-activeline > .CodeMirror-gutter-wrapper > .CodeMirror-gutter-elt {
+  background: #333a3f;
+}
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-activeline > .CodeMirror-gutter-wrapper .CodeMirror-foldgutter-open:after,
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-activeline > .CodeMirror-gutter-wrapper .CodeMirror-foldgutter-folded:after,
+.CodeMirror-linewidget .inline-text-editor .CodeMirror-activeline > .CodeMirror-gutter-wrapper .CodeMirror-foldgutter-blank:after {
+  color: #5b6469;
+}
+.not-editor {
+  /**
+	 * I embedded the image directly in CSS to
+	 * avoid hosting the image somewhere online. ^_^
+	 */
+  background: #292d2f center no-repeat url('data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%22116px%22%20height%3D%2255px%22%20viewBox%3D%220%200%20116%2055%22%20enable-background%3D%22new%200%200%20116%2055%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20opacity%3D%220.5%22%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M45%2C1H9c-4.951%2C0-9%2C4.05-9%2C9v36c0%2C4.95%2C4.049%2C9%2C9%2C9h36c4.949%2C0%2C9-4.05%2C9-9V10C54%2C5.05%2C49.949%2C1%2C45%2C1z%0A%09%09%09%20M47.25%2C43.75c0%2C2.475-2.025%2C4.5-4.5%2C4.5h-31.5c-2.475%2C0-4.5-2.025-4.5-4.5v-31.5c0-2.476%2C2.025-4.5%2C4.5-4.5h31.5%0A%09%09%09c2.475%2C0%2C4.5%2C2.024%2C4.5%2C4.5V43.75z%22%2F%3E%0A%09%09%3Cg%3E%0A%09%09%09%3Cg%3E%0A%09%09%09%09%3Cg%3E%0A%09%09%09%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M25.312%2C15.344v5.906h-5.906v13.5h5.906v5.906H13.5V15.344H25.312z%22%2F%3E%0A%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%3Cg%3E%0A%09%09%09%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M40.5%2C15.344v25.313H28.688V34.75h5.906v-13.5h-5.906v-5.906H40.5z%22%2F%3E%0A%09%09%09%09%3C%2Fg%3E%0A%09%09%09%3C%2Fg%3E%0A%09%09%3C%2Fg%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%20opacity%3D%220.5%22%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M71.768%2C3.734c1.596%2C0%2C2.897%2C0.546%2C3.947%2C1.428l-1.47%2C2.478c-0.672-0.462-1.429-0.798-2.353-0.798%0A%09%09%09c-1.974%2C0-3.232%2C1.554-3.232%2C4.031c0%2C2.688%2C1.176%2C4.115%2C3.527%2C4.115c0.881%2C0%2C1.638-0.504%2C2.226-0.966l1.554%2C2.436%0A%09%09%09c-1.092%2C1.092-2.646%2C1.638-4.115%2C1.638c-3.904%2C0-6.887-2.436-6.887-7.223C64.965%2C6.38%2C67.988%2C3.734%2C71.768%2C3.734z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M76.725%2C10.873c0-4.493%2C2.688-7.139%2C6.467-7.139c3.779%2C0%2C6.468%2C2.667%2C6.468%2C7.139%0A%09%09%09c0%2C4.493-2.688%2C7.223-6.468%2C7.223C79.413%2C18.096%2C76.725%2C15.366%2C76.725%2C10.873z%20M85.963%2C10.873c0-2.478-1.134-4.031-2.771-4.031%0A%09%09%09c-1.637%2C0-2.771%2C1.554-2.771%2C4.031s1.134%2C4.115%2C2.771%2C4.115C84.829%2C14.988%2C85.963%2C13.351%2C85.963%2C10.873z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M92.266%2C3.986h4.24c4.157%2C0%2C7.014%2C2.058%2C7.014%2C6.887s-2.855%2C6.971-6.804%2C6.971h-4.45V3.986z%0A%09%09%09%20M96.296%2C14.946c1.974%2C0%2C3.527-0.882%2C3.527-4.073s-1.554-3.989-3.527-3.989h-0.42v8.062H96.296z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M106.124%2C3.986h8.985V7.01h-5.375v2.226h4.619v3.023h-4.619v2.562h5.586v3.023h-9.196V3.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M68.156%2C25.01h-3.653v-3.023h10.918v3.023h-3.653v10.834h-3.61L68.156%2C25.01L68.156%2C25.01z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M77.564%2C21.986h3.61v5.165h4.367v-5.165h3.61v13.857h-3.61V30.3h-4.367v5.543h-3.61V21.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M92.35%2C21.986h8.985v3.023H95.96v2.226h4.619v3.023H95.96v2.563h5.585v3.022H92.35V21.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M64.167%2C39.986h3.694l0.757%2C6.173l0.462%2C4.282h0.084l0.756-4.282l1.303-6.173h3.022l1.302%2C6.173%0A%09%09%09l0.756%2C4.282h0.084l0.463-4.282l0.756-6.173h3.442l-2.269%2C13.857h-4.576l-1.135-5.627l-0.42-2.98h-0.084l-0.42%2C2.98l-1.092%2C5.627%0A%09%09%09h-4.492L64.167%2C39.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M82.855%2C39.986h8.986v3.022h-5.375v2.226h4.619v3.023h-4.619v2.563h5.585v3.022h-9.196V39.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%23484D4F%22%20d%3D%22M94.784%2C39.986h5.039c2.854%2C0%2C5.165%2C0.882%2C5.165%2C3.568c0%2C1.176-0.631%2C2.395-2.059%2C2.897v0.084%0A%09%09%09c1.807%2C0.462%2C2.688%2C1.554%2C2.688%2C3.274c0%2C2.813-2.437%2C4.031-5.375%2C4.031h-5.459V39.986z%20M99.57%2C45.486%0A%09%09%09c1.345%2C0%2C1.891-0.588%2C1.891-1.428s-0.546-1.302-1.891-1.302h-1.176v2.729H99.57L99.57%2C45.486z%20M99.991%2C51.072%0A%09%09%09c1.428%2C0%2C2.1-0.588%2C2.1-1.596c0-1.009-0.672-1.471-2.1-1.471h-1.597v3.064h1.597V51.072z%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M45%2C0H9C4.049%2C0%2C0%2C4.05%2C0%2C9v36c0%2C4.95%2C4.049%2C9%2C9%2C9h36c4.949%2C0%2C9-4.05%2C9-9V9C54%2C4.05%2C49.949%2C0%2C45%2C0z%0A%09%09%09%20M47.25%2C42.75c0%2C2.475-2.025%2C4.5-4.5%2C4.5h-31.5c-2.475%2C0-4.5-2.025-4.5-4.5v-31.5c0-2.476%2C2.025-4.5%2C4.5-4.5h31.5%0A%09%09%09c2.475%2C0%2C4.5%2C2.024%2C4.5%2C4.5V42.75z%22%2F%3E%0A%09%09%3Cg%3E%0A%09%09%09%3Cg%3E%0A%09%09%09%09%3Cg%3E%0A%09%09%09%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M25.312%2C14.344v5.906h-5.906v13.5h5.906v5.906H13.5V14.344H25.312z%22%2F%3E%0A%09%09%09%09%3C%2Fg%3E%0A%09%09%09%09%3Cg%3E%0A%09%09%09%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M40.5%2C14.344v25.313H28.688V33.75h5.906v-13.5h-5.906v-5.906H40.5z%22%2F%3E%0A%09%09%09%09%3C%2Fg%3E%0A%09%09%09%3C%2Fg%3E%0A%09%09%3C%2Fg%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M71.768%2C2.734c1.596%2C0%2C2.897%2C0.546%2C3.947%2C1.428l-1.47%2C2.478c-0.672-0.462-1.429-0.798-2.353-0.798%0A%09%09%09c-1.974%2C0-3.232%2C1.554-3.232%2C4.031c0%2C2.688%2C1.176%2C4.115%2C3.527%2C4.115c0.881%2C0%2C1.638-0.504%2C2.226-0.966l1.554%2C2.436%0A%09%09%09c-1.092%2C1.092-2.646%2C1.638-4.115%2C1.638c-3.904%2C0-6.887-2.436-6.887-7.223C64.965%2C5.38%2C67.988%2C2.734%2C71.768%2C2.734z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M76.725%2C9.873c0-4.493%2C2.688-7.139%2C6.467-7.139c3.779%2C0%2C6.468%2C2.667%2C6.468%2C7.139%0A%09%09%09c0%2C4.493-2.688%2C7.223-6.468%2C7.223C79.413%2C17.096%2C76.725%2C14.366%2C76.725%2C9.873z%20M85.963%2C9.873c0-2.478-1.134-4.031-2.771-4.031%0A%09%09%09c-1.637%2C0-2.771%2C1.554-2.771%2C4.031s1.135%2C4.115%2C2.771%2C4.115S85.963%2C12.351%2C85.963%2C9.873z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M92.266%2C2.986h4.24c4.157%2C0%2C7.014%2C2.058%2C7.014%2C6.887s-2.855%2C6.971-6.804%2C6.971h-4.45V2.986z%0A%09%09%09%20M96.296%2C13.946c1.974%2C0%2C3.527-0.882%2C3.527-4.073s-1.554-3.989-3.527-3.989h-0.42v8.062H96.296z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M106.124%2C2.986h8.985V6.01h-5.375v2.226h4.619v3.023h-4.619v2.562h5.586v3.023h-9.196V2.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M68.156%2C24.01h-3.653v-3.023h10.918v3.023h-3.653v10.834h-3.61L68.156%2C24.01L68.156%2C24.01z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M77.564%2C20.986h3.61v5.165h4.367v-5.165h3.61v13.857h-3.61V29.3h-4.367v5.543h-3.61V20.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M92.35%2C20.986h8.985v3.023H95.96v2.226h4.619v3.023H95.96v2.563h5.585v3.022H92.35V20.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M64.167%2C38.986h3.694l0.757%2C6.173l0.462%2C4.282h0.084l0.756-4.282l1.303-6.173h3.022l1.302%2C6.173%0A%09%09%09l0.756%2C4.282h0.084l0.463-4.282l0.756-6.173h3.442l-2.269%2C13.857h-4.576l-1.135-5.627l-0.42-2.98h-0.084l-0.42%2C2.98l-1.092%2C5.627%0A%09%09%09h-4.492L64.167%2C38.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M82.855%2C38.986h8.986v3.022h-5.375v2.226h4.619v3.023h-4.619v2.563h5.585v3.022h-9.196V38.986z%22%2F%3E%0A%09%09%3Cpath%20fill%3D%22%231C2021%22%20d%3D%22M94.784%2C38.986h5.039c2.854%2C0%2C5.165%2C0.882%2C5.165%2C3.568c0%2C1.176-0.631%2C2.395-2.059%2C2.897v0.084%0A%09%09%09c1.807%2C0.462%2C2.688%2C1.554%2C2.688%2C3.274c0%2C2.813-2.437%2C4.031-5.375%2C4.031h-5.459V38.986z%20M99.57%2C44.486%0A%09%09%09c1.345%2C0%2C1.891-0.588%2C1.891-1.428s-0.546-1.302-1.891-1.302h-1.176v2.729H99.57L99.57%2C44.486z%20M99.991%2C50.072%0A%09%09%09c1.428%2C0%2C2.1-0.588%2C2.1-1.596c0-1.009-0.672-1.471-2.1-1.471h-1.597v3.064h1.597V50.072z%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A') !important;
+}
+.image-view {
+  box-shadow: inset 0 0 15px 0px rgba(0, 0, 0, 0.3);
+  background: #292d2f !important;
+  color: #cacdd3;
+}
+.image-view .image-data {
+  color: #ff6666;
+}
+.image-view .image-preview {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+}
+.cm-global-variable {
+  color: #ff5f5f !important;
+  text-decoration: none !important;
+}
+.CodeMirror-foldgutter-open:after,
+.CodeMirror-foldgutter-folded:after,
+.CodeMirror-foldgutter-blank:after {
+  color: #5b6469;
+}
+.CodeMirror-widget .CodeMirror-foldmarker {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-bottom: 2px;
+  border: 1px solid #185f8c;
+  line-height: 100%;
+  font-family: sans-serif;
+  background: #0d4c73;
+  color: #fff;
+}
+::-webkit-scrollbar {
+  background: none !important;
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 0 12px rgba(12, 12, 12, 0.5) inset !important;
+  border-radius: 4px;
+  width: 8px;
+}
+.CodeMirror-gutter-filler {
+  background: none;
+  height: 8px;
+}
+.CodeMirror-scrollbar-filler {
+  background: none;
+  width: 8px;
+  height: 8px;
+}
+.tickmark-track,
+.tickmark-track .tickmark {
+  width: 8px;
+}
+.tickmark-track .tickmark {
+  background-color: #af7f00;
+  border-color: #dea919;
+}
+.tickmark-track .tickmark.tickmark-current {
+  background-color: #0087af;
+  border-color: #0087af;
+}
+.CodeMirror:after,
+.cm-quote:before {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  content: "";
+}
+.CodeMirror:after {
+  box-shadow: inset 0 0 15px 0px rgba(0, 0, 0, 0.3);
+  top: -5px;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  z-index: 10;
+}
+.cm-quote:before {
+  top: 0;
+  left: -10px;
+  bottom: 0;
+  border-left: 3px solid #5f6572;
+}
